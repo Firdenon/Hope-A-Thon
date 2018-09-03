@@ -13,7 +13,7 @@
         <!--Login View Controller-->
         <scene sceneID="oz0-q7-DAi">
             <objects>
-                <viewController id="0NN-eB-OmQ" customClass="LoginViewController" customModule="HopeAthon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0NN-eB-OmQ" customClass="LoginViewController" customModule="Hope_A_Thon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vJc-rG-gGN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,17 +40,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTj-xf-lKV">
-                                <rect key="frame" x="66" y="479" width="179" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bT-4j-Kr3">
-                                <rect key="frame" x="253" y="474" width="55" height="30"/>
+                                <rect key="frame" x="16" y="617" width="161" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign Up"/>
+                                <state key="normal" title="Don't have an account?"/>
                                 <connections>
                                     <segue destination="y4u-JV-cqH" kind="show" id="s2V-Pk-LRn"/>
                                 </connections>
@@ -72,16 +65,25 @@
             </objects>
             <point key="canvasLocation" x="987" y="-422"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="z1O-rR-CtV">
             <objects>
-                <viewController id="y4u-JV-cqH" sceneMemberID="viewController">
+                <viewController id="y4u-JV-cqH" customClass="SignUpViewController" customModule="Hope_A_Thon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sPD-HO-icb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBw-ES-EqR">
+                                <rect key="frame" x="16" y="617" width="176" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Already have an account?"/>
+                                <connections>
+                                    <action selector="backToLogin:" destination="y4u-JV-cqH" eventType="touchUpInside" id="HKp-qA-P5q"/>
+                                </connections>
+                            </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="YPS-Id-lg2">
                                 <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <date key="date" timeIntervalSinceReferenceDate="557674991.15758395">
                                     <!--2018-09-03 13:43:11 +0000-->
                                 </date>
@@ -135,6 +137,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujC-JU-uxL">
                                         <rect key="frame" x="0.0" y="222" width="275" height="30"/>
                                         <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="onTapSignUp:" destination="y4u-JV-cqH" eventType="touchUpInside" id="QC4-in-kza"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -151,6 +156,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2Un-nb-IyX"/>
                     </view>
+                    <connections>
+                        <outlet property="birthdatePicker" destination="YPS-Id-lg2" id="xlK-bp-fAk"/>
+                        <outlet property="birthdateTF" destination="V1q-By-5ch" id="KFo-tU-hnc"/>
+                        <outlet property="emailTF" destination="df5-bS-YA2" id="hMy-Fn-3S8"/>
+                        <outlet property="femaleBtn" destination="9bl-2w-Uv2" id="nmF-Uw-uAy"/>
+                        <outlet property="fullnameTF" destination="QD7-DW-fgh" id="MUV-1K-JSk"/>
+                        <outlet property="maleBtn" destination="fWG-dH-jxb" id="h6a-W3-Ief"/>
+                        <outlet property="passwordTF" destination="kKf-Lb-bYC" id="RFh-vV-Khs"/>
+                        <outlet property="retypePasswordTF" destination="br2-TD-ChG" id="WkQ-Qx-t10"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0yc-bu-3yp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
