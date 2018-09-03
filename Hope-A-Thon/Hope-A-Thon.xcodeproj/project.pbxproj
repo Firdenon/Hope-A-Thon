@@ -17,7 +17,6 @@
 		850668B4213D812500100DB7 /* NotificationTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 850668AE213D812500100DB7 /* NotificationTableViewController.xib */; };
 		850668B6213D833A00100DB7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850668B5213D833A00100DB7 /* SignUpViewController.swift */; };
 		BA17FF23213D4ADD00B8B228 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA17FF22213D4ADD00B8B228 /* AppDelegate.swift */; };
-		BA17FF25213D4ADD00B8B228 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA17FF24213D4ADD00B8B228 /* ViewController.swift */; };
 		BA17FF28213D4ADD00B8B228 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA17FF26213D4ADD00B8B228 /* Main.storyboard */; };
 		BA17FF2B213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA17FF29213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodeld */; };
 		BA17FF2D213D4ADF00B8B228 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA17FF2C213D4ADF00B8B228 /* Assets.xcassets */; };
@@ -27,6 +26,14 @@
 		BA716A60213D55BB00B979D2 /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA716A5F213D55BB00B979D2 /* Activity.storyboard */; };
 		BA716A62213D55CA00B979D2 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA716A61213D55CA00B979D2 /* Profile.storyboard */; };
 		BA716A64213D55D200B979D2 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA716A63213D55D200B979D2 /* Search.storyboard */; };
+		BA716A66213D59CD00B979D2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA716A65213D59CD00B979D2 /* HomeViewController.swift */; };
+		BA716A6A213D5F8300B979D2 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA716A69213D5F8300B979D2 /* HomeTableViewCell.swift */; };
+		BA716A6C213D61AA00B979D2 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA716A6B213D61AA00B979D2 /* Activity.swift */; };
+		BA716A6E213D683200B979D2 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA716A6D213D683200B979D2 /* GradientView.swift */; };
+		BA716A70213D771B00B979D2 /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA716A6F213D771B00B979D2 /* BookmarkTableViewCell.swift */; };
+		BA716A74213D775900B979D2 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA716A73213D775900B979D2 /* BookmarkViewController.swift */; };
+		BA716A76213D7C1B00B979D2 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA716A75213D7C1B00B979D2 /* ActivityViewController.swift */; };
+		BA716A78213D7C3200B979D2 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA716A77213D7C3200B979D2 /* ActivityTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +48,6 @@
 		850668B5213D833A00100DB7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BA17FF1F213D4ADD00B8B228 /* Hope-A-Thon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hope-A-Thon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA17FF22213D4ADD00B8B228 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA17FF24213D4ADD00B8B228 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA17FF27213D4ADD00B8B228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA17FF2A213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hope_A_Thon.xcdatamodel; sourceTree = "<group>"; };
 		BA17FF2C213D4ADF00B8B228 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +58,14 @@
 		BA716A5F213D55BB00B979D2 /* Activity.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Activity.storyboard; sourceTree = "<group>"; };
 		BA716A61213D55CA00B979D2 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		BA716A63213D55D200B979D2 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		BA716A65213D59CD00B979D2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BA716A69213D5F8300B979D2 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		BA716A6B213D61AA00B979D2 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		BA716A6D213D683200B979D2 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		BA716A6F213D771B00B979D2 /* BookmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkTableViewCell.swift; sourceTree = "<group>"; };
+		BA716A73213D775900B979D2 /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
+		BA716A75213D7C1B00B979D2 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		BA716A77213D7C3200B979D2 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,10 +127,6 @@
 				BA716A56213D54F500B979D2 /* Model */,
 				BA716A57213D550700B979D2 /* View */,
 				BA716A58213D551400B979D2 /* Controller */,
-				BA17FF22213D4ADD00B8B228 /* AppDelegate.swift */,
-				BA17FF24213D4ADD00B8B228 /* ViewController.swift */,
-				BA17FF2C213D4ADF00B8B228 /* Assets.xcassets */,
-				BA17FF2E213D4ADF00B8B228 /* LaunchScreen.storyboard */,
 				BA17FF31213D4ADF00B8B228 /* Info.plist */,
 				BA17FF29213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodeld */,
 			);
@@ -126,6 +136,8 @@
 		BA716A56213D54F500B979D2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BA716A6B213D61AA00B979D2 /* Activity.swift */,
+				BA716A6D213D683200B979D2 /* GradientView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -139,6 +151,7 @@
 				BA716A5F213D55BB00B979D2 /* Activity.storyboard */,
 				BA716A61213D55CA00B979D2 /* Profile.storyboard */,
 				BA716A63213D55D200B979D2 /* Search.storyboard */,
+				BA17FF2E213D4ADF00B8B228 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -146,8 +159,23 @@
 		BA716A58213D551400B979D2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BA716A65213D59CD00B979D2 /* HomeViewController.swift */,
+				BA716A69213D5F8300B979D2 /* HomeTableViewCell.swift */,
+				BA716A73213D775900B979D2 /* BookmarkViewController.swift */,
+				BA716A6F213D771B00B979D2 /* BookmarkTableViewCell.swift */,
+				BA716A75213D7C1B00B979D2 /* ActivityViewController.swift */,
+				BA716A77213D7C3200B979D2 /* ActivityTableViewCell.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		BA716A79213D807F00B979D2 /* Additional */ = {
+			isa = PBXGroup;
+			children = (
+				BA17FF22213D4ADD00B8B228 /* AppDelegate.swift */,
+				BA17FF2C213D4ADF00B8B228 /* Assets.xcassets */,
+			);
+			path = Additional;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
