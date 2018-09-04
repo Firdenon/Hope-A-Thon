@@ -23,12 +23,21 @@ class ActivityViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        upperSegment.frame = CGRect.init(x: 0, y: 88, width: 375, height: 35)
+        setNavTitle()
     }
     
     @IBAction func upperSegmentPressed() {
         activityTableView.reloadData()
+    }
+    
+    func setNavTitle() {
+        let titleLabel = UILabel()
+        titleLabel.attributedText = NSAttributedString(string: "ACTIVITIES")
+        titleLabel.font = UIFont(name: "HelveticaNeue", size: 17.0)
+        titleLabel.textColor = UIColor.white
+        titleLabel.addCharacterSpacing(kernValue: 2.25)
+        titleLabel.sizeToFit()
+        self.navigationItem.titleView = titleLabel
     }
 }
 

@@ -43,7 +43,6 @@
 		BAEAD633213E66A1004FE7EC /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEAD62C213E66A1004FE7EC /* Home.storyboard */; };
 		BAEAD634213E66A1004FE7EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEAD62D213E66A1004FE7EC /* LaunchScreen.storyboard */; };
 		BAEAD635213E66A1004FE7EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEAD62E213E66A1004FE7EC /* Main.storyboard */; };
-		E0C326D4213E71E400867CDA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C326D3213E71E400867CDA /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,7 +84,6 @@
 		BAEAD62C213E66A1004FE7EC /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		BAEAD62D213E66A1004FE7EC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAEAD62E213E66A1004FE7EC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		E0C326D3213E71E400867CDA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,14 +171,13 @@
 		BAEAD608213E6619004FE7EC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BAEAD609213E6619004FE7EC /* SearchViewController.swift */,
-				BAEAD60A213E6619004FE7EC /* BookmarkTableViewCell.swift */,
+				BAEAD60E213E6619004FE7EC /* HomeViewController.swift */,
 				BAEAD60B213E6619004FE7EC /* HomeTableViewCell.swift */,
 				BAEAD60C213E6619004FE7EC /* BookmarkViewController.swift */,
-				E0C326D3213E71E400867CDA /* ProfileViewController.swift */,
+				BAEAD60A213E6619004FE7EC /* BookmarkTableViewCell.swift */,
 				BAEAD60D213E6619004FE7EC /* ActivityViewController.swift */,
-				BAEAD60E213E6619004FE7EC /* HomeViewController.swift */,
 				BAEAD60F213E6619004FE7EC /* ActivityTableViewCell.swift */,
+				BAEAD609213E6619004FE7EC /* SearchViewController.swift */,
 				BAEAD610213E6619004FE7EC /* SearchTableViewCell.swift */,
 			);
 			path = Controller;
@@ -289,7 +286,6 @@
 				BAEAD613213E6619004FE7EC /* HomeTableViewCell.swift in Sources */,
 				85A6318F213E2425002EECB2 /* SignUpPasswordVC.swift in Sources */,
 				8539324A213E08A300936825 /* GradientView.swift in Sources */,
-				E0C326D4213E71E400867CDA /* ProfileViewController.swift in Sources */,
 				8539324D213E139400936825 /* BaseSignUpViewController.swift in Sources */,
 				BAEAD614213E6619004FE7EC /* BookmarkViewController.swift in Sources */,
 				BAEAD612213E6619004FE7EC /* BookmarkTableViewCell.swift in Sources */,
@@ -430,9 +426,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW6L62Q584;
+				DEVELOPMENT_TEAM = W7GMLURGAQ;
 				INFOPLIST_FILE = "Hope-A-Thon/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,9 +444,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW6L62Q584;
+				DEVELOPMENT_TEAM = W7GMLURGAQ;
 				INFOPLIST_FILE = "Hope-A-Thon/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

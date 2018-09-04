@@ -88,7 +88,7 @@
             </objects>
             <point key="canvasLocation" x="3820" y="164.77832512315271"/>
         </scene>
-        <!--Home-->
+        <!--Search View Controller-->
         <scene sceneID="o2a-Cr-qlo">
             <objects>
                 <viewController id="ibM-IU-M9O" customClass="SearchViewController" customModule="Hope_A_Thon" customModuleProvider="target" sceneMemberID="viewController">
@@ -189,7 +189,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="otH-Ie-n2c"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="IqG-Ts-H7L"/>
+                    <navigationItem key="navigationItem" id="IqG-Ts-H7L"/>
                     <connections>
                         <outlet property="searchBar" destination="sul-LW-edo" id="QKR-iq-BWi"/>
                         <outlet property="table" destination="lyA-Fd-0Nj" id="pO9-A6-LfD"/>
@@ -207,6 +207,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tqE-Qy-7J8">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.42352941179999998" green="0.71372549019999998" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
