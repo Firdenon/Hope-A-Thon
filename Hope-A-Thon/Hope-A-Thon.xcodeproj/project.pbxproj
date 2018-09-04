@@ -27,6 +27,8 @@
 		85A631A4213E4E1C002EECB2 /* NotificationTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85A6319F213E4E1B002EECB2 /* NotificationTableViewController.xib */; };
 		85A631A5213E4E1C002EECB2 /* NotificationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A631A0213E4E1C002EECB2 /* NotificationItem.swift */; };
 		85A631A9213E4ED3002EECB2 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A631A8213E4ED3002EECB2 /* DummyData.swift */; };
+		85A631AB213E5CBA002EECB2 /* SignUpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A631AA213E5CBA002EECB2 /* SignUpPageViewController.swift */; };
+		BA17FF28213D4ADD00B8B228 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA17FF26213D4ADD00B8B228 /* Main.storyboard */; };
 		BA17FF2B213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA17FF29213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodeld */; };
 		BAEAD611213E6619004FE7EC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAD609213E6619004FE7EC /* SearchViewController.swift */; };
 		BAEAD612213E6619004FE7EC /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAD60A213E6619004FE7EC /* BookmarkTableViewCell.swift */; };
@@ -43,6 +45,8 @@
 		BAEAD633213E66A1004FE7EC /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEAD62C213E66A1004FE7EC /* Home.storyboard */; };
 		BAEAD634213E66A1004FE7EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEAD62D213E66A1004FE7EC /* LaunchScreen.storyboard */; };
 		BAEAD635213E66A1004FE7EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEAD62E213E66A1004FE7EC /* Main.storyboard */; };
+		BAEAD637213E7447004FE7EC /* UrgentPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAD636213E7447004FE7EC /* UrgentPageViewController.swift */; };
+		BAEAD639213E745C004FE7EC /* UrgentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAD638213E745C004FE7EC /* UrgentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +70,7 @@
 		85A6319F213E4E1B002EECB2 /* NotificationTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationTableViewController.xib; sourceTree = "<group>"; };
 		85A631A0213E4E1C002EECB2 /* NotificationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationItem.swift; sourceTree = "<group>"; };
 		85A631A8213E4ED3002EECB2 /* DummyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		85A631AA213E5CBA002EECB2 /* SignUpPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPageViewController.swift; sourceTree = "<group>"; };
 		BA17FF1F213D4ADD00B8B228 /* Hope-A-Thon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hope-A-Thon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA17FF2A213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hope_A_Thon.xcdatamodel; sourceTree = "<group>"; };
 		BA17FF31213D4ADF00B8B228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +89,8 @@
 		BAEAD62C213E66A1004FE7EC /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		BAEAD62D213E66A1004FE7EC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAEAD62E213E66A1004FE7EC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BAEAD636213E7447004FE7EC /* UrgentPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgentPageViewController.swift; sourceTree = "<group>"; };
+		BAEAD638213E745C004FE7EC /* UrgentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +116,7 @@
 				85A63190213E2430002EECB2 /* SignUpGenderVC.swift */,
 				85A63192213E2442002EECB2 /* SignUpBirthdateVC.swift */,
 				85A63194213E253A002EECB2 /* SignUpLastVC.swift */,
+				85A631AA213E5CBA002EECB2 /* SignUpPageViewController.swift */,
 			);
 			path = "Login & Signup";
 			sourceTree = "<group>";
@@ -173,6 +181,8 @@
 			children = (
 				BAEAD60E213E6619004FE7EC /* HomeViewController.swift */,
 				BAEAD60B213E6619004FE7EC /* HomeTableViewCell.swift */,
+				BAEAD636213E7447004FE7EC /* UrgentPageViewController.swift */,
+				BAEAD638213E745C004FE7EC /* UrgentViewController.swift */,
 				BAEAD60C213E6619004FE7EC /* BookmarkViewController.swift */,
 				BAEAD60A213E6619004FE7EC /* BookmarkTableViewCell.swift */,
 				BAEAD60D213E6619004FE7EC /* ActivityViewController.swift */,
@@ -279,6 +289,7 @@
 				85A631A3213E4E1C002EECB2 /* NotificationTableViewCell.swift in Sources */,
 				85A6318D213E240C002EECB2 /* SignUpEmailVC.swift in Sources */,
 				85A631A9213E4ED3002EECB2 /* DummyData.swift in Sources */,
+				85A631AB213E5CBA002EECB2 /* SignUpPageViewController.swift in Sources */,
 				85A63195213E253A002EECB2 /* SignUpLastVC.swift in Sources */,
 				85A63197213E2639002EECB2 /* UserInfo.swift in Sources */,
 				452A6D80213E4FC90080D7D3 /* Activity.swift in Sources */,
@@ -288,6 +299,7 @@
 				8539324A213E08A300936825 /* GradientView.swift in Sources */,
 				8539324D213E139400936825 /* BaseSignUpViewController.swift in Sources */,
 				BAEAD614213E6619004FE7EC /* BookmarkViewController.swift in Sources */,
+				BAEAD639213E745C004FE7EC /* UrgentViewController.swift in Sources */,
 				BAEAD612213E6619004FE7EC /* BookmarkTableViewCell.swift in Sources */,
 				85A63193213E2442002EECB2 /* SignUpBirthdateVC.swift in Sources */,
 				BAEAD617213E6619004FE7EC /* ActivityTableViewCell.swift in Sources */,
@@ -296,6 +308,7 @@
 				BAEAD611213E6619004FE7EC /* SearchViewController.swift in Sources */,
 				85A631A2213E4E1C002EECB2 /* NotificationTableViewController.swift in Sources */,
 				BAEAD618213E6619004FE7EC /* SearchTableViewCell.swift in Sources */,
+				BAEAD637213E7447004FE7EC /* UrgentPageViewController.swift in Sources */,
 				85A6318B213E23E7002EECB2 /* SignUpFullNameVC.swift in Sources */,
 				850668BD213D867F00100DB7 /* AppDelegate.swift in Sources */,
 				85A63191213E2430002EECB2 /* SignUpGenderVC.swift in Sources */,

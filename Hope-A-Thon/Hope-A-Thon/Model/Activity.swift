@@ -15,15 +15,17 @@ class Activity: NSObject {
     var location: String = ""
     var ngo: String = ""
     var image: UIImage
+    var bookmark: Bool
     
 //    override init(){
 //    }
     
-    init(title: String, date: String, location: String, ngo: String, image: UIImage) {
+    init(title: String, date: String, location: String, ngo: String, image: UIImage, bookmark: Bool) {
         self.title = title
         self.date = date
         self.location = location
         self.ngo = ngo
         self.image = image
+        self.bookmark = bookmark
     }
 }
