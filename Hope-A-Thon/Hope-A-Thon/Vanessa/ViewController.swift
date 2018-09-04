@@ -9,7 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var labelHeader: UILabel!
+    
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var postedLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
@@ -52,6 +53,7 @@ class ViewController: UIViewController {
         desiredLabel.addCharacterSpacing(kernValue: 2.33)
         descLabel.addCharacterSpacing(kernValue: 2.33)
         termLabel.addCharacterSpacing(kernValue: 2.33)
+        labelHeader.addCharacterSpacing(kernValue: 2.33)
         
         // Do any additional setup after loading the view, typically from a nib.
     }
