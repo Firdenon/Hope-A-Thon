@@ -174,10 +174,10 @@
             </objects>
             <point key="canvasLocation" x="-78" y="651"/>
         </scene>
-        <!--Base Sign Up View Controller-->
+        <!--Sign Up Full NameVC-->
         <scene sceneID="4me-Bf-Qmy">
             <objects>
-                <viewController id="4RT-Fb-S4m" customClass="BaseSignUpViewController" customModule="Hope_A_Thon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4RT-Fb-S4m" customClass="SignUpFullNameVC" customModule="Hope_A_Thon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ePd-y5-6KS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -209,10 +209,10 @@
             </objects>
             <point key="canvasLocation" x="1964" y="333"/>
         </scene>
-        <!--Base Sign Up View Controller-->
+        <!--Sign Up EmailVC-->
         <scene sceneID="wnm-aB-zDA">
             <objects>
-                <viewController id="x7j-ro-oHi" customClass="BaseSignUpViewController" customModule="Hope_A_Thon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="x7j-ro-oHi" customClass="SignUpEmailVC" customModule="Hope_A_Thon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fun-ag-52J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -241,10 +241,10 @@
             </objects>
             <point key="canvasLocation" x="2794" y="332"/>
         </scene>
-        <!--Base Sign Up View Controller-->
+        <!--Sign Up PasswordVC-->
         <scene sceneID="TWp-CJ-83j">
             <objects>
-                <viewController id="3qO-nd-Eo7" customClass="BaseSignUpViewController" customModule="Hope_A_Thon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3qO-nd-Eo7" customClass="SignUpPasswordVC" customModule="Hope_A_Thon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oMf-bR-1oO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -260,6 +260,9 @@
                                 <rect key="frame" x="164" y="356" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="282-Gm-DHl" kind="show" id="ijG-7r-n7a"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cet-vg-NrH">
                                 <rect key="frame" x="50" y="280" width="275" height="30"/>
@@ -276,6 +279,136 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DSv-Zp-fFM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3634" y="331"/>
+        </scene>
+        <!--Sign Up GenderVC-->
+        <scene sceneID="zXP-C9-IHf">
+            <objects>
+                <viewController id="282-Gm-DHl" customClass="SignUpGenderVC" customModule="Hope_A_Thon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hee-ZX-XjL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="23d-vU-wDY">
+                                <rect key="frame" x="135" y="391" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUH-HN-kvC">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
+                                        <state key="normal" title="Male"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJ0-Xf-2gN">
+                                        <rect key="frame" x="55" y="0.0" width="50" height="30"/>
+                                        <state key="normal" title="Female"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gvn-LO-eCE">
+                                <rect key="frame" x="274" y="88" width="85" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Skip for now"/>
+                                <connections>
+                                    <segue destination="xPu-B1-u3o" kind="show" id="5lo-hr-FYL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gJD-yc-g8g"/>
+                    </view>
+                    <connections>
+                        <segue destination="xPu-B1-u3o" kind="show" identifier="next" id="U7R-eg-XiC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xpn-MP-Otk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4510" y="333"/>
+        </scene>
+        <!--Sign Up BirthdateVC-->
+        <scene sceneID="ZKa-0e-NiF">
+            <objects>
+                <viewController id="xPu-B1-u3o" customClass="SignUpBirthdateVC" customModule="Hope_A_Thon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cbd-a6-Nks">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZbZ-5U-bE5">
+                                <rect key="frame" x="0.0" y="466" width="375" height="263"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="fPh-aZ-EIU">
+                                        <rect key="frame" x="0.0" y="47" width="375" height="216"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="557719870.24770796">
+                                            <!--2018-09-04 02:11:10 +0000-->
+                                        </date>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10i-u2-l6w">
+                                        <rect key="frame" x="303" y="8" width="64" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Continue"/>
+                                        <connections>
+                                            <segue destination="4oE-rp-a7e" kind="show" id="r2K-4h-rrc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="fPh-aZ-EIU" secondAttribute="bottom" id="0z5-pO-5RU"/>
+                                    <constraint firstItem="fPh-aZ-EIU" firstAttribute="top" secondItem="ZbZ-5U-bE5" secondAttribute="top" constant="47" id="7Rm-f0-YIY"/>
+                                    <constraint firstItem="fPh-aZ-EIU" firstAttribute="leading" secondItem="ZbZ-5U-bE5" secondAttribute="leading" id="81e-ha-ayG"/>
+                                    <constraint firstItem="10i-u2-l6w" firstAttribute="top" secondItem="ZbZ-5U-bE5" secondAttribute="top" constant="8" id="OiV-qH-I2F"/>
+                                    <constraint firstAttribute="trailing" secondItem="10i-u2-l6w" secondAttribute="trailing" constant="8" id="cab-Im-XMH"/>
+                                    <constraint firstAttribute="trailing" secondItem="fPh-aZ-EIU" secondAttribute="trailing" id="ft5-z2-m7z"/>
+                                    <constraint firstItem="fPh-aZ-EIU" firstAttribute="top" secondItem="10i-u2-l6w" secondAttribute="bottom" constant="9" id="g31-9y-XlY"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date of Birth" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="66b-ox-Fv9">
+                                <rect key="frame" x="50" y="391" width="275" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjU-PX-tfh">
+                                <rect key="frame" x="274" y="88" width="85" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Skip for now"/>
+                                <connections>
+                                    <segue destination="4oE-rp-a7e" kind="show" id="oZu-fZ-21Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="frR-rQ-Xdq" firstAttribute="bottom" secondItem="ZbZ-5U-bE5" secondAttribute="bottom" id="8RV-wp-uaa"/>
+                            <constraint firstItem="ZbZ-5U-bE5" firstAttribute="leading" secondItem="frR-rQ-Xdq" secondAttribute="leading" id="gLh-qJ-MtB"/>
+                            <constraint firstItem="frR-rQ-Xdq" firstAttribute="trailing" secondItem="ZbZ-5U-bE5" secondAttribute="trailing" id="zJX-o3-l2r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="frR-rQ-Xdq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m7j-cU-sPR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5341.6000000000004" y="331.77339901477836"/>
+        </scene>
+        <!--Sign Up LastVC-->
+        <scene sceneID="cLT-FE-XGS">
+            <objects>
+                <viewController id="4oE-rp-a7e" customClass="SignUpLastVC" customModule="Hope_A_Thon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vNq-nB-Ahg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQ5-ih-VfW">
+                                <rect key="frame" x="160" y="391" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign Up"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="blF-V2-RxF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DBh-fr-hsF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6167" y="333"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ctx-Ra-N4O">
@@ -300,4 +433,8 @@
             <point key="canvasLocation" x="1188" y="333.28335832083962"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="oZu-fZ-21Y"/>
+        <segue reference="U7R-eg-XiC"/>
+    </inferredMetricsTieBreakers>
 </document>

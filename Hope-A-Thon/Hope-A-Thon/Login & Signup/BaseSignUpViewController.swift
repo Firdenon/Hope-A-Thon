@@ -15,12 +15,6 @@ class BaseSignUpViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        
-//        let signInButton = UIButton()
-//        signInButton.titleLabel?.text = "Already have an account?"
-//        signInButton.titleLabel?.font = UIFont.systemFont(ofSize: 10)
-//        signInButton.addTarget(self, action: #selector(backToSignIn), for: .touchUpInside)
-        
         let signInButton = UIBarButtonItem(title: "Already have an account?", style: .plain, target: self, action: #selector(backToSignIn))
         signInButton.setTitleTextAttributes([
                 NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12),
