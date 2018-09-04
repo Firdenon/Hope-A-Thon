@@ -34,41 +34,41 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3GT-FC-X47">
-                                <rect key="frame" x="120.00000000000001" y="680" width="135.33333333333334" height="26.333333333333332"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3GT-FC-X47">
+                                <rect key="frame" x="80" y="680" width="215" height="26.333333333333371"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Don't have an account yet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWJ-k1-XL0">
-                                        <rect key="frame" x="0.0" y="0.0" width="135.33333333333334" height="13"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account yet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWJ-k1-XL0">
+                                        <rect key="frame" x="40" y="0.0" width="135.33333333333334" height="13"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sign up here." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6MU-Mp-dBz">
-                                        <rect key="frame" x="33.999999999999993" y="13" width="67.333333333333314" height="13.333333333333336"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up here." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6MU-Mp-dBz">
+                                        <rect key="frame" x="74" y="13" width="67.333333333333314" height="13.333333333333336"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="11"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIv-4J-5oK">
-                                <rect key="frame" x="164" y="483" width="47" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign In"/>
-                                <connections>
-                                    <action selector="signIn:" destination="0NN-eB-OmQ" eventType="touchUpInside" id="H9U-So-p6m"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.42352941176470588" green="0.71372549019607845" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="3GT-FC-X47" firstAttribute="leading" secondItem="6gk-LT-Cb7" secondAttribute="leading" constant="80" id="6Gf-bW-Un6"/>
+                            <constraint firstItem="6gk-LT-Cb7" firstAttribute="trailing" secondItem="3GT-FC-X47" secondAttribute="trailing" constant="80" id="ZvV-eS-bUh"/>
+                            <constraint firstItem="6gk-LT-Cb7" firstAttribute="bottom" secondItem="3GT-FC-X47" secondAttribute="bottom" constant="71.666666666666629" id="rE5-yl-X3e"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6gk-LT-Cb7"/>
                     </view>
                     <navigationItem key="navigationItem" id="HOC-Yu-m7A"/>
                     <connections>
                         <outlet property="emailTF" destination="3uF-cv-02p" id="dkN-jn-cBw"/>
                         <outlet property="passwordTF" destination="T8w-7u-nit" id="Qbg-Yk-nOw"/>
+                        <outlet property="signUpLabel1" destination="aWJ-k1-XL0" id="ts8-O8-bwe"/>
+                        <outlet property="signUpLabel2" destination="6MU-Mp-dBz" id="i33-iA-Yac"/>
+                        <outlet property="signUpStackView" destination="3GT-FC-X47" id="Yaz-YA-Y1X"/>
                         <segue destination="pLh-R5-z7j" kind="show" identifier="next" id="s4f-Bf-73p"/>
+                        <segue destination="sa6-2s-YUd" kind="show" identifier="signUp" id="hxk-cG-2yE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jYB-QX-pKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -107,12 +107,12 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.42352941179999998" green="0.71372549019999998" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="yG3-wr-U0F"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="L7V-sH-ahf"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="fullnameTF" destination="k2R-gF-efs" id="j3V-9x-S58"/>
                         <outlet property="nextBtn" destination="kNp-NE-2b6" id="vac-8k-IXA"/>
@@ -157,9 +157,10 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.42352941179999998" green="0.71372549019999998" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="Tv5-PH-BZi"/>
                     </view>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="emailTF" destination="pK3-AR-SVz" id="HoR-7u-jng"/>
                         <outlet property="nextBtn" destination="m9U-bh-dFI" id="cJa-iJ-wPF"/>
@@ -208,9 +209,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.42352941179999998" green="0.71372549019999998" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="ib3-Oy-qbF"/>
                     </view>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="nextBtn" destination="kmX-4J-IaI" id="SJf-cA-yrI"/>
                         <outlet property="passwordErrorLabel" destination="Dmu-h4-aMm" id="UCs-eL-Mxp"/>
@@ -260,9 +262,10 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.42352941179999998" green="0.71372549019999998" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="gJD-yc-g8g"/>
                     </view>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xpn-MP-Otk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -277,7 +280,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZbZ-5U-bE5">
-                                <rect key="frame" x="0.0" y="466" width="375" height="263"/>
+                                <rect key="frame" x="0.0" y="515" width="375" height="263"/>
                                 <subviews>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="fPh-aZ-EIU">
                                         <rect key="frame" x="0.0" y="47" width="375" height="216"/>
@@ -324,7 +327,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.42352941179999998" green="0.71372549019999998" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="frR-rQ-Xdq" firstAttribute="bottom" secondItem="ZbZ-5U-bE5" secondAttribute="bottom" id="8RV-wp-uaa"/>
                             <constraint firstItem="ZbZ-5U-bE5" firstAttribute="leading" secondItem="frR-rQ-Xdq" secondAttribute="leading" id="gLh-qJ-MtB"/>
@@ -332,6 +335,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="frR-rQ-Xdq"/>
                     </view>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="birthdatePicker" destination="fPh-aZ-EIU" id="BG5-Pg-Bl7"/>
                         <outlet property="birthdateTF" destination="66b-ox-Fv9" id="hRo-qT-LM2"/>
@@ -358,7 +362,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.42352941179999998" green="0.71372549019999998" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="blF-V2-RxF"/>
                     </view>
                 </viewController>
