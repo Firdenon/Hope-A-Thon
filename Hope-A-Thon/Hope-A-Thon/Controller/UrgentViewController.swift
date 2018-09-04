@@ -26,5 +26,7 @@ class UrgentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         urgentImage.image = image
+        urgentImage.layer.borderWidth = 0.5
+        urgentImage.layer.cornerRadius = 14
     }
 }

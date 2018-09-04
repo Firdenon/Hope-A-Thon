@@ -24,13 +24,11 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var homeTableView: UITableView!
     @IBOutlet weak var recentLabel: UILabel!
     @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var containerView: UIView!
     
     // MARK: - App Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        urgentActivities.append(Activity(title: "PEDULI LOMBOK", date: "27/09/2018 - 30/09/2018", location: "Lombok", ngo: "HOPE", image: #imageLiteral(resourceName: "Lake"), bookmark: true))
-        urgentActivities.append(Activity(title: "PEDULI JOGJA", date: "31/09/2018 - 27/10/2018", location: "Jogjakarta", ngo: "HOPE - 2", image: #imageLiteral(resourceName: "Mountain"), bookmark: false))
         
         nonUrgentActivities.append(Activity(title: "LANGIT INDONESIA", date: "27/10/2018 - 27/11/2018", location: "Jakarta", ngo: "HOPE", image: #imageLiteral(resourceName: "Sky"), bookmark: true))
         nonUrgentActivities.append(Activity(title: "Danau Toba Kita", date: "30/09/2018 - 05/10/2018", location: "Sumatera", ngo: "HOPE", image: #imageLiteral(resourceName: "Lake"), bookmark: false))
@@ -46,10 +44,18 @@ class HomeViewController: UIViewController {
         
         setNavTitle()
         recentLabel.addCharacterSpacing(kernValue: 1.5)
+        containerView.layer.borderWidth = 0.5
+        containerView.layer.cornerRadius = 14
     }
     
     @IBAction func upperSegmentClicked() {
         homeTableView.reloadData()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? UrgentPageViewController {
+            destination.urgentDelegate = self
+        }
     }
 }
 
@@ -101,9 +107,11 @@ extension UILabel {
 extension HomeViewController: UrgentDelegate {
     func urgentPageCount(urgentPageViewController: UrgentPageViewController, didUpdatePageCount count: Int) {
         pageControl.numberOfPages = count
+        print(pageControl.numberOfPages)
     }
     
     func urgentPageIndex(urgentPageViewController: UrgentPageViewController, didUpdatePageIndex index: Int) {
         pageControl.currentPage = index
+        print("Current index: \(pageControl.currentPage)")
     }
 }

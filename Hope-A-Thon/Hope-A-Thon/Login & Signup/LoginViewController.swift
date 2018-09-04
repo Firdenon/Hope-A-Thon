@@ -23,12 +23,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         emailTF.delegate = self
         passwordTF.delegate = self
-        
-        emailTF.returnKeyType = .next
         passwordTF.returnKeyType = .send
-        
-        emailTF.layer.cornerRadius = 10
-        passwordTF.layer.cornerRadius = 10
         
         let tapSignUp = UITapGestureRecognizer(target: self, action: #selector(self.userTapSignUp (_:)))
         signUpStackView.addGestureRecognizer(tapSignUp)
@@ -57,7 +52,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
         return true
     }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         setKeyboardListeners()
