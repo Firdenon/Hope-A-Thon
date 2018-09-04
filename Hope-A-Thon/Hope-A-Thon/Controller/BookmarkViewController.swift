@@ -8,28 +8,31 @@
 
 import UIKit
 
-
-
 class BookmarkViewController: UIViewController {
     
     // MARK: - Outlets
-    @IBOutlet weak var upperSegment: UISegmentedControl!
     @IBOutlet weak var bookmarkTableView: UITableView!
     
     // MARK: - Variables
-    
+    var mixArrayBookmark = [Activity]()
     
     // MARK: - App Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
+        setNavTitle()
         
-        upperSegment.frame = CGRect.init(x: 0, y: 88, width: 375, height: 35)
+        mixArrayBookmark = bookmarkUrgentActivities + bookmarkNonUrgentActivities
     }
     
-    @IBAction func upperSegmentClicked() {
-        bookmarkTableView.reloadData()
+    func setNavTitle() {
+        let titleLabel = UILabel()
+        titleLabel.attributedText = NSAttributedString(string: "BOOKMARK")
+        titleLabel.font = UIFont(name: "HelveticaNeue", size: 17.0)
+        titleLabel.textColor = UIColor.white
+        titleLabel.addCharacterSpacing(kernValue: 2.25)
+        titleLabel.sizeToFit()
+        self.navigationItem.titleView = titleLabel
     }
 }
 
@@ -39,30 +42,18 @@ extension BookmarkViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if upperSegment.selectedSegmentIndex == 0 {
-            return bookmarkUrgentActivities.count
-        } else {
-            return bookmarkNonUrgentActivities.count
-        }
+        return mixArrayBookmark.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "bookmarkCell") as! BookmarkTableViewCell
-        if upperSegment.selectedSegmentIndex == 0 {
-            cell.titleLabel.text = bookmarkUrgentActivities[indexPath.row].title
-            cell.dateLabel.text = bookmarkUrgentActivities[indexPath.row].date
-            cell.locationLabel.text = bookmarkUrgentActivities[indexPath.row].location
-            cell.ngoLabel.text = bookmarkUrgentActivities[indexPath.row].ngo
-            cell.activityImage.image = bookmarkUrgentActivities[indexPath.row].image
-        } else {
-            cell.titleLabel.text = bookmarkNonUrgentActivities[indexPath.row].title
-            cell.dateLabel.text = bookmarkNonUrgentActivities[indexPath.row].date
-            cell.locationLabel.text = bookmarkNonUrgentActivities[indexPath.row].location
-            cell.ngoLabel.text = bookmarkNonUrgentActivities[indexPath.row].ngo
-            cell.activityImage.image = bookmarkNonUrgentActivities[indexPath.row].image
-            
-        }
+        cell.titleLabel.text = mixArrayBookmark[indexPath.row].title
+        cell.dateLabel.text = mixArrayBookmark[indexPath.row].date
+        cell.locationLabel.text = mixArrayBookmark[indexPath.row].location
+        cell.ngoLabel.text = mixArrayBookmark[indexPath.row].ngo
+        cell.activityImage.image = mixArrayBookmark[indexPath.row].image
+        
         cell.layer.borderWidth = 0.5
         cell.layer.cornerRadius = 14
         return cell

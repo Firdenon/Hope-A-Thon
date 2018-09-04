@@ -175,13 +175,13 @@
 		BAEAD608213E6619004FE7EC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BAEAD609213E6619004FE7EC /* SearchViewController.swift */,
-				BAEAD60A213E6619004FE7EC /* BookmarkTableViewCell.swift */,
+				BAEAD60E213E6619004FE7EC /* HomeViewController.swift */,
 				BAEAD60B213E6619004FE7EC /* HomeTableViewCell.swift */,
 				BAEAD60C213E6619004FE7EC /* BookmarkViewController.swift */,
+				BAEAD60A213E6619004FE7EC /* BookmarkTableViewCell.swift */,
 				BAEAD60D213E6619004FE7EC /* ActivityViewController.swift */,
-				BAEAD60E213E6619004FE7EC /* HomeViewController.swift */,
 				BAEAD60F213E6619004FE7EC /* ActivityTableViewCell.swift */,
+				BAEAD609213E6619004FE7EC /* SearchViewController.swift */,
 				BAEAD610213E6619004FE7EC /* SearchTableViewCell.swift */,
 			);
 			path = Controller;
