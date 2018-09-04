@@ -29,6 +29,9 @@ class UrgentPageViewController: UIPageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        urgentActivities.append(Activity(title: "PEDULI LOMBOK", date: "27/09/2018 - 30/09/2018", location: "Lombok", ngo: "HOPE", image: #imageLiteral(resourceName: "Lake"), bookmark: true))
+        urgentActivities.append(Activity(title: "PEDULI JOGJA", date: "31/09/2018 - 27/10/2018", location: "Jogjakarta", ngo: "HOPE - 2", image: #imageLiteral(resourceName: "Mountain"), bookmark: false))
+        
         delegate = self
         dataSource = self
         
