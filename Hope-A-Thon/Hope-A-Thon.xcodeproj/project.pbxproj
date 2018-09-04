@@ -189,6 +189,7 @@
 				85A6319D213E4E1B002EECB2 /* NotificationTableViewController.swift */,
 				85A6319F213E4E1B002EECB2 /* NotificationTableViewController.xib */,
 				85A631A8213E4ED3002EECB2 /* DummyData.swift */,
+				85A631B0213EB71A002EECB2 /* NotificationEmbededViewController.swift */,
 				26A4DB73213EABE800F91964 /* Vanessa */,
 				850668B9213D867F00100DB7 /* Additional */,
 				850668A3213D812000100DB7 /* Login & Signup */,
@@ -197,7 +198,6 @@
 				BAEAD608213E6619004FE7EC /* Controller */,
 				BA17FF31213D4ADF00B8B228 /* Info.plist */,
 				BA17FF29213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodeld */,
-				85A631B0213EB71A002EECB2 /* NotificationEmbededViewController.swift */,
 			);
 			path = "Hope-A-Thon";
 			sourceTree = "<group>";

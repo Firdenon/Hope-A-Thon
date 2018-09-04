@@ -35,17 +35,20 @@ func randomBool() -> Bool {
     return arc4random_uniform(2) == 1
 }
 
+private var globalImageNotif = UIImage(named: "hopeindonesia_logo")!
+private var globalNotifDescription = "Your application has been accepted."
+
 var notificationItems = [
-    NotificationItem(title: "Your application has been approved. Please wait to be contacted", timestamp: randomDate(), image: UIImage(named: "notification")!, isNew: randomBool()),
-    NotificationItem(title: "Your application has been approved. Please wait to be contacted", timestamp: randomDate(), image: UIImage(named: "notification")!, isNew: randomBool()),
-    NotificationItem(title: "Your application has been approved. Please wait to be contacted", timestamp: randomDate(), image: UIImage(named: "notification")!, isNew: randomBool()),
-    NotificationItem(title: "Your application has been approved. Please wait to be contacted", timestamp: randomDate(), image: UIImage(named: "notification")!, isNew: randomBool()),
-    NotificationItem(title: "Your application has been approved. Please wait to be contacted", timestamp: randomDate(), image: UIImage(named: "notification")!, isNew: randomBool()),
-    NotificationItem(title: "Your application has been approved. Please wait to be contacted", timestamp: randomDate(), image: UIImage(named: "notification")!, isNew: randomBool()),
-    NotificationItem(title: "Your application has been approved. Please wait to be contacted", timestamp: randomDate(), image: UIImage(named: "notification")!, isNew: randomBool()),
-    NotificationItem(title: "Your application has been approved. Please wait to be contacted", timestamp: randomDate(), image: UIImage(named: "notification")!, isNew: randomBool()),
-    NotificationItem(title: "Your application has been approved. Please wait to be contacted", timestamp: randomDate(), image: UIImage(named: "notification")!, isNew: randomBool()),
-    NotificationItem(title: "Your application has been approved. Please wait to be contacted", timestamp: randomDate(), image: UIImage(named: "notification")!, isNew: randomBool()),
+    NotificationItem(title: "Gempa Lombok", desc: globalNotifDescription, timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
+    NotificationItem(title: "Tsunami Aceh", desc: globalNotifDescription, timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
+    NotificationItem(title: "Banjir Jakarta", desc: globalNotifDescription, timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
+    NotificationItem(title: "Peduli Gunung", desc: globalNotifDescription, timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
+    NotificationItem(title: "Langit Indonesia", desc: globalNotifDescription, timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
+    NotificationItem(title: "Danau Toba Kita", desc: globalNotifDescription, timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
+    NotificationItem(title: "Gempa Tangerang", desc: globalNotifDescription, timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
+    NotificationItem(title: "Puting Beliung", desc: globalNotifDescription, timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
+    NotificationItem(title: "Kelaparan", desc: globalNotifDescription, timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
+    NotificationItem(title: "Tsunami", desc: globalNotifDescription, timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
 ]
 
 var globalUserInfo = UserInfo()

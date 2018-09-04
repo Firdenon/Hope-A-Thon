@@ -14,7 +14,7 @@ class NotificationTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "NotificationTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
-        tableView.rowHeight = 65
+        tableView.rowHeight = 70
     }
     
     override func viewDidAppear(_ animated: Bool) {

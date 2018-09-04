@@ -18,7 +18,7 @@ var bookmarkNonUrgentActivities = [Activity]()
 var ongoingActivities = [Activity]()
 var completedActivities = [Activity]()
 
-class HomeViewController: UIViewController {
+class HomeViewController: NotificationEmbededViewController {
 
     // MARK: - Outlets
     @IBOutlet weak var homeTableView: UITableView!
