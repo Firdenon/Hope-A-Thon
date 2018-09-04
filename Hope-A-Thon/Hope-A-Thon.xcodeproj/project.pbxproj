@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		452A6D80213E4FC90080D7D3 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A6D7F213E4FC90080D7D3 /* Activity.swift */; };
+		452A6D82213E93AA0080D7D3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A6D81213E93AA0080D7D3 /* ProfileViewController.swift */; };
 		850668A6213D812000100DB7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850668A4213D812000100DB7 /* LoginViewController.swift */; };
 		850668A7213D812000100DB7 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850668A5213D812000100DB7 /* SignIn.storyboard */; };
 		850668BC213D867F00100DB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 850668BA213D867F00100DB7 /* Assets.xcassets */; };
@@ -46,10 +47,13 @@
 		BAEAD633213E66A1004FE7EC /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEAD62C213E66A1004FE7EC /* Home.storyboard */; };
 		BAEAD634213E66A1004FE7EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEAD62D213E66A1004FE7EC /* LaunchScreen.storyboard */; };
 		BAEAD635213E66A1004FE7EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEAD62E213E66A1004FE7EC /* Main.storyboard */; };
+		BAEAD637213E7447004FE7EC /* UrgentPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAD636213E7447004FE7EC /* UrgentPageViewController.swift */; };
+		BAEAD639213E745C004FE7EC /* UrgentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAD638213E745C004FE7EC /* UrgentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		452A6D7F213E4FC90080D7D3 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		452A6D81213E93AA0080D7D3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		850668A4213D812000100DB7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		850668A5213D812000100DB7 /* SignIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		850668BA213D867F00100DB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 		BAEAD62C213E66A1004FE7EC /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		BAEAD62D213E66A1004FE7EC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAEAD62E213E66A1004FE7EC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BAEAD636213E7447004FE7EC /* UrgentPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgentPageViewController.swift; sourceTree = "<group>"; };
+		BAEAD638213E745C004FE7EC /* UrgentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,8 +186,11 @@
 		BAEAD608213E6619004FE7EC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				452A6D81213E93AA0080D7D3 /* ProfileViewController.swift */,
 				BAEAD60E213E6619004FE7EC /* HomeViewController.swift */,
 				BAEAD60B213E6619004FE7EC /* HomeTableViewCell.swift */,
+				BAEAD636213E7447004FE7EC /* UrgentPageViewController.swift */,
+				BAEAD638213E745C004FE7EC /* UrgentViewController.swift */,
 				BAEAD60C213E6619004FE7EC /* BookmarkViewController.swift */,
 				BAEAD60A213E6619004FE7EC /* BookmarkTableViewCell.swift */,
 				BAEAD60D213E6619004FE7EC /* ActivityViewController.swift */,
@@ -299,6 +308,8 @@
 				85A631AD213E82E2002EECB2 /* HopeTextField.swift in Sources */,
 				8539324D213E139400936825 /* BaseSignUpViewController.swift in Sources */,
 				BAEAD614213E6619004FE7EC /* BookmarkViewController.swift in Sources */,
+				452A6D82213E93AA0080D7D3 /* ProfileViewController.swift in Sources */,
+				BAEAD639213E745C004FE7EC /* UrgentViewController.swift in Sources */,
 				BAEAD612213E6619004FE7EC /* BookmarkTableViewCell.swift in Sources */,
 				85A63193213E2442002EECB2 /* SignUpBirthdateVC.swift in Sources */,
 				BAEAD617213E6619004FE7EC /* ActivityTableViewCell.swift in Sources */,
@@ -307,6 +318,7 @@
 				BAEAD611213E6619004FE7EC /* SearchViewController.swift in Sources */,
 				85A631A2213E4E1C002EECB2 /* NotificationTableViewController.swift in Sources */,
 				BAEAD618213E6619004FE7EC /* SearchTableViewCell.swift in Sources */,
+				BAEAD637213E7447004FE7EC /* UrgentPageViewController.swift in Sources */,
 				85A6318B213E23E7002EECB2 /* SignUpFullNameVC.swift in Sources */,
 				850668BD213D867F00100DB7 /* AppDelegate.swift in Sources */,
 				85A63191213E2430002EECB2 /* SignUpGenderVC.swift in Sources */,

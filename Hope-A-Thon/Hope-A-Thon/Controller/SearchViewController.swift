@@ -27,6 +27,11 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        searchBar.backgroundImage = UIImage()
+        searchBar.layer.borderWidth = 0
+//        navigationItem.title = "Search"
+        setNavTitle()
+        self.searchBar.setSearchFieldBackgroundImage(UIImage(named: "searchbar"), for: UIControlState.normal)
         mixArrayHome = urgentActivities + nonUrgentActivities
         
         mixArrayActivity = ongoingActivities + completedActivities
@@ -62,7 +67,6 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "searchCell") as? SearchTableViewCell else{ return UITableViewCell() }
         
         if indexPath.section == 0 {
-            print("1")
             cell.titleLable.text = currentArray[indexPath.row].title
             cell.dateLabel.text = currentArray[indexPath.row].date
             cell.locationLabel.text = currentArray[indexPath.row].location
@@ -70,7 +74,6 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
             cell.imageV.image = currentArray[indexPath.row].image
         }
         else if indexPath.section == 1 {
-          print("tesss")
             cell.titleLable.text = currentArray1[indexPath.row].title
             cell.dateLabel.text = currentArray1[indexPath.row].date
             cell.locationLabel.text = currentArray1[indexPath.row].location
@@ -90,23 +93,32 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         return cell
     }
     
+    
+
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let label = UILabel()
-        label.textAlignment = NSTextAlignment(rawValue: 1)!
+        
         if section == 0 {
-            label.text = "Home"
+            label.text = "  HOME"
         }
         else if section == 1 {
-            label.text = "Bookmark"
+            label.text = "  BOOKMARK"
         }
         else if section == 2 {
-            label.text = "Activities"
+            label.text = "  ACTIVITIES"
         }
-        label.backgroundColor = UIColor.lightGray
+        label.font = UIFont(name: "HelveticaNeue-Bold", size: 14)
+        label.textColor = UIColor(netHex: 0x506F91)
+        label.layer.borderWidth = 0.3
+        label.layer.borderColor = UIColor.lightGray.cgColor
+        
+        label.backgroundColor = UIColor.white
+        label.addCharacterSpacing(kernValue: 1.5)
         return label
     }
     
@@ -150,6 +162,47 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         table.reloadData()
     }
     
+    @IBAction func cancelBtn(_ sender: Any) {
+      
+        self.becomeFirstResponder()
+        currentArray = mixArrayHome
+        currentArray1 = mixArrayBookmark
+        currentArray2 = mixArrayActivity
+        searchBar.text = ""
+        table.reloadData()
+       
+}
+    override var canBecomeFirstResponder: Bool{
+        return true
+        
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.becomeFirstResponder()
+        
+    }
+    
+    func setNavTitle() {
+        let titleLabel = UILabel()
+        titleLabel.attributedText = NSAttributedString(string: "SEARCH")
+        titleLabel.font = UIFont(name: "HelveticaNeue", size: 17.0)
+        titleLabel.textColor = UIColor.white
+        titleLabel.addCharacterSpacing(kernValue: 2.25)
+        titleLabel.sizeToFit()
+        self.navigationItem.titleView = titleLabel
+    }
+
+    
+    
+}
+extension UIColor {
+    convenience init(r: Int, g: Int, b: Int, a: Int = 255) {
+        self.init(red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b) / 255.0, alpha: CGFloat(a) / 255.0)
+    }
+    
+    convenience init(netHex:Int) {
+        self.init(r:(netHex >> 16) & 0xff, g:(netHex >> 8) & 0xff, b:netHex & 0xff)
+    }
 }
 
 

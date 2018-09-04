@@ -21,7 +21,6 @@ class BookmarkViewController: UIViewController {
         super.viewDidLoad()
         
         setNavTitle()
-        
         mixArrayBookmark = bookmarkUrgentActivities + bookmarkNonUrgentActivities
     }
     
@@ -56,6 +55,8 @@ extension BookmarkViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.layer.borderWidth = 0.5
         cell.layer.cornerRadius = 14
+        cell.selectionStyle = .none
+        
         return cell
     }
 }
