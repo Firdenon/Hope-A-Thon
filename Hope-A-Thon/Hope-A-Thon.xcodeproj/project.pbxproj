@@ -21,6 +21,7 @@
 		850668BD213D867F00100DB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850668BB213D867F00100DB7 /* AppDelegate.swift */; };
 		8539324A213E08A300936825 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85393248213E08A300936825 /* GradientView.swift */; };
 		8539324D213E139400936825 /* BaseSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8539324C213E139400936825 /* BaseSignUpViewController.swift */; };
+		85396197213EE678009562A2 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85396196213EE678009562A2 /* NotificationManager.swift */; };
 		85A6318B213E23E7002EECB2 /* SignUpFullNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A6318A213E23E7002EECB2 /* SignUpFullNameVC.swift */; };
 		85A6318D213E240C002EECB2 /* SignUpEmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A6318C213E240C002EECB2 /* SignUpEmailVC.swift */; };
 		85A6318F213E2425002EECB2 /* SignUpPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A6318E213E2425002EECB2 /* SignUpPasswordVC.swift */; };
@@ -37,6 +38,7 @@
 		85A631AB213E5CBA002EECB2 /* SignUpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A631AA213E5CBA002EECB2 /* SignUpPageViewController.swift */; };
 		85A631AD213E82E2002EECB2 /* HopeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A631AC213E82E2002EECB2 /* HopeTextField.swift */; };
 		85A631AF213E9B9D002EECB2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A631AE213E9B9D002EECB2 /* Extensions.swift */; };
+		85A631B1213EB71A002EECB2 /* NotificationEmbededViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A631B0213EB71A002EECB2 /* NotificationEmbededViewController.swift */; };
 		BA17FF2B213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA17FF29213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodeld */; };
 		BAEAD611213E6619004FE7EC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAD609213E6619004FE7EC /* SearchViewController.swift */; };
 		BAEAD612213E6619004FE7EC /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAD60A213E6619004FE7EC /* BookmarkTableViewCell.swift */; };
@@ -72,6 +74,7 @@
 		850668BB213D867F00100DB7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85393248213E08A300936825 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		8539324C213E139400936825 /* BaseSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSignUpViewController.swift; sourceTree = "<group>"; };
+		85396196213EE678009562A2 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		85A6318A213E23E7002EECB2 /* SignUpFullNameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFullNameVC.swift; sourceTree = "<group>"; };
 		85A6318C213E240C002EECB2 /* SignUpEmailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmailVC.swift; sourceTree = "<group>"; };
 		85A6318E213E2425002EECB2 /* SignUpPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPasswordVC.swift; sourceTree = "<group>"; };
@@ -88,6 +91,7 @@
 		85A631AA213E5CBA002EECB2 /* SignUpPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPageViewController.swift; sourceTree = "<group>"; };
 		85A631AC213E82E2002EECB2 /* HopeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopeTextField.swift; sourceTree = "<group>"; };
 		85A631AE213E9B9D002EECB2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		85A631B0213EB71A002EECB2 /* NotificationEmbededViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationEmbededViewController.swift; sourceTree = "<group>"; };
 		BA17FF1F213D4ADD00B8B228 /* Hope-A-Thon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hope-A-Thon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA17FF2A213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hope_A_Thon.xcdatamodel; sourceTree = "<group>"; };
 		BA17FF31213D4ADF00B8B228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -181,13 +185,15 @@
 		BA17FF21213D4ADD00B8B228 /* Hope-A-Thon */ = {
 			isa = PBXGroup;
 			children = (
-				26A4DB73213EABE800F91964 /* Vanessa */,
 				85A631A0213E4E1C002EECB2 /* NotificationItem.swift */,
 				85A6319E213E4E1B002EECB2 /* NotificationTableViewCell.swift */,
 				85A6319C213E4E1B002EECB2 /* NotificationTableViewCell.xib */,
 				85A6319D213E4E1B002EECB2 /* NotificationTableViewController.swift */,
 				85A6319F213E4E1B002EECB2 /* NotificationTableViewController.xib */,
 				85A631A8213E4ED3002EECB2 /* DummyData.swift */,
+				85396196213EE678009562A2 /* NotificationManager.swift */,
+				85A631B0213EB71A002EECB2 /* NotificationEmbededViewController.swift */,
+				26A4DB73213EABE800F91964 /* Vanessa */,
 				850668B9213D867F00100DB7 /* Additional */,
 				850668A3213D812000100DB7 /* Login & Signup */,
 				BA716A56213D54F500B979D2 /* Model */,
@@ -330,6 +336,7 @@
 				85A63197213E2639002EECB2 /* UserInfo.swift in Sources */,
 				452A6D80213E4FC90080D7D3 /* Activity.swift in Sources */,
 				BAEAD616213E6619004FE7EC /* HomeViewController.swift in Sources */,
+				85396197213EE678009562A2 /* NotificationManager.swift in Sources */,
 				26A4DB78213EAC0D00F91964 /* CheckMarkViewCell.swift in Sources */,
 				BAEAD613213E6619004FE7EC /* HomeTableViewCell.swift in Sources */,
 				85A6318F213E2425002EECB2 /* SignUpPasswordVC.swift in Sources */,
@@ -337,6 +344,7 @@
 				85A631AD213E82E2002EECB2 /* HopeTextField.swift in Sources */,
 				8539324D213E139400936825 /* BaseSignUpViewController.swift in Sources */,
 				BAEAD614213E6619004FE7EC /* BookmarkViewController.swift in Sources */,
+				85A631B1213EB71A002EECB2 /* NotificationEmbededViewController.swift in Sources */,
 				452A6D82213E93AA0080D7D3 /* ProfileViewController.swift in Sources */,
 				26A4DB7F213EAC3E00F91964 /* ViewController.swift in Sources */,
 				BAEAD639213E745C004FE7EC /* UrgentViewController.swift in Sources */,
@@ -482,7 +490,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GS5B2M7L38;
+				DEVELOPMENT_TEAM = W7GMLURGAQ;
 				INFOPLIST_FILE = "Hope-A-Thon/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -500,7 +508,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GS5B2M7L38;
+				DEVELOPMENT_TEAM = W7GMLURGAQ;
 				INFOPLIST_FILE = "Hope-A-Thon/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

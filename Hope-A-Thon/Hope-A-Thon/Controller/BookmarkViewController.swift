@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BookmarkViewController: UIViewController {
+class BookmarkViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
     
     // MARK: - Outlets
     @IBOutlet weak var bookmarkTableView: UITableView!
@@ -21,7 +21,12 @@ class BookmarkViewController: UIViewController {
         super.viewDidLoad()
         
         setNavTitle()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         mixArrayBookmark = bookmarkUrgentActivities + bookmarkNonUrgentActivities
+        bookmarkTableView.reloadData()
     }
     
     func setNavTitle() {
@@ -33,9 +38,7 @@ class BookmarkViewController: UIViewController {
         titleLabel.sizeToFit()
         self.navigationItem.titleView = titleLabel
     }
-}
-
-extension BookmarkViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -52,6 +55,19 @@ extension BookmarkViewController: UITableViewDelegate, UITableViewDataSource {
         cell.locationLabel.text = mixArrayBookmark[indexPath.row].location
         cell.ngoLabel.text = mixArrayBookmark[indexPath.row].ngo
         cell.activityImage.image = mixArrayBookmark[indexPath.row].image
+        cell.bookmarkBtn.tag = indexPath.row
+//        cell.bookmarkBtn.addTarget(self, action: Selector("clicked"), for: UIControlEvents.touchUpInside)
+        cell.bookmarkBtn.addTarget(self, action: #selector(BookmarkViewController.clicked(_:)), for: .touchUpInside)
+        if mixArrayBookmark[indexPath.row].bookmark == true {
+            print("1 , 1")
+            cell.bookmarkBtn.setImage(#imageLiteral(resourceName: "starActive"), for: .normal)
+        }
+        else if mixArrayBookmark[indexPath.row].bookmark == false {
+            print("2 , 2")
+            cell.bookmarkBtn.setImage(#imageLiteral(resourceName: "starNot"), for: .normal)
+            
+            
+        }
         
         cell.layer.borderWidth = 0.5
         cell.layer.cornerRadius = 14
@@ -59,4 +75,41 @@ extension BookmarkViewController: UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
+    
+
+    
+    @objc func clicked(_ sender: UIButton){
+        
+//        let data = mixArrayBookmark[sender.tag]
+        if mixArrayBookmark[sender.tag].bookmark == false {
+            print("1")
+            mixArrayBookmark[sender.tag].bookmark = true
+        }
+        else{
+            print("2")
+            mixArrayBookmark[sender.tag].bookmark = false
+            mixArrayBookmark.remove(at: sender.tag)
+            if sender.tag>=bookmarkUrgentActivities.count{
+                var newIndex = sender.tag - bookmarkUrgentActivities.count
+                bookmarkNonUrgentActivities.remove(at: newIndex)
+            }
+            else{
+                var newIndex = sender.tag
+                bookmarkUrgentActivities.remove(at: newIndex)
+            }
+            
+            
+        }
+        
+        
+        bookmarkTableView.reloadData()
+    }
+  
+    
 }
+
+//extension BookmarkViewController: UITableViewDelegate, UITableViewDataSource {
+//
+//
+//
+//}

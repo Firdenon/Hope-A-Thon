@@ -18,7 +18,7 @@ var bookmarkNonUrgentActivities = [Activity]()
 var ongoingActivities = [Activity]()
 var completedActivities = [Activity]()
 
-class HomeViewController: UIViewController {
+class HomeViewController: NotificationEmbededViewController {
 
     // MARK: - Outlets
     @IBOutlet weak var homeTableView: UITableView!
@@ -52,6 +52,10 @@ class HomeViewController: UIViewController {
         homeTableView.reloadData()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        homeTableView.reloadData()
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? UrgentPageViewController {
             destination.urgentDelegate = self
@@ -77,11 +81,50 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell.locationLabel.text = nonUrgentActivities[indexPath.row].location
         cell.ngoLabel.text = nonUrgentActivities[indexPath.row].ngo
         cell.activityImage.image = nonUrgentActivities[indexPath.row].image
+        cell.bookmarkBtn.tag = indexPath.row
+        cell.bookmarkBtn.addTarget(self, action: #selector(HomeViewController.clicked(_:)), for: .touchUpInside)
+        
+        if nonUrgentActivities[indexPath.row].bookmark == true{
+            cell.bookmarkBtn.setImage(#imageLiteral(resourceName: "starActive"), for: .normal)
+           
+        }
+        else if nonUrgentActivities[indexPath.row].bookmark == false{
+                cell.bookmarkBtn.setImage(#imageLiteral(resourceName: "starNot"), for: .normal)
+            
+            }
         
         cell.layer.borderWidth = 0.5
         cell.layer.cornerRadius = 14
+        cell.selectionStyle = .none
+        
         return cell
     }
+    
+    @objc func clicked(_ sender: UIButton){
+
+        if nonUrgentActivities[sender.tag].bookmark == false {
+            nonUrgentActivities[sender.tag].bookmark = true
+            bookmarkNonUrgentActivities.append(nonUrgentActivities[sender.tag])
+        }
+        else{
+    
+            nonUrgentActivities[sender.tag].bookmark = false
+            for i in 0...bookmarkNonUrgentActivities.count-1{
+                if bookmarkNonUrgentActivities[i].title == nonUrgentActivities[sender.tag].title{
+                     bookmarkNonUrgentActivities[i].bookmark = false
+                    bookmarkNonUrgentActivities.remove(at: i)
+                }
+                else{
+                    print("empty")
+                }
+            }
+           
+        }
+            
+            homeTableView.reloadData()
+    
+    }
+
     
     func setNavTitle() {
         let titleLabel = UILabel()
@@ -107,11 +150,9 @@ extension UILabel {
 extension HomeViewController: UrgentDelegate {
     func urgentPageCount(urgentPageViewController: UrgentPageViewController, didUpdatePageCount count: Int) {
         pageControl.numberOfPages = count
-        print(pageControl.numberOfPages)
     }
     
     func urgentPageIndex(urgentPageViewController: UrgentPageViewController, didUpdatePageIndex index: Int) {
         pageControl.currentPage = index
-        print("Current index: \(pageControl.currentPage)")
     }
 }
