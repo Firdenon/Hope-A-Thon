@@ -8,29 +8,35 @@
 
 import UIKit
 
-class SignUpEmailVC: BaseSignUpViewController {
+class SignUpEmailVC: BaseSignUpViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var nextBtn: UIButton!
     @IBOutlet weak var emailTF: UITextField!
     
+    @IBOutlet weak var signInStackView: UIStackView!
+    @IBOutlet weak var signInLabel1: UILabel!
+    @IBOutlet weak var signInLabel2: UILabel!
+    @IBOutlet weak var questionLabel: UILabel!
+    
     override func viewDidLoad() {
-        emailTF.becomeFirstResponder()
         super.viewDidLoad()
-        nextBtn.isHidden = true
-    }
-
-    override func userTapOnScreen(_ sender: UITapGestureRecognizer) {
-        nextBtn.isHidden = true
-        emailTF.resignFirstResponder()
         
-        guard let inputEmail = emailTF.text else {return}
-        if inputEmail == "" {return}
+        emailTF.delegate = self
         
-        globalUserInfo.email = inputEmail
-        nextBtn.isHidden = false
+        let tapSignIn = UITapGestureRecognizer(target: self, action: #selector(self.backToSignIn))
+        signInStackView.addGestureRecognizer(tapSignIn)
+        
+        signInLabel1.addCharacterSpacing(kernValue: 2.5)
+        signInLabel2.addCharacterSpacing(kernValue: 2.5)
+        questionLabel.addCharacterSpacing(kernValue: 2.25)
     }
     
-    @IBAction func onTapNextBtn(_ sender: Any) {
-        self.performSegue(withIdentifier: "next", sender: nil)
+    override func userTapOnScreen (_ sender: UITapGestureRecognizer) {
+        emailTF.resignFirstResponder()
+        globalUserInfo.email = emailTF.text
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        emailTF.resignFirstResponder()
+        return true
     }
 }

@@ -13,8 +13,18 @@ class UrgentViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak var urgentImage: UIImageView!
     
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var ngoLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var bookmarkButton: UIButton!
+    
     // MARK: - Variables
     var itemIndex: Int = 0
+    var titleActivity = ""
+    var location = ""
+    var date = ""
+    var ngo = ""
     var image: UIImage = UIImage() {
         didSet{
             if let imageView = urgentImage{
@@ -25,6 +35,19 @@ class UrgentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        titleLabel.text = titleActivity
+        locationLabel.text = location
+        dateLabel.text = date
+        ngoLabel.text = ngo
         urgentImage.image = image
+        
+        titleLabel.addCharacterSpacing(kernValue: 3)
+        urgentImage.layer.borderWidth = 0.5
+        urgentImage.layer.cornerRadius = 14
+    }
+    
+    
+    @IBAction func bookmarkButtonPressed() {
+        print(itemIndex)
     }
 }

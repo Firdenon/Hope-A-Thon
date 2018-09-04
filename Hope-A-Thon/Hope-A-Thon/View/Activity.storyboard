@@ -136,7 +136,9 @@
         <scene sceneID="QcT-6Y-Ypv">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t6C-QS-cuu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Activity" id="bBd-9P-aM4"/>
+                    <tabBarItem key="tabBarItem" title="Activity" image="icon_activities" selectedImage="icon_activities_active" id="bBd-9P-aM4">
+                        <inset key="imageInsets" minX="0.0" minY="123" maxX="0.0" maxY="119"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="n8n-en-ZnX">
@@ -154,4 +156,8 @@
             <point key="canvasLocation" x="196" y="147.78325123152709"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_activities" width="512" height="512"/>
+        <image name="icon_activities_active" width="512" height="512"/>
+    </resources>
 </document>

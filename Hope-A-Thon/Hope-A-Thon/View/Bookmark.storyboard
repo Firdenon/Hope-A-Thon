@@ -124,11 +124,13 @@
             </objects>
             <point key="canvasLocation" x="1018.4" y="81.2807881773399"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Bookmark-->
         <scene sceneID="Zca-VO-DDF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6fp-CM-ax5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="bix-0i-z7p"/>
+                    <tabBarItem key="tabBarItem" title="Bookmark" image="icon_bookmark" selectedImage="icon_bookmark_active" id="bix-0i-z7p">
+                        <inset key="imageInsets" minX="0.0" minY="123" maxX="0.0" maxY="119"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="72a-5m-ZxY">
@@ -147,6 +149,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icon_bookmark" width="512" height="512"/>
+        <image name="icon_bookmark_active" width="512" height="512"/>
         <image name="starNot" width="512" height="512"/>
     </resources>
 </document>

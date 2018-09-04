@@ -9,14 +9,15 @@
 import Foundation
 
 class UserInfo {
-    var fullname: String?
+    var firstName: String?
+    var lastName: String?
     var email: String?
     var password: String?
     var gender: UserGender?
     var birthdate: Date?
     
     func isBeingFilled() -> Bool {
-        return fullname != nil || email != nil || password != nil || gender != nil || birthdate != nil
+        return firstName != nil || lastName != nil || email != nil || password != nil || gender != nil || birthdate != nil
     }
 }
 
