@@ -10,26 +10,27 @@ import UIKit
 
 class SignUpEmailVC: BaseSignUpViewController {
 
+    @IBOutlet weak var nextBtn: UIButton!
+    @IBOutlet weak var emailTF: UITextField!
+    
     override func viewDidLoad() {
+        emailTF.becomeFirstResponder()
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        nextBtn.isHidden = true
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func userTapOnScreen(_ sender: UITapGestureRecognizer) {
+        nextBtn.isHidden = true
+        emailTF.resignFirstResponder()
+        
+        guard let inputEmail = emailTF.text else {return}
+        if inputEmail == "" {return}
+        
+        globalUserInfo.email = inputEmail
+        nextBtn.isHidden = false
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func onTapNextBtn(_ sender: Any) {
+        self.performSegue(withIdentifier: "next", sender: nil)
     }
-    */
-
 }

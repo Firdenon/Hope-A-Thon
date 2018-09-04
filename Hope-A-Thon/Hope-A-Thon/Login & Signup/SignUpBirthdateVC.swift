@@ -9,27 +9,28 @@
 import UIKit
 
 class SignUpBirthdateVC: BaseSignUpViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBOutlet weak var birthdatePicker: UIDatePicker!
+    @IBOutlet weak var birthdateTF: UITextField!
+    
+    private var birthDate: Date? {
+        didSet {
+            let df = DateFormatter()
+            df.dateFormat = "d MMMM yyyy"
+            self.birthdateTF.text = df.string(from: birthDate!)
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
-    */
 
+    @IBAction func onChangeBirthdatePicker(_ sender: UIDatePicker) {
+        birthDate = sender.date
+    }
+    
+    @IBAction func onTapNextBtn(_ sender: Any) {
+        globalUserInfo.birthdate = birthDate
+        self.performSegue(withIdentifier: "next", sender: nil)
+    }
+    
 }

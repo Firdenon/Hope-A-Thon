@@ -13,7 +13,6 @@
 		850668B1213D812500100DB7 /* NotificationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850668AB213D812500100DB7 /* NotificationTableViewController.swift */; };
 		850668B2213D812500100DB7 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850668AC213D812500100DB7 /* NotificationTableViewCell.swift */; };
 		850668B4213D812500100DB7 /* NotificationTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 850668AE213D812500100DB7 /* NotificationTableViewController.xib */; };
-		850668B6213D833A00100DB7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850668B5213D833A00100DB7 /* SignUpViewController.swift */; };
 		850668BC213D867F00100DB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 850668BA213D867F00100DB7 /* Assets.xcassets */; };
 		850668BD213D867F00100DB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850668BB213D867F00100DB7 /* AppDelegate.swift */; };
 		850668C2213D86AB00100DB7 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850668C0213D86AB00100DB7 /* DummyData.swift */; };
@@ -34,6 +33,7 @@
 		85A63191213E2430002EECB2 /* SignUpGenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A63190213E2430002EECB2 /* SignUpGenderVC.swift */; };
 		85A63193213E2442002EECB2 /* SignUpBirthdateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A63192213E2442002EECB2 /* SignUpBirthdateVC.swift */; };
 		85A63195213E253A002EECB2 /* SignUpLastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A63194213E253A002EECB2 /* SignUpLastVC.swift */; };
+		85A63197213E2639002EECB2 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A63196213E2639002EECB2 /* UserInfo.swift */; };
 		BA17FF28213D4ADD00B8B228 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA17FF26213D4ADD00B8B228 /* Main.storyboard */; };
 		BA17FF2B213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA17FF29213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodeld */; };
 		BA17FF30213D4ADF00B8B228 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA17FF2E213D4ADF00B8B228 /* LaunchScreen.storyboard */; };
@@ -50,7 +50,6 @@
 		850668AB213D812500100DB7 /* NotificationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewController.swift; sourceTree = "<group>"; };
 		850668AC213D812500100DB7 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		850668AE213D812500100DB7 /* NotificationTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationTableViewController.xib; sourceTree = "<group>"; };
-		850668B5213D833A00100DB7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		850668BA213D867F00100DB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		850668BB213D867F00100DB7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		850668C0213D86AB00100DB7 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
@@ -70,6 +69,7 @@
 		85A63190213E2430002EECB2 /* SignUpGenderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpGenderVC.swift; sourceTree = "<group>"; };
 		85A63192213E2442002EECB2 /* SignUpBirthdateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBirthdateVC.swift; sourceTree = "<group>"; };
 		85A63194213E253A002EECB2 /* SignUpLastVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpLastVC.swift; sourceTree = "<group>"; };
+		85A63196213E2639002EECB2 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		BA17FF1F213D4ADD00B8B228 /* Hope-A-Thon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hope-A-Thon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA17FF27213D4ADD00B8B228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA17FF2A213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hope_A_Thon.xcdatamodel; sourceTree = "<group>"; };
@@ -96,8 +96,8 @@
 		850668A3213D812000100DB7 /* Login & Signup */ = {
 			isa = PBXGroup;
 			children = (
+				8539324C213E139400936825 /* BaseSignUpViewController.swift */,
 				850668A4213D812000100DB7 /* LoginViewController.swift */,
-				850668B5213D833A00100DB7 /* SignUpViewController.swift */,
 				850668A5213D812000100DB7 /* SignIn.storyboard */,
 				85A6318A213E23E7002EECB2 /* SignUpFullNameVC.swift */,
 				85A6318C213E240C002EECB2 /* SignUpEmailVC.swift */,
@@ -105,7 +105,6 @@
 				85A63190213E2430002EECB2 /* SignUpGenderVC.swift */,
 				85A63192213E2442002EECB2 /* SignUpBirthdateVC.swift */,
 				85A63194213E253A002EECB2 /* SignUpLastVC.swift */,
-				8539324C213E139400936825 /* BaseSignUpViewController.swift */,
 			);
 			path = "Login & Signup";
 			sourceTree = "<group>";
@@ -169,6 +168,7 @@
 			children = (
 				85393249213E08A300936825 /* Activity.swift */,
 				85393248213E08A300936825 /* GradientView.swift */,
+				85A63196213E2639002EECB2 /* UserInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -283,6 +283,7 @@
 				850668B1213D812500100DB7 /* NotificationTableViewController.swift in Sources */,
 				85A6318D213E240C002EECB2 /* SignUpEmailVC.swift in Sources */,
 				85A63195213E253A002EECB2 /* SignUpLastVC.swift in Sources */,
+				85A63197213E2639002EECB2 /* UserInfo.swift in Sources */,
 				85A6318F213E2425002EECB2 /* SignUpPasswordVC.swift in Sources */,
 				8539324A213E08A300936825 /* GradientView.swift in Sources */,
 				8539324D213E139400936825 /* BaseSignUpViewController.swift in Sources */,
@@ -299,7 +300,6 @@
 				850668BD213D867F00100DB7 /* AppDelegate.swift in Sources */,
 				85A63191213E2430002EECB2 /* SignUpGenderVC.swift in Sources */,
 				BA17FF2B213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodeld in Sources */,
-				850668B6213D833A00100DB7 /* SignUpViewController.swift in Sources */,
 				85393242213E087300936825 /* BookmarkViewController.swift in Sources */,
 				850668C3213D86AB00100DB7 /* NotificationItem.swift in Sources */,
 			);

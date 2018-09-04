@@ -12,8 +12,10 @@ class SignUpLastVC: BaseSignUpViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
+    @IBAction func onTapSignUpBtn(_ sender: Any) {
+        debugPrint(globalUserInfo)
+        self.dismiss(animated: true, completion: nil)
+    }
 }
