@@ -14,6 +14,12 @@ class ProfileViewController: UIViewController, UINavigationBarDelegate, UITextFi
     
     
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    
+    
+    
+    
     @IBOutlet weak var contactLabel: UILabel!
     @IBOutlet weak var dobLabel: UILabel!
     @IBOutlet weak var genderLabel : UILabel!
@@ -33,6 +39,8 @@ class ProfileViewController: UIViewController, UINavigationBarDelegate, UITextFi
     @IBOutlet weak var insideStack: UIStackView!
     
     @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var phoneTextfield: UITextField!
     
     
     
@@ -46,6 +54,8 @@ class ProfileViewController: UIViewController, UINavigationBarDelegate, UITextFi
         //UIApplication.shared.statusBarStyle = .lightContent
         
         nameTextField.delegate = self
+        phoneTextfield.delegate = self
+        emailTextField.delegate = self
         
         contactCard.layer.cornerRadius = 10
         contactCard.layer.borderWidth = 1
@@ -125,15 +135,31 @@ class ProfileViewController: UIViewController, UINavigationBarDelegate, UITextFi
         nameTextField.isHidden = false
     }
     
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        
-        return true
+    @IBAction func contactEditBtn(_ sender: Any) {
+        emailTextField.isHidden = false
+        phoneTextfield.isHidden = false
     }
     
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField.tag == 1 {
+            nameLabel.text = textField.text
+        } else if textField.tag == 2 || textField.tag == 3 {
+            if textField.tag == 2 {
+                if let nextTag = textField.superview?.viewWithTag(textField.tag + 1) as? UITextField {
+                    nextTag.becomeFirstResponder()
+                    emailLabel.text = textField.text
+                } else {
+                    textField.resignFirstResponder()
+                }
+            } else if textField.tag == 3 {
+                phoneLabel.text = textField.text
+            }
+        }
+        
         textField.resignFirstResponder()
         textField.isHidden = true
-        return true
+        return false
     }
     
 

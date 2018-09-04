@@ -91,24 +91,27 @@
                                                                                     <constraint firstAttribute="width" constant="20" id="ua7-cB-4MJ"/>
                                                                                 </constraints>
                                                                                 <state key="normal" image="icon_edit"/>
+                                                                                <connections>
+                                                                                    <action selector="contactEditBtn:" destination="W1r-mO-Gaf" eventType="touchUpInside" id="SiM-8r-eRf"/>
+                                                                                </connections>
                                                                             </button>
-                                                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lIs-Hv-GLn">
+                                                                            <textField hidden="YES" opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lIs-Hv-GLn">
                                                                                 <rect key="frame" x="77.666666666666686" y="60.666666666666686" width="200" height="30"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="200" id="I8p-fW-AZ1"/>
                                                                                 </constraints>
                                                                                 <nil key="textColor"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="continue" textContentType="email"/>
                                                                             </textField>
-                                                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t7A-T8-sQN">
+                                                                            <textField hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t7A-T8-sQN">
                                                                                 <rect key="frame" x="77.666666666666686" y="96" width="200" height="30"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="200" id="QND-Jq-irg"/>
                                                                                 </constraints>
                                                                                 <nil key="textColor"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" textContentType="email"/>
                                                                             </textField>
                                                                         </subviews>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -772,14 +775,14 @@
                                                 <color key="shadowColor" red="0.38467639590000002" green="0.38467639590000002" blue="0.38467639590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <size key="shadowOffset" width="1" height="1"/>
                                             </label>
-                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lNT-p1-sh2">
+                                            <textField hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lNT-p1-sh2">
                                                 <rect key="frame" x="37.666666666666657" y="153.66666666666669" width="300" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="Hyp-1N-Hph"/>
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="name"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -832,6 +835,8 @@
                         <outlet property="contactLabel" destination="f6A-Tp-IBs" id="khJ-tD-w9c"/>
                         <outlet property="dobCard" destination="O1r-3y-6gi" id="mii-YF-bHp"/>
                         <outlet property="dobLabel" destination="3k5-FE-cuD" id="6wG-gg-ppK"/>
+                        <outlet property="emailLabel" destination="uKx-HL-6rP" id="kFX-Zk-euq"/>
+                        <outlet property="emailTextField" destination="lIs-Hv-GLn" id="RyT-6k-tZg"/>
                         <outlet property="emergencyCard" destination="nEP-pB-cUE" id="vba-th-Blk"/>
                         <outlet property="emergencyLabel" destination="7o5-P0-NVF" id="Aj1-aV-YBR"/>
                         <outlet property="genderLabel" destination="8ln-za-NOn" id="Ss2-yy-tXC"/>
@@ -843,6 +848,8 @@
                         <outlet property="nationalLabel" destination="2lr-LU-Gby" id="6Ds-CT-mED"/>
                         <outlet property="nationalityCard" destination="TFI-gj-4Cn" id="7Yq-E2-uvU"/>
                         <outlet property="occupationLabel" destination="trh-yw-I0a" id="dY0-td-e48"/>
+                        <outlet property="phoneLabel" destination="ehb-Dc-CaZ" id="zDA-A7-a9r"/>
+                        <outlet property="phoneTextfield" destination="t7A-T8-sQN" id="9xT-Sx-IoR"/>
                         <outlet property="profileImage" destination="Dzd-Bw-txy" id="LY0-Wb-emO"/>
                         <outlet property="skillCard" destination="2ZR-VI-CKB" id="NNJ-UC-2gz"/>
                         <outlet property="skillLabel" destination="71d-YT-4ny" id="kOJ-a8-ANk"/>
@@ -881,7 +888,7 @@
         <image name="icon_health" width="409.60000610351562" height="409.60000610351562"/>
         <image name="icon_infrastructure" width="409.60000610351562" height="409.60000610351562"/>
         <image name="icon_logistics" width="409.60000610351562" height="409.60000610351562"/>
-        <image name="icon_profile" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="icon_profile" width="25.600000381469727" height="25.600000381469727"/>
         <image name="icon_reconstruction" width="409.60000610351562" height="409.60000610351562"/>
         <image name="icon_rescue" width="409.60000610351562" height="409.60000610351562"/>
     </resources>
