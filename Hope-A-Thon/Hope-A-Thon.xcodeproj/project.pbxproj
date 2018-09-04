@@ -7,21 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		452A6D70213E4F8F0080D7D3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A6D5E213E4F8F0080D7D3 /* SearchViewController.swift */; };
-		452A6D71213E4F8F0080D7D3 /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A6D5F213E4F8F0080D7D3 /* BookmarkTableViewCell.swift */; };
-		452A6D72213E4F8F0080D7D3 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A6D60213E4F8F0080D7D3 /* HomeTableViewCell.swift */; };
-		452A6D73213E4F8F0080D7D3 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A6D61213E4F8F0080D7D3 /* BookmarkViewController.swift */; };
-		452A6D74213E4F8F0080D7D3 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A6D62213E4F8F0080D7D3 /* ActivityViewController.swift */; };
-		452A6D75213E4F8F0080D7D3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A6D63213E4F8F0080D7D3 /* HomeViewController.swift */; };
-		452A6D76213E4F8F0080D7D3 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A6D64213E4F8F0080D7D3 /* ActivityTableViewCell.swift */; };
-		452A6D77213E4F8F0080D7D3 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A6D65213E4F8F0080D7D3 /* SearchTableViewCell.swift */; };
-		452A6D78213E4F8F0080D7D3 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 452A6D67213E4F8F0080D7D3 /* Search.storyboard */; };
-		452A6D79213E4F8F0080D7D3 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 452A6D68213E4F8F0080D7D3 /* Profile.storyboard */; };
-		452A6D7A213E4F8F0080D7D3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 452A6D69213E4F8F0080D7D3 /* Home.storyboard */; };
-		452A6D7B213E4F8F0080D7D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 452A6D6A213E4F8F0080D7D3 /* LaunchScreen.storyboard */; };
-		452A6D7C213E4F8F0080D7D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 452A6D6C213E4F8F0080D7D3 /* Main.storyboard */; };
-		452A6D7D213E4F8F0080D7D3 /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 452A6D6E213E4F8F0080D7D3 /* Activity.storyboard */; };
-		452A6D7E213E4F8F0080D7D3 /* Bookmark.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 452A6D6F213E4F8F0080D7D3 /* Bookmark.storyboard */; };
 		452A6D80213E4FC90080D7D3 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A6D7F213E4FC90080D7D3 /* Activity.swift */; };
 		850668A6213D812000100DB7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850668A4213D812000100DB7 /* LoginViewController.swift */; };
 		850668A7213D812000100DB7 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850668A5213D812000100DB7 /* SignIn.storyboard */; };
@@ -43,24 +28,24 @@
 		85A631A5213E4E1C002EECB2 /* NotificationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A631A0213E4E1C002EECB2 /* NotificationItem.swift */; };
 		85A631A9213E4ED3002EECB2 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A631A8213E4ED3002EECB2 /* DummyData.swift */; };
 		BA17FF2B213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA17FF29213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodeld */; };
+		BAEAD611213E6619004FE7EC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAD609213E6619004FE7EC /* SearchViewController.swift */; };
+		BAEAD612213E6619004FE7EC /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAD60A213E6619004FE7EC /* BookmarkTableViewCell.swift */; };
+		BAEAD613213E6619004FE7EC /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAD60B213E6619004FE7EC /* HomeTableViewCell.swift */; };
+		BAEAD614213E6619004FE7EC /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAD60C213E6619004FE7EC /* BookmarkViewController.swift */; };
+		BAEAD615213E6619004FE7EC /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAD60D213E6619004FE7EC /* ActivityViewController.swift */; };
+		BAEAD616213E6619004FE7EC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAD60E213E6619004FE7EC /* HomeViewController.swift */; };
+		BAEAD617213E6619004FE7EC /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAD60F213E6619004FE7EC /* ActivityTableViewCell.swift */; };
+		BAEAD618213E6619004FE7EC /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAD610213E6619004FE7EC /* SearchTableViewCell.swift */; };
+		BAEAD62F213E66A1004FE7EC /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEAD628213E66A0004FE7EC /* Search.storyboard */; };
+		BAEAD630213E66A1004FE7EC /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEAD629213E66A1004FE7EC /* Activity.storyboard */; };
+		BAEAD631213E66A1004FE7EC /* Bookmark.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEAD62A213E66A1004FE7EC /* Bookmark.storyboard */; };
+		BAEAD632213E66A1004FE7EC /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEAD62B213E66A1004FE7EC /* Profile.storyboard */; };
+		BAEAD633213E66A1004FE7EC /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEAD62C213E66A1004FE7EC /* Home.storyboard */; };
+		BAEAD634213E66A1004FE7EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEAD62D213E66A1004FE7EC /* LaunchScreen.storyboard */; };
+		BAEAD635213E66A1004FE7EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEAD62E213E66A1004FE7EC /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		452A6D5E213E4F8F0080D7D3 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		452A6D5F213E4F8F0080D7D3 /* BookmarkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkTableViewCell.swift; sourceTree = "<group>"; };
-		452A6D60213E4F8F0080D7D3 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
-		452A6D61213E4F8F0080D7D3 /* BookmarkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
-		452A6D62213E4F8F0080D7D3 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
-		452A6D63213E4F8F0080D7D3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		452A6D64213E4F8F0080D7D3 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
-		452A6D65213E4F8F0080D7D3 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
-		452A6D67213E4F8F0080D7D3 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
-		452A6D68213E4F8F0080D7D3 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
-		452A6D69213E4F8F0080D7D3 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		452A6D6B213E4F8F0080D7D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		452A6D6D213E4F8F0080D7D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		452A6D6E213E4F8F0080D7D3 /* Activity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Activity.storyboard; sourceTree = "<group>"; };
-		452A6D6F213E4F8F0080D7D3 /* Bookmark.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Bookmark.storyboard; sourceTree = "<group>"; };
 		452A6D7F213E4FC90080D7D3 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		850668A4213D812000100DB7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		850668A5213D812000100DB7 /* SignIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
@@ -84,6 +69,21 @@
 		BA17FF1F213D4ADD00B8B228 /* Hope-A-Thon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hope-A-Thon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA17FF2A213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hope_A_Thon.xcdatamodel; sourceTree = "<group>"; };
 		BA17FF31213D4ADF00B8B228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAEAD609213E6619004FE7EC /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		BAEAD60A213E6619004FE7EC /* BookmarkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkTableViewCell.swift; sourceTree = "<group>"; };
+		BAEAD60B213E6619004FE7EC /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		BAEAD60C213E6619004FE7EC /* BookmarkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
+		BAEAD60D213E6619004FE7EC /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		BAEAD60E213E6619004FE7EC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BAEAD60F213E6619004FE7EC /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
+		BAEAD610213E6619004FE7EC /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		BAEAD628213E66A0004FE7EC /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		BAEAD629213E66A1004FE7EC /* Activity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Activity.storyboard; sourceTree = "<group>"; };
+		BAEAD62A213E66A1004FE7EC /* Bookmark.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Bookmark.storyboard; sourceTree = "<group>"; };
+		BAEAD62B213E66A1004FE7EC /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		BAEAD62C213E66A1004FE7EC /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		BAEAD62D213E66A1004FE7EC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BAEAD62E213E66A1004FE7EC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,37 +97,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		452A6D5D213E4F8F0080D7D3 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				452A6D5E213E4F8F0080D7D3 /* SearchViewController.swift */,
-				452A6D5F213E4F8F0080D7D3 /* BookmarkTableViewCell.swift */,
-				452A6D60213E4F8F0080D7D3 /* HomeTableViewCell.swift */,
-				452A6D61213E4F8F0080D7D3 /* BookmarkViewController.swift */,
-				452A6D62213E4F8F0080D7D3 /* ActivityViewController.swift */,
-				452A6D63213E4F8F0080D7D3 /* HomeViewController.swift */,
-				452A6D64213E4F8F0080D7D3 /* ActivityTableViewCell.swift */,
-				452A6D65213E4F8F0080D7D3 /* SearchTableViewCell.swift */,
-			);
-			name = Controller;
-			path = "../../../../backup hopaton/Hope-A-Thon/Controller";
-			sourceTree = "<group>";
-		};
-		452A6D66213E4F8F0080D7D3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				452A6D67213E4F8F0080D7D3 /* Search.storyboard */,
-				452A6D68213E4F8F0080D7D3 /* Profile.storyboard */,
-				452A6D69213E4F8F0080D7D3 /* Home.storyboard */,
-				452A6D6A213E4F8F0080D7D3 /* LaunchScreen.storyboard */,
-				452A6D6C213E4F8F0080D7D3 /* Main.storyboard */,
-				452A6D6E213E4F8F0080D7D3 /* Activity.storyboard */,
-				452A6D6F213E4F8F0080D7D3 /* Bookmark.storyboard */,
-			);
-			name = View;
-			path = "../../../../backup hopaton/Hope-A-Thon/View";
-			sourceTree = "<group>";
-		};
 		850668A3213D812000100DB7 /* Login & Signup */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,11 +147,11 @@
 				85A6319D213E4E1B002EECB2 /* NotificationTableViewController.swift */,
 				85A6319F213E4E1B002EECB2 /* NotificationTableViewController.xib */,
 				85A631A8213E4ED3002EECB2 /* DummyData.swift */,
-				452A6D5D213E4F8F0080D7D3 /* Controller */,
-				452A6D66213E4F8F0080D7D3 /* View */,
 				850668B9213D867F00100DB7 /* Additional */,
 				850668A3213D812000100DB7 /* Login & Signup */,
 				BA716A56213D54F500B979D2 /* Model */,
+				BAEAD627213E6694004FE7EC /* View */,
+				BAEAD608213E6619004FE7EC /* Controller */,
 				BA17FF31213D4ADF00B8B228 /* Info.plist */,
 				BA17FF29213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodeld */,
 			);
@@ -197,6 +166,35 @@
 				85A63196213E2639002EECB2 /* UserInfo.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BAEAD608213E6619004FE7EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BAEAD609213E6619004FE7EC /* SearchViewController.swift */,
+				BAEAD60A213E6619004FE7EC /* BookmarkTableViewCell.swift */,
+				BAEAD60B213E6619004FE7EC /* HomeTableViewCell.swift */,
+				BAEAD60C213E6619004FE7EC /* BookmarkViewController.swift */,
+				BAEAD60D213E6619004FE7EC /* ActivityViewController.swift */,
+				BAEAD60E213E6619004FE7EC /* HomeViewController.swift */,
+				BAEAD60F213E6619004FE7EC /* ActivityTableViewCell.swift */,
+				BAEAD610213E6619004FE7EC /* SearchTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BAEAD627213E6694004FE7EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BAEAD629213E66A1004FE7EC /* Activity.storyboard */,
+				BAEAD62A213E66A1004FE7EC /* Bookmark.storyboard */,
+				BAEAD62C213E66A1004FE7EC /* Home.storyboard */,
+				BAEAD62D213E66A1004FE7EC /* LaunchScreen.storyboard */,
+				BAEAD62E213E66A1004FE7EC /* Main.storyboard */,
+				BAEAD62B213E66A1004FE7EC /* Profile.storyboard */,
+				BAEAD628213E66A0004FE7EC /* Search.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,17 +255,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				452A6D7A213E4F8F0080D7D3 /* Home.storyboard in Resources */,
-				452A6D7B213E4F8F0080D7D3 /* LaunchScreen.storyboard in Resources */,
-				452A6D79213E4F8F0080D7D3 /* Profile.storyboard in Resources */,
+				BAEAD631213E66A1004FE7EC /* Bookmark.storyboard in Resources */,
 				85A631A1213E4E1C002EECB2 /* NotificationTableViewCell.xib in Resources */,
+				BAEAD632213E66A1004FE7EC /* Profile.storyboard in Resources */,
+				BAEAD634213E66A1004FE7EC /* LaunchScreen.storyboard in Resources */,
+				BAEAD633213E66A1004FE7EC /* Home.storyboard in Resources */,
+				BAEAD635213E66A1004FE7EC /* Main.storyboard in Resources */,
+				BAEAD630213E66A1004FE7EC /* Activity.storyboard in Resources */,
 				850668A7213D812000100DB7 /* SignIn.storyboard in Resources */,
-				452A6D7E213E4F8F0080D7D3 /* Bookmark.storyboard in Resources */,
 				85A631A4213E4E1C002EECB2 /* NotificationTableViewController.xib in Resources */,
-				452A6D7C213E4F8F0080D7D3 /* Main.storyboard in Resources */,
-				452A6D7D213E4F8F0080D7D3 /* Activity.storyboard in Resources */,
 				850668BC213D867F00100DB7 /* Assets.xcassets in Resources */,
-				452A6D78213E4F8F0080D7D3 /* Search.storyboard in Resources */,
+				BAEAD62F213E66A1004FE7EC /* Search.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,48 +282,29 @@
 				85A63195213E253A002EECB2 /* SignUpLastVC.swift in Sources */,
 				85A63197213E2639002EECB2 /* UserInfo.swift in Sources */,
 				452A6D80213E4FC90080D7D3 /* Activity.swift in Sources */,
+				BAEAD616213E6619004FE7EC /* HomeViewController.swift in Sources */,
+				BAEAD613213E6619004FE7EC /* HomeTableViewCell.swift in Sources */,
 				85A6318F213E2425002EECB2 /* SignUpPasswordVC.swift in Sources */,
-				452A6D75213E4F8F0080D7D3 /* HomeViewController.swift in Sources */,
-				452A6D72213E4F8F0080D7D3 /* HomeTableViewCell.swift in Sources */,
 				8539324A213E08A300936825 /* GradientView.swift in Sources */,
 				8539324D213E139400936825 /* BaseSignUpViewController.swift in Sources */,
+				BAEAD614213E6619004FE7EC /* BookmarkViewController.swift in Sources */,
+				BAEAD612213E6619004FE7EC /* BookmarkTableViewCell.swift in Sources */,
 				85A63193213E2442002EECB2 /* SignUpBirthdateVC.swift in Sources */,
-				452A6D73213E4F8F0080D7D3 /* BookmarkViewController.swift in Sources */,
-				452A6D71213E4F8F0080D7D3 /* BookmarkTableViewCell.swift in Sources */,
+				BAEAD617213E6619004FE7EC /* ActivityTableViewCell.swift in Sources */,
 				85A631A5213E4E1C002EECB2 /* NotificationItem.swift in Sources */,
-				452A6D76213E4F8F0080D7D3 /* ActivityTableViewCell.swift in Sources */,
 				850668A6213D812000100DB7 /* LoginViewController.swift in Sources */,
+				BAEAD611213E6619004FE7EC /* SearchViewController.swift in Sources */,
 				85A631A2213E4E1C002EECB2 /* NotificationTableViewController.swift in Sources */,
-				452A6D70213E4F8F0080D7D3 /* SearchViewController.swift in Sources */,
-				452A6D77213E4F8F0080D7D3 /* SearchTableViewCell.swift in Sources */,
+				BAEAD618213E6619004FE7EC /* SearchTableViewCell.swift in Sources */,
 				85A6318B213E23E7002EECB2 /* SignUpFullNameVC.swift in Sources */,
 				850668BD213D867F00100DB7 /* AppDelegate.swift in Sources */,
 				85A63191213E2430002EECB2 /* SignUpGenderVC.swift in Sources */,
 				BA17FF2B213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodeld in Sources */,
-				452A6D74213E4F8F0080D7D3 /* ActivityViewController.swift in Sources */,
+				BAEAD615213E6619004FE7EC /* ActivityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		452A6D6A213E4F8F0080D7D3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				452A6D6B213E4F8F0080D7D3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		452A6D6C213E4F8F0080D7D3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				452A6D6D213E4F8F0080D7D3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BA17FF32213D4ADF00B8B228 /* Debug */ = {
