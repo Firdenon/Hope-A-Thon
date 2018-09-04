@@ -28,7 +28,6 @@
 		85A631A5213E4E1C002EECB2 /* NotificationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A631A0213E4E1C002EECB2 /* NotificationItem.swift */; };
 		85A631A9213E4ED3002EECB2 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A631A8213E4ED3002EECB2 /* DummyData.swift */; };
 		85A631AB213E5CBA002EECB2 /* SignUpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A631AA213E5CBA002EECB2 /* SignUpPageViewController.swift */; };
-		BA17FF28213D4ADD00B8B228 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA17FF26213D4ADD00B8B228 /* Main.storyboard */; };
 		BA17FF2B213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA17FF29213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodeld */; };
 		BAEAD611213E6619004FE7EC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAD609213E6619004FE7EC /* SearchViewController.swift */; };
 		BAEAD612213E6619004FE7EC /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAD60A213E6619004FE7EC /* BookmarkTableViewCell.swift */; };
@@ -47,6 +46,7 @@
 		BAEAD635213E66A1004FE7EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEAD62E213E66A1004FE7EC /* Main.storyboard */; };
 		BAEAD637213E7447004FE7EC /* UrgentPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAD636213E7447004FE7EC /* UrgentPageViewController.swift */; };
 		BAEAD639213E745C004FE7EC /* UrgentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAD638213E745C004FE7EC /* UrgentViewController.swift */; };
+		E0A67945213EA66D002E32D0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A67944213EA66D002E32D0 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +91,7 @@
 		BAEAD62E213E66A1004FE7EC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BAEAD636213E7447004FE7EC /* UrgentPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgentPageViewController.swift; sourceTree = "<group>"; };
 		BAEAD638213E745C004FE7EC /* UrgentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgentViewController.swift; sourceTree = "<group>"; };
+		E0A67944213EA66D002E32D0 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +185,7 @@
 				BAEAD636213E7447004FE7EC /* UrgentPageViewController.swift */,
 				BAEAD638213E745C004FE7EC /* UrgentViewController.swift */,
 				BAEAD60C213E6619004FE7EC /* BookmarkViewController.swift */,
+				E0A67944213EA66D002E32D0 /* ProfileViewController.swift */,
 				BAEAD60A213E6619004FE7EC /* BookmarkTableViewCell.swift */,
 				BAEAD60D213E6619004FE7EC /* ActivityViewController.swift */,
 				BAEAD60F213E6619004FE7EC /* ActivityTableViewCell.swift */,
@@ -299,6 +301,7 @@
 				8539324A213E08A300936825 /* GradientView.swift in Sources */,
 				8539324D213E139400936825 /* BaseSignUpViewController.swift in Sources */,
 				BAEAD614213E6619004FE7EC /* BookmarkViewController.swift in Sources */,
+				E0A67945213EA66D002E32D0 /* ProfileViewController.swift in Sources */,
 				BAEAD639213E745C004FE7EC /* UrgentViewController.swift in Sources */,
 				BAEAD612213E6619004FE7EC /* BookmarkTableViewCell.swift in Sources */,
 				85A63193213E2442002EECB2 /* SignUpBirthdateVC.swift in Sources */,
