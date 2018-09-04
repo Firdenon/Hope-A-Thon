@@ -10,22 +10,61 @@ import UIKit
 
 class SignUpBirthdateVC: BaseSignUpViewController {
     @IBOutlet weak var birthdatePicker: UIDatePicker!
-    @IBOutlet weak var birthdateTF: UITextField!
+    @IBOutlet weak var birthdateTF: UIButton!
+    
+    @IBOutlet weak var continueBtn: UIButton!
+    @IBOutlet weak var signInStackView: UIStackView!
+    @IBOutlet weak var signInLabel1: UILabel!
+    @IBOutlet weak var signInLabel2: UILabel!
+    @IBOutlet weak var questionLabel: UILabel!
     
     private var birthDate: Date? {
         didSet {
             let df = DateFormatter()
-            df.dateFormat = "d MMMM yyyy"
-            self.birthdateTF.text = df.string(from: birthDate!)
+            df.dateFormat = "MM/dd/yyyy"
+            self.birthdateTF.setTitle(df.string(from: self.birthDate!), for: .normal)
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        continueBtn.isEnabled = false
+        continueBtn.setTitle("", for: .normal)
+        self.birthdatePicker.transform = .init(scaleX: 0.01, y: 0.01)
+        birthDate = Date()
+        
+        let tapSignIn = UITapGestureRecognizer(target: self, action: #selector(self.backToSignIn))
+        signInStackView.addGestureRecognizer(tapSignIn)
+        
+        signInLabel1.addCharacterSpacing(kernValue: 2.5)
+        signInLabel2.addCharacterSpacing(kernValue: 2.5)
+        questionLabel.addCharacterSpacing(kernValue: 2.25)
+        
+        birthdatePicker.setValue(UIColor.white, forKeyPath: "textColor")
+    }
+    
+    private var pickerIsHidden = false {
+        didSet {
+            if pickerIsHidden {
+                UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
+                self.birthdatePicker.transform = .identity
+                }, completion: nil)
+            } else {
+                UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
+                    self.birthdatePicker.transform = .init(scaleX: 0.01, y: 0.01)
+                }, completion: nil)
+            }
+        }
     }
 
+    @IBAction func onTapBirthdate(_ sender: Any) {
+        pickerIsHidden = !pickerIsHidden
+    }
+    
     @IBAction func onChangeBirthdatePicker(_ sender: UIDatePicker) {
         birthDate = sender.date
+        continueBtn.isEnabled = true
+        continueBtn.setTitle("Continue", for: .normal)
     }
     
     @IBAction func onTapNextBtn(_ sender: Any) {

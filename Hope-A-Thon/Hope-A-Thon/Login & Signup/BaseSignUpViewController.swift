@@ -13,15 +13,15 @@ class BaseSignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let signInButton = UIBarButtonItem(title: "Already have an account?", style: .plain, target: self, action: #selector(backToSignIn))
-        signInButton.setTitleTextAttributes([
-            NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12),
-            ], for: .normal)
-        setToolbarItems([
-            UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil),
-            signInButton,
-            UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        ], animated: true)
+//        let signInButton = UIBarButtonItem(title: "Already have an account?", style: .plain, target: self, action: #selector(backToSignIn))
+//        signInButton.setTitleTextAttributes([
+//            NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12),
+//            ], for: .normal)
+//        setToolbarItems([
+//            UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil),
+//            signInButton,
+//            UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+//        ], animated: true)
         
         
         

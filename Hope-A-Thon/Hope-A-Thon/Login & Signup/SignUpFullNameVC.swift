@@ -8,29 +8,46 @@
 
 import UIKit
 
-class SignUpFullNameVC: BaseSignUpViewController {
-    @IBOutlet weak var fullnameTF: UITextField!
-    @IBOutlet weak var nextBtn: UIButton!
+class SignUpFullNameVC: BaseSignUpViewController, UITextFieldDelegate {
+    
+    @IBOutlet weak var lastNameTF: UITextField!
+    @IBOutlet weak var firstNameTF: UITextField!
+    
+    @IBOutlet weak var signInStackView: UIStackView!
+    @IBOutlet weak var signInLabel1: UILabel!
+    @IBOutlet weak var signInLabel2: UILabel!
+    @IBOutlet weak var questionLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fullnameTF.becomeFirstResponder()
-        nextBtn.isHidden = true
+        
+        firstNameTF.delegate = self
+        lastNameTF.delegate = self
+        
+        let tapSignIn = UITapGestureRecognizer(target: self, action: #selector(self.backToSignIn))
+        signInStackView.addGestureRecognizer(tapSignIn)
+        
+        signInLabel1.addCharacterSpacing(kernValue: 2.5)
+        signInLabel2.addCharacterSpacing(kernValue: 2.5)
+        questionLabel.addCharacterSpacing(kernValue: 2.25)
     }
     
     override func userTapOnScreen (_ sender: UITapGestureRecognizer) {
-        nextBtn.isHidden = true
-        fullnameTF.resignFirstResponder()
+        firstNameTF.resignFirstResponder()
+        lastNameTF.resignFirstResponder()
         
-        guard let inputFullname = fullnameTF.text else {return}
-        if inputFullname == "" {return}
-        
-        globalUserInfo.fullname = inputFullname
-        nextBtn.isHidden = false
+        globalUserInfo.firstName = firstNameTF.text
+        globalUserInfo.lastName = lastNameTF.text
     }
     
-    @IBAction func onTapNextBtn(_ sender: Any) {
-        self.performSegue(withIdentifier: "next", sender: nil)
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == firstNameTF {
+            lastNameTF.becomeFirstResponder()
+        } else {
+            lastNameTF.resignFirstResponder()
+        }
+        return true
     }
     
 }
