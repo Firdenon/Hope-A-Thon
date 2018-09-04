@@ -12,6 +12,7 @@ class SignUpBirthdateVC: BaseSignUpViewController {
     @IBOutlet weak var birthdatePicker: UIDatePicker!
     @IBOutlet weak var birthdateTF: UIButton!
     
+    @IBOutlet weak var continueBtn: UIButton!
     @IBOutlet weak var signInStackView: UIStackView!
     @IBOutlet weak var signInLabel1: UILabel!
     @IBOutlet weak var signInLabel2: UILabel!
@@ -27,7 +28,8 @@ class SignUpBirthdateVC: BaseSignUpViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        continueBtn.isEnabled = false
+        continueBtn.setTitle("", for: .normal)
         self.birthdatePicker.transform = .init(scaleX: 0.01, y: 0.01)
         birthDate = Date()
         
@@ -61,6 +63,8 @@ class SignUpBirthdateVC: BaseSignUpViewController {
     
     @IBAction func onChangeBirthdatePicker(_ sender: UIDatePicker) {
         birthDate = sender.date
+        continueBtn.isEnabled = true
+        continueBtn.setTitle("Continue", for: .normal)
     }
     
     @IBAction func onTapNextBtn(_ sender: Any) {

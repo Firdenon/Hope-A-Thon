@@ -51,6 +51,14 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="xXc-uD-2f4">
+                                <rect key="frame" x="38" y="156" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_text" translatesAutoresizingMaskIntoConstraints="NO" id="LkH-Uy-qeE">
+                                <rect key="frame" x="63" y="380" width="250" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.42352941176470588" green="0.71372549019607845" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -92,31 +100,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YhN-7E-kxl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1188" y="330"/>
-        </scene>
-        <!--Sign Up LastVC-->
-        <scene sceneID="cLT-FE-XGS">
-            <objects>
-                <viewController storyboardIdentifier="SignUpLast" id="4oE-rp-a7e" customClass="SignUpLastVC" customModule="Hope_A_Thon" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vNq-nB-Ahg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQ5-ih-VfW">
-                                <rect key="frame" x="160" y="391" width="55" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign Up"/>
-                                <connections>
-                                    <action selector="onTapSignUpBtn:" destination="4oE-rp-a7e" eventType="touchUpInside" id="bVX-nn-NNy"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.42352941179999998" green="0.71372549019999998" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <viewLayoutGuide key="safeArea" id="blF-V2-RxF"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DBh-fr-hsF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2793" y="-422"/>
         </scene>
         <!--Sign Up Full NameVC-->
         <scene sceneID="aK5-Zi-Chv">
@@ -397,7 +380,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CEQ-ej-gvL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1964" y="1045"/>
+            <point key="canvasLocation" x="4454" y="330"/>
         </scene>
         <!--Sign Up BirthdateVC-->
         <scene sceneID="RP4-pJ-CdH">
@@ -459,6 +442,9 @@
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="KfZ-i8-Tqw" kind="show" id="364-q9-D66"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.42352941179999998" green="0.71372549019999998" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -473,6 +459,7 @@
                     <connections>
                         <outlet property="birthdatePicker" destination="SFz-fT-WAo" id="Atk-ME-eZd"/>
                         <outlet property="birthdateTF" destination="ccL-3o-QX5" id="f0k-Z5-eLe"/>
+                        <outlet property="continueBtn" destination="Ff8-0T-WWY" id="Cb5-b4-hTD"/>
                         <outlet property="questionLabel" destination="6of-3i-Fvi" id="sul-IZ-3dK"/>
                         <outlet property="signInLabel1" destination="4CW-D3-4cl" id="2i9-qh-GMG"/>
                         <outlet property="signInLabel2" destination="kYz-od-l8p" id="gcI-Ah-Ari"/>
@@ -481,7 +468,51 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3lw-Ci-nFv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2792.8000000000002" y="1044.8275862068965"/>
+            <point key="canvasLocation" x="5247" y="330"/>
+        </scene>
+        <!--Sign Up LastVC-->
+        <scene sceneID="gOc-98-CmA">
+            <objects>
+                <viewController id="KfZ-i8-Tqw" customClass="SignUpLastVC" customModule="Hope_A_Thon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h6h-66-YXi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Beavr!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNR-xB-WjO">
+                                <rect key="frame" x="16" y="150" width="343" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ac-p2-Nrv">
+                                <rect key="frame" x="16" y="545" width="343" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.42352941179999998" green="0.71372549019999998" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="679-o5-cQN"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YVR-7K-TPy"/>
+                    <connections>
+                        <outlet property="tapLabel" destination="3ac-p2-Nrv" id="S8W-Q2-lqI"/>
+                        <outlet property="welcomeLabel" destination="cNR-xB-WjO" id="KYZ-Dy-3uz"/>
+                        <segue destination="pLh-R5-z7j" kind="show" identifier="next" id="tvi-w7-l8y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4oS-G7-TWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1926" y="-1087"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="700" height="700"/>
+        <image name="logo_text" width="750" height="250"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="s4f-Bf-73p"/>
+    </inferredMetricsTieBreakers>
 </document>
