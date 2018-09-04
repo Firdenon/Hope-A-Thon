@@ -81,6 +81,16 @@
                                                             <color key="textColor" red="1" green="0.99823848309999996" blue="0.99419582679999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qOt-od-B93">
+                                                            <rect key="frame" x="325" y="0.0" width="50" height="100"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </imageView>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vl-lv-eoB">
+                                                            <rect key="frame" x="331" y="35" width="20" height="20"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <state key="normal" backgroundImage="starNot"/>
+                                                        </button>
                                                     </subviews>
                                                 </view>
                                             </subviews>
@@ -134,4 +144,7 @@
             <point key="canvasLocation" x="76" y="81.2807881773399"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="starNot" width="512" height="512"/>
+    </resources>
 </document>

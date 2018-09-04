@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		452A6D80213E4FC90080D7D3 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A6D7F213E4FC90080D7D3 /* Activity.swift */; };
+		452A6D82213E93AA0080D7D3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A6D81213E93AA0080D7D3 /* ProfileViewController.swift */; };
 		850668A6213D812000100DB7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850668A4213D812000100DB7 /* LoginViewController.swift */; };
 		850668A7213D812000100DB7 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850668A5213D812000100DB7 /* SignIn.storyboard */; };
 		850668BC213D867F00100DB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 850668BA213D867F00100DB7 /* Assets.xcassets */; };
@@ -28,7 +29,6 @@
 		85A631A5213E4E1C002EECB2 /* NotificationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A631A0213E4E1C002EECB2 /* NotificationItem.swift */; };
 		85A631A9213E4ED3002EECB2 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A631A8213E4ED3002EECB2 /* DummyData.swift */; };
 		85A631AB213E5CBA002EECB2 /* SignUpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A631AA213E5CBA002EECB2 /* SignUpPageViewController.swift */; };
-		BA17FF28213D4ADD00B8B228 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA17FF26213D4ADD00B8B228 /* Main.storyboard */; };
 		BA17FF2B213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA17FF29213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodeld */; };
 		BAEAD611213E6619004FE7EC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAD609213E6619004FE7EC /* SearchViewController.swift */; };
 		BAEAD612213E6619004FE7EC /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAD60A213E6619004FE7EC /* BookmarkTableViewCell.swift */; };
@@ -51,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		452A6D7F213E4FC90080D7D3 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		452A6D81213E93AA0080D7D3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		850668A4213D812000100DB7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		850668A5213D812000100DB7 /* SignIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		850668BA213D867F00100DB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -179,6 +180,7 @@
 		BAEAD608213E6619004FE7EC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				452A6D81213E93AA0080D7D3 /* ProfileViewController.swift */,
 				BAEAD60E213E6619004FE7EC /* HomeViewController.swift */,
 				BAEAD60B213E6619004FE7EC /* HomeTableViewCell.swift */,
 				BAEAD636213E7447004FE7EC /* UrgentPageViewController.swift */,
@@ -299,6 +301,7 @@
 				8539324A213E08A300936825 /* GradientView.swift in Sources */,
 				8539324D213E139400936825 /* BaseSignUpViewController.swift in Sources */,
 				BAEAD614213E6619004FE7EC /* BookmarkViewController.swift in Sources */,
+				452A6D82213E93AA0080D7D3 /* ProfileViewController.swift in Sources */,
 				BAEAD639213E745C004FE7EC /* UrgentViewController.swift in Sources */,
 				BAEAD612213E6619004FE7EC /* BookmarkTableViewCell.swift in Sources */,
 				85A63193213E2442002EECB2 /* SignUpBirthdateVC.swift in Sources */,
