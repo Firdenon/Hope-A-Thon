@@ -21,6 +21,7 @@
 		850668BD213D867F00100DB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850668BB213D867F00100DB7 /* AppDelegate.swift */; };
 		8539324A213E08A300936825 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85393248213E08A300936825 /* GradientView.swift */; };
 		8539324D213E139400936825 /* BaseSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8539324C213E139400936825 /* BaseSignUpViewController.swift */; };
+		85396197213EE678009562A2 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85396196213EE678009562A2 /* NotificationManager.swift */; };
 		85A6318B213E23E7002EECB2 /* SignUpFullNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A6318A213E23E7002EECB2 /* SignUpFullNameVC.swift */; };
 		85A6318D213E240C002EECB2 /* SignUpEmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A6318C213E240C002EECB2 /* SignUpEmailVC.swift */; };
 		85A6318F213E2425002EECB2 /* SignUpPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A6318E213E2425002EECB2 /* SignUpPasswordVC.swift */; };
@@ -73,6 +74,7 @@
 		850668BB213D867F00100DB7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85393248213E08A300936825 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		8539324C213E139400936825 /* BaseSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSignUpViewController.swift; sourceTree = "<group>"; };
+		85396196213EE678009562A2 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		85A6318A213E23E7002EECB2 /* SignUpFullNameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFullNameVC.swift; sourceTree = "<group>"; };
 		85A6318C213E240C002EECB2 /* SignUpEmailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmailVC.swift; sourceTree = "<group>"; };
 		85A6318E213E2425002EECB2 /* SignUpPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPasswordVC.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				85A6319D213E4E1B002EECB2 /* NotificationTableViewController.swift */,
 				85A6319F213E4E1B002EECB2 /* NotificationTableViewController.xib */,
 				85A631A8213E4ED3002EECB2 /* DummyData.swift */,
+				85396196213EE678009562A2 /* NotificationManager.swift */,
 				85A631B0213EB71A002EECB2 /* NotificationEmbededViewController.swift */,
 				26A4DB73213EABE800F91964 /* Vanessa */,
 				850668B9213D867F00100DB7 /* Additional */,
@@ -333,6 +336,7 @@
 				85A63197213E2639002EECB2 /* UserInfo.swift in Sources */,
 				452A6D80213E4FC90080D7D3 /* Activity.swift in Sources */,
 				BAEAD616213E6619004FE7EC /* HomeViewController.swift in Sources */,
+				85396197213EE678009562A2 /* NotificationManager.swift in Sources */,
 				26A4DB78213EAC0D00F91964 /* CheckMarkViewCell.swift in Sources */,
 				BAEAD613213E6619004FE7EC /* HomeTableViewCell.swift in Sources */,
 				85A6318F213E2425002EECB2 /* SignUpPasswordVC.swift in Sources */,

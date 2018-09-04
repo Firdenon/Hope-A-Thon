@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class NotificationEmbededViewController: UIViewController {
 
@@ -28,7 +29,17 @@ class NotificationEmbededViewController: UIViewController {
         let barButton = UIBarButtonItem(customView: button)
         navigationItem.rightBarButtonItem = barButton
         toggleNotificationBadge()
+        
+        UNUserNotificationCenter.current().delegate = self
+        
+//        let doubleTap = UITapGestureRecognizer(target: self, action: #selector(testNotif))
+//        doubleTap.numberOfTapsRequired = 2
+//        self.view.addGestureRecognizer(doubleTap)
     }
+    
+//    @objc func testNotif() {
+//        NotificationManager.instance.notifAcceptance(NotificationItem(title: "Gempa Lombok", desc: "Your application has been accepted. Waiting to get approved.", timestamp: Date(), image: UIImage(named: "hopeindonesia_logo")!, isNew: true))
+//    }
     
     
     private func toggleNotificationBadge() {
@@ -103,5 +114,14 @@ class NotificationEmbededViewController: UIViewController {
                 self.toggleNotificationBadge()
             })
         }
+    }
+}
+
+extension NotificationEmbededViewController: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+        //displaying the ios local notification when app is in foreground
+        completionHandler([.alert, .badge, .sound])
+        toggleNotificationBadge()
     }
 }

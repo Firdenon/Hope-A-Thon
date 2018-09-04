@@ -51,5 +51,10 @@ var notificationItems = [
     NotificationItem(title: "Tsunami", desc: globalNotifDescription, timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
 ]
 
+func addNewNotification(_ n: NotificationItem) {
+    notificationItems.append(n)
+    
+}
+
 var globalUserInfo = UserInfo()
 
