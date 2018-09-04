@@ -10,15 +10,17 @@ import UIKit
 
 class NotificationItem {
     var title: String!
+    var desc: String!
     var timestamp: Date!
     var image: UIImage!
     var isNew: Bool!
     
-    init(title: String, timestamp: Date, image: UIImage, isNew: Bool) {
+    init(title: String, desc: String, timestamp: Date, image: UIImage, isNew: Bool) {
         self.title = title
         self.timestamp = timestamp
         self.image = image
         self.isNew = isNew
+        self.desc = desc
     }
     
     func timestampInString() -> String {
