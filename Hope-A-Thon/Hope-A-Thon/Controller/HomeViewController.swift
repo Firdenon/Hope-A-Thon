@@ -50,6 +50,7 @@ class HomeViewController: UIViewController {
         completedActivities.append(Activity(title: "DANAU TOBA", date: "27/08/2018 - 27/09/2018", location: "Padang", ngo: "HOPE", image: #imageLiteral(resourceName: "Lake")))
         
         upperSegment.frame = CGRect.init(x: 0, y: 88, width: 375, height: 35)
+        setNavTitle()
     }
     
     @IBAction func upperSegmentClicked() {
@@ -71,10 +72,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        var activity = Activity()
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "homeCell") as! HomeTableViewCell
-//        cell.setCell(activity: activity)
         if upperSegment.selectedSegmentIndex == 0 {
             cell.titleLabel.text = urgentActivities[indexPath.row].title
             cell.titleLabel.addCharacterSpacing()
@@ -93,10 +92,20 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.layer.borderWidth = 0.5
         cell.layer.cornerRadius = 14
-//        cell.clipsToBounds = false
         return cell
     }
+    
+    func setNavTitle() {
+        let titleLabel = UILabel()
+        titleLabel.attributedText = NSAttributedString(string: "HOME")
+        titleLabel.font = UIFont(name: "HelveticaNeue", size: 17.0)
+        titleLabel.textColor = UIColor.white
+        titleLabel.addCharacterSpacing(kernValue: 2.25)
+        titleLabel.sizeToFit()
+        self.navigationItem.titleView = titleLabel
+    }
 }
+
 extension UILabel {
     func addCharacterSpacing(kernValue: Double = 1.75) {
         if let labelText = text, labelText.count > 0 {
@@ -106,3 +115,4 @@ extension UILabel {
         }
     }
 }
+
