@@ -149,8 +149,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon_bookmark" width="512" height="512"/>
-        <image name="icon_bookmark_active" width="512" height="512"/>
+        <image name="icon_bookmark" width="32" height="32"/>
+        <image name="icon_bookmark_active" width="32" height="32"/>
         <image name="starNot" width="512" height="512"/>
     </resources>
 </document>

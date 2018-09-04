@@ -81,12 +81,24 @@
                                                             <color key="textColor" red="1" green="0.99823848309999996" blue="0.99419582679999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mo9-xK-d4e">
+                                                            <rect key="frame" x="325" y="0.0" width="50" height="100"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </imageView>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLQ-sK-zql">
+                                                            <rect key="frame" x="331" y="35" width="20" height="20"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <state key="normal" backgroundImage="starNot"/>
+                                                        </button>
                                                     </subviews>
                                                 </view>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="activityImage" destination="Yx8-Iz-BnX" id="aUc-fw-c9S"/>
+                                            <outlet property="bookmarkBtn" destination="LLQ-sK-zql" id="RiD-PI-vvW"/>
                                             <outlet property="dateLabel" destination="YUz-C5-qPC" id="Aqb-6O-j3M"/>
                                             <outlet property="locationLabel" destination="wLc-7h-A7U" id="kHA-rS-jv7"/>
                                             <outlet property="ngoLabel" destination="eEJ-Hf-UHU" id="7J9-52-CeX"/>
@@ -786,7 +798,7 @@
         <image name="icon_fundraising_inactive" width="512" height="512"/>
         <image name="icon_health" width="512" height="512"/>
         <image name="icon_health_inactive" width="512" height="512"/>
-        <image name="icon_home" width="512" height="512"/>
+        <image name="icon_home" width="32" height="32"/>
         <image name="icon_infrastructure" width="512" height="512"/>
         <image name="icon_infrastructure_inactive" width="512" height="512"/>
         <image name="icon_logistics" width="512" height="512"/>
@@ -796,5 +808,6 @@
         <image name="icon_rescue" width="512" height="512"/>
         <image name="icon_rescue_inactive" width="512" height="512"/>
         <image name="icon_star_w" width="512" height="512"/>
+        <image name="starNot" width="512" height="512"/>
     </resources>
 </document>

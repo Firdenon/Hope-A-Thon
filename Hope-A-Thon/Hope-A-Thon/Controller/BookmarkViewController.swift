@@ -21,7 +21,12 @@ class BookmarkViewController: UIViewController, UITableViewDelegate,UITableViewD
         super.viewDidLoad()
         
         setNavTitle()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         mixArrayBookmark = bookmarkUrgentActivities + bookmarkNonUrgentActivities
+        bookmarkTableView.reloadData()
     }
     
     func setNavTitle() {
@@ -57,10 +62,12 @@ class BookmarkViewController: UIViewController, UITableViewDelegate,UITableViewD
             print("1 , 1")
             cell.bookmarkBtn.setImage(#imageLiteral(resourceName: "starActive"), for: .normal)
         }
-//        else if mixArrayBookmark[indexPath.row].bookmark == false {
-//            print("2 , 2")
-//            cell.bookmarkBtn.setImage(#imageLiteral(resourceName: "starNot"), for: .normal)
-//        }
+        else if mixArrayBookmark[indexPath.row].bookmark == false {
+            print("2 , 2")
+            cell.bookmarkBtn.setImage(#imageLiteral(resourceName: "starNot"), for: .normal)
+            
+            
+        }
         
         cell.layer.borderWidth = 0.5
         cell.layer.cornerRadius = 14
@@ -72,7 +79,7 @@ class BookmarkViewController: UIViewController, UITableViewDelegate,UITableViewD
 
     
     @objc func clicked(_ sender: UIButton){
-        print("Button click")
+        
 //        let data = mixArrayBookmark[sender.tag]
         if mixArrayBookmark[sender.tag].bookmark == false {
             print("1")
