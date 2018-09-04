@@ -10,47 +10,57 @@
 		850668A6213D812000100DB7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850668A4213D812000100DB7 /* LoginViewController.swift */; };
 		850668A7213D812000100DB7 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850668A5213D812000100DB7 /* SignIn.storyboard */; };
 		850668AF213D812500100DB7 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 850668A9213D812500100DB7 /* NotificationTableViewCell.xib */; };
-		850668B0213D812500100DB7 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850668AA213D812500100DB7 /* DummyData.swift */; };
 		850668B1213D812500100DB7 /* NotificationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850668AB213D812500100DB7 /* NotificationTableViewController.swift */; };
 		850668B2213D812500100DB7 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850668AC213D812500100DB7 /* NotificationTableViewCell.swift */; };
-		850668B3213D812500100DB7 /* NotificationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850668AD213D812500100DB7 /* NotificationItem.swift */; };
 		850668B4213D812500100DB7 /* NotificationTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 850668AE213D812500100DB7 /* NotificationTableViewController.xib */; };
 		850668B6213D833A00100DB7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850668B5213D833A00100DB7 /* SignUpViewController.swift */; };
-		BA17FF23213D4ADD00B8B228 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA17FF22213D4ADD00B8B228 /* AppDelegate.swift */; };
+		850668BC213D867F00100DB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 850668BA213D867F00100DB7 /* Assets.xcassets */; };
+		850668BD213D867F00100DB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850668BB213D867F00100DB7 /* AppDelegate.swift */; };
+		850668C2213D86AB00100DB7 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850668C0213D86AB00100DB7 /* DummyData.swift */; };
+		850668C3213D86AB00100DB7 /* NotificationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850668C1213D86AB00100DB7 /* NotificationItem.swift */; };
+		8539323B213E071D00936825 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA716A59213D558600B979D2 /* Home.storyboard */; };
+		85393242213E087300936825 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8539323C213E087300936825 /* BookmarkViewController.swift */; };
+		85393243213E087300936825 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8539323D213E087300936825 /* ActivityViewController.swift */; };
+		85393244213E087300936825 /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8539323E213E087300936825 /* BookmarkTableViewCell.swift */; };
+		85393245213E087300936825 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8539323F213E087300936825 /* ActivityTableViewCell.swift */; };
+		85393246213E087300936825 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85393240213E087300936825 /* HomeTableViewCell.swift */; };
+		85393247213E087300936825 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85393241213E087300936825 /* HomeViewController.swift */; };
+		8539324A213E08A300936825 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85393248213E08A300936825 /* GradientView.swift */; };
+		8539324B213E08A300936825 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85393249213E08A300936825 /* Activity.swift */; };
+		8539324D213E139400936825 /* BaseSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8539324C213E139400936825 /* BaseSignUpViewController.swift */; };
 		BA17FF28213D4ADD00B8B228 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA17FF26213D4ADD00B8B228 /* Main.storyboard */; };
 		BA17FF2B213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA17FF29213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodeld */; };
-		BA17FF2D213D4ADF00B8B228 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA17FF2C213D4ADF00B8B228 /* Assets.xcassets */; };
 		BA17FF30213D4ADF00B8B228 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA17FF2E213D4ADF00B8B228 /* LaunchScreen.storyboard */; };
-		BA716A5A213D558600B979D2 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA716A59213D558600B979D2 /* Home.storyboard */; };
 		BA716A5C213D559200B979D2 /* Bookmark.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA716A5B213D559200B979D2 /* Bookmark.storyboard */; };
 		BA716A60213D55BB00B979D2 /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA716A5F213D55BB00B979D2 /* Activity.storyboard */; };
 		BA716A62213D55CA00B979D2 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA716A61213D55CA00B979D2 /* Profile.storyboard */; };
 		BA716A64213D55D200B979D2 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA716A63213D55D200B979D2 /* Search.storyboard */; };
-		BA716A66213D59CD00B979D2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA716A65213D59CD00B979D2 /* HomeViewController.swift */; };
-		BA716A6A213D5F8300B979D2 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA716A69213D5F8300B979D2 /* HomeTableViewCell.swift */; };
-		BA716A6C213D61AA00B979D2 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA716A6B213D61AA00B979D2 /* Activity.swift */; };
-		BA716A6E213D683200B979D2 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA716A6D213D683200B979D2 /* GradientView.swift */; };
-		BA716A70213D771B00B979D2 /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA716A6F213D771B00B979D2 /* BookmarkTableViewCell.swift */; };
-		BA716A74213D775900B979D2 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA716A73213D775900B979D2 /* BookmarkViewController.swift */; };
-		BA716A76213D7C1B00B979D2 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA716A75213D7C1B00B979D2 /* ActivityViewController.swift */; };
-		BA716A78213D7C3200B979D2 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA716A77213D7C3200B979D2 /* ActivityTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		850668A4213D812000100DB7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		850668A5213D812000100DB7 /* SignIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		850668A9213D812500100DB7 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
-		850668AA213D812500100DB7 /* DummyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		850668AB213D812500100DB7 /* NotificationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewController.swift; sourceTree = "<group>"; };
 		850668AC213D812500100DB7 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
-		850668AD213D812500100DB7 /* NotificationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationItem.swift; sourceTree = "<group>"; };
 		850668AE213D812500100DB7 /* NotificationTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationTableViewController.xib; sourceTree = "<group>"; };
 		850668B5213D833A00100DB7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		850668BA213D867F00100DB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		850668BB213D867F00100DB7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		850668C0213D86AB00100DB7 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		850668C1213D86AB00100DB7 /* NotificationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationItem.swift; sourceTree = "<group>"; };
+		8539323C213E087300936825 /* BookmarkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
+		8539323D213E087300936825 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		8539323E213E087300936825 /* BookmarkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkTableViewCell.swift; sourceTree = "<group>"; };
+		8539323F213E087300936825 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
+		85393240213E087300936825 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		85393241213E087300936825 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		85393248213E08A300936825 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		85393249213E08A300936825 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		8539324C213E139400936825 /* BaseSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSignUpViewController.swift; sourceTree = "<group>"; };
 		BA17FF1F213D4ADD00B8B228 /* Hope-A-Thon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hope-A-Thon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA17FF22213D4ADD00B8B228 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA17FF27213D4ADD00B8B228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA17FF2A213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hope_A_Thon.xcdatamodel; sourceTree = "<group>"; };
-		BA17FF2C213D4ADF00B8B228 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA17FF2F213D4ADF00B8B228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA17FF31213D4ADF00B8B228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA716A59213D558600B979D2 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -58,14 +68,6 @@
 		BA716A5F213D55BB00B979D2 /* Activity.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Activity.storyboard; sourceTree = "<group>"; };
 		BA716A61213D55CA00B979D2 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		BA716A63213D55D200B979D2 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
-		BA716A65213D59CD00B979D2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		BA716A69213D5F8300B979D2 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
-		BA716A6B213D61AA00B979D2 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
-		BA716A6D213D683200B979D2 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		BA716A6F213D771B00B979D2 /* BookmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkTableViewCell.swift; sourceTree = "<group>"; };
-		BA716A73213D775900B979D2 /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
-		BA716A75213D7C1B00B979D2 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
-		BA716A77213D7C3200B979D2 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				850668A4213D812000100DB7 /* LoginViewController.swift */,
 				850668B5213D833A00100DB7 /* SignUpViewController.swift */,
 				850668A5213D812000100DB7 /* SignIn.storyboard */,
+				8539324C213E139400936825 /* BaseSignUpViewController.swift */,
 			);
 			path = "Login & Signup";
 			sourceTree = "<group>";
@@ -93,14 +96,23 @@
 			isa = PBXGroup;
 			children = (
 				850668A9213D812500100DB7 /* NotificationTableViewCell.xib */,
-				850668AA213D812500100DB7 /* DummyData.swift */,
 				850668AB213D812500100DB7 /* NotificationTableViewController.swift */,
 				850668AC213D812500100DB7 /* NotificationTableViewCell.swift */,
-				850668AD213D812500100DB7 /* NotificationItem.swift */,
 				850668AE213D812500100DB7 /* NotificationTableViewController.xib */,
+				850668C0213D86AB00100DB7 /* DummyData.swift */,
+				850668C1213D86AB00100DB7 /* NotificationItem.swift */,
 			);
 			name = Notifications;
 			path = "../../../../Desktop/Academy/Mini Challenge 2/HopeAthon/HopeAthon/Notifications";
+			sourceTree = "<group>";
+		};
+		850668B9213D867F00100DB7 /* Additional */ = {
+			isa = PBXGroup;
+			children = (
+				850668BA213D867F00100DB7 /* Assets.xcassets */,
+				850668BB213D867F00100DB7 /* AppDelegate.swift */,
+			);
+			path = Additional;
 			sourceTree = "<group>";
 		};
 		BA17FF16213D4ADD00B8B228 = {
@@ -122,6 +134,7 @@
 		BA17FF21213D4ADD00B8B228 /* Hope-A-Thon */ = {
 			isa = PBXGroup;
 			children = (
+				850668B9213D867F00100DB7 /* Additional */,
 				850668A8213D812500100DB7 /* Notifications */,
 				850668A3213D812000100DB7 /* Login & Signup */,
 				BA716A56213D54F500B979D2 /* Model */,
@@ -136,8 +149,8 @@
 		BA716A56213D54F500B979D2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BA716A6B213D61AA00B979D2 /* Activity.swift */,
-				BA716A6D213D683200B979D2 /* GradientView.swift */,
+				85393249213E08A300936825 /* Activity.swift */,
+				85393248213E08A300936825 /* GradientView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,23 +172,14 @@
 		BA716A58213D551400B979D2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BA716A65213D59CD00B979D2 /* HomeViewController.swift */,
-				BA716A69213D5F8300B979D2 /* HomeTableViewCell.swift */,
-				BA716A73213D775900B979D2 /* BookmarkViewController.swift */,
-				BA716A6F213D771B00B979D2 /* BookmarkTableViewCell.swift */,
-				BA716A75213D7C1B00B979D2 /* ActivityViewController.swift */,
-				BA716A77213D7C3200B979D2 /* ActivityTableViewCell.swift */,
+				8539323F213E087300936825 /* ActivityTableViewCell.swift */,
+				8539323D213E087300936825 /* ActivityViewController.swift */,
+				8539323E213E087300936825 /* BookmarkTableViewCell.swift */,
+				8539323C213E087300936825 /* BookmarkViewController.swift */,
+				85393240213E087300936825 /* HomeTableViewCell.swift */,
+				85393241213E087300936825 /* HomeViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		BA716A79213D807F00B979D2 /* Additional */ = {
-			isa = PBXGroup;
-			children = (
-				BA17FF22213D4ADD00B8B228 /* AppDelegate.swift */,
-				BA17FF2C213D4ADF00B8B228 /* Assets.xcassets */,
-			);
-			path = Additional;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,16 +241,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				850668AF213D812500100DB7 /* NotificationTableViewCell.xib in Resources */,
+				8539323B213E071D00936825 /* Home.storyboard in Resources */,
 				BA17FF30213D4ADF00B8B228 /* LaunchScreen.storyboard in Resources */,
 				BA716A60213D55BB00B979D2 /* Activity.storyboard in Resources */,
 				BA716A5C213D559200B979D2 /* Bookmark.storyboard in Resources */,
-				BA17FF2D213D4ADF00B8B228 /* Assets.xcassets in Resources */,
 				850668A7213D812000100DB7 /* SignIn.storyboard in Resources */,
 				850668B4213D812500100DB7 /* NotificationTableViewController.xib in Resources */,
 				BA17FF28213D4ADD00B8B228 /* Main.storyboard in Resources */,
 				BA716A62213D55CA00B979D2 /* Profile.storyboard in Resources */,
 				BA716A64213D55D200B979D2 /* Search.storyboard in Resources */,
-				BA716A5A213D558600B979D2 /* Home.storyboard in Resources */,
+				850668BC213D867F00100DB7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,13 +263,21 @@
 			files = (
 				850668B2213D812500100DB7 /* NotificationTableViewCell.swift in Sources */,
 				850668B1213D812500100DB7 /* NotificationTableViewController.swift in Sources */,
+				8539324A213E08A300936825 /* GradientView.swift in Sources */,
+				8539324D213E139400936825 /* BaseSignUpViewController.swift in Sources */,
+				85393246213E087300936825 /* HomeTableViewCell.swift in Sources */,
+				85393245213E087300936825 /* ActivityTableViewCell.swift in Sources */,
 				850668A6213D812000100DB7 /* LoginViewController.swift in Sources */,
-				BA17FF25213D4ADD00B8B228 /* ViewController.swift in Sources */,
+				8539324B213E08A300936825 /* Activity.swift in Sources */,
+				85393247213E087300936825 /* HomeViewController.swift in Sources */,
+				85393243213E087300936825 /* ActivityViewController.swift in Sources */,
+				85393244213E087300936825 /* BookmarkTableViewCell.swift in Sources */,
+				850668C2213D86AB00100DB7 /* DummyData.swift in Sources */,
+				850668BD213D867F00100DB7 /* AppDelegate.swift in Sources */,
 				BA17FF2B213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodeld in Sources */,
-				850668B0213D812500100DB7 /* DummyData.swift in Sources */,
 				850668B6213D833A00100DB7 /* SignUpViewController.swift in Sources */,
-				BA17FF23213D4ADD00B8B228 /* AppDelegate.swift in Sources */,
-				850668B3213D812500100DB7 /* NotificationItem.swift in Sources */,
+				85393242213E087300936825 /* BookmarkViewController.swift in Sources */,
+				850668C3213D86AB00100DB7 /* NotificationItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
