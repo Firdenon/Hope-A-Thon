@@ -10,10 +10,16 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController, UINavigationBarDelegate {
+class ProfileViewController: UIViewController, UINavigationBarDelegate, UITextFieldDelegate {
     
     
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    
+    
+    
+    
     @IBOutlet weak var contactLabel: UILabel!
     @IBOutlet weak var dobLabel: UILabel!
     @IBOutlet weak var genderLabel : UILabel!
@@ -32,6 +38,12 @@ class ProfileViewController: UIViewController, UINavigationBarDelegate {
     @IBOutlet weak var emergencyCard: UIView!
     @IBOutlet weak var insideStack: UIStackView!
     
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var phoneTextfield: UITextField!
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +52,10 @@ class ProfileViewController: UIViewController, UINavigationBarDelegate {
         self.profileImage.layer.borderWidth = CGFloat(3.5)
         self.profileImage.layer.borderColor = UIColor.white.cgColor
         //UIApplication.shared.statusBarStyle = .lightContent
+        
+        nameTextField.delegate = self
+        phoneTextfield.delegate = self
+        emailTextField.delegate = self
         
         contactCard.layer.cornerRadius = 10
         contactCard.layer.borderWidth = 1
@@ -108,6 +124,45 @@ class ProfileViewController: UIViewController, UINavigationBarDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    @IBAction func dobEditBtn(_ sender: Any) {
+        
+    }
+    
+    
+    @IBAction func nameEditBtn(_ sender: Any) {
+        nameTextField.isHidden = false
+    }
+    
+    @IBAction func contactEditBtn(_ sender: Any) {
+        emailTextField.isHidden = false
+        phoneTextfield.isHidden = false
+    }
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField.tag == 1 {
+            nameLabel.text = textField.text
+        } else if textField.tag == 2 || textField.tag == 3 {
+            if textField.tag == 2 {
+                if let nextTag = textField.superview?.viewWithTag(textField.tag + 1) as? UITextField {
+                    nextTag.becomeFirstResponder()
+                    emailLabel.text = textField.text
+                } else {
+                    textField.resignFirstResponder()
+                }
+            } else if textField.tag == 3 {
+                phoneLabel.text = textField.text
+            }
+        }
+        
+        textField.resignFirstResponder()
+        textField.isHidden = true
+        return false
+    }
+    
+
     
 }
 
