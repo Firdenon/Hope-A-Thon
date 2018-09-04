@@ -181,13 +181,13 @@
 		BA17FF21213D4ADD00B8B228 /* Hope-A-Thon */ = {
 			isa = PBXGroup;
 			children = (
-				26A4DB73213EABE800F91964 /* Vanessa */,
 				85A631A0213E4E1C002EECB2 /* NotificationItem.swift */,
 				85A6319E213E4E1B002EECB2 /* NotificationTableViewCell.swift */,
 				85A6319C213E4E1B002EECB2 /* NotificationTableViewCell.xib */,
 				85A6319D213E4E1B002EECB2 /* NotificationTableViewController.swift */,
 				85A6319F213E4E1B002EECB2 /* NotificationTableViewController.xib */,
 				85A631A8213E4ED3002EECB2 /* DummyData.swift */,
+				26A4DB73213EABE800F91964 /* Vanessa */,
 				850668B9213D867F00100DB7 /* Additional */,
 				850668A3213D812000100DB7 /* Login & Signup */,
 				BA716A56213D54F500B979D2 /* Model */,
@@ -482,7 +482,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GS5B2M7L38;
+				DEVELOPMENT_TEAM = W7GMLURGAQ;
 				INFOPLIST_FILE = "Hope-A-Thon/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -500,7 +500,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GS5B2M7L38;
+				DEVELOPMENT_TEAM = W7GMLURGAQ;
 				INFOPLIST_FILE = "Hope-A-Thon/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
