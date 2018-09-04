@@ -89,6 +89,7 @@
                                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vl-lv-eoB">
                                                             <rect key="frame" x="331" y="35" width="20" height="20"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <state key="normal" backgroundImage="starNot"/>
                                                         </button>
                                                     </subviews>
@@ -97,6 +98,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="activityImage" destination="4nE-6c-re8" id="MTa-rV-OzN"/>
+                                            <outlet property="bookmarkBtn" destination="6vl-lv-eoB" id="Lw3-M6-QGl"/>
                                             <outlet property="dateLabel" destination="mGr-pq-NUx" id="lG4-bD-BMs"/>
                                             <outlet property="locationLabel" destination="O8a-dD-t8J" id="dvZ-M1-CXC"/>
                                             <outlet property="ngoLabel" destination="qp0-Z1-L1W" id="VaG-bx-FO9"/>
