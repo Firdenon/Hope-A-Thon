@@ -57,6 +57,7 @@
 		BAEAD635213E66A1004FE7EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEAD62E213E66A1004FE7EC /* Main.storyboard */; };
 		BAEAD637213E7447004FE7EC /* UrgentPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAD636213E7447004FE7EC /* UrgentPageViewController.swift */; };
 		BAEAD639213E745C004FE7EC /* UrgentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAD638213E745C004FE7EC /* UrgentViewController.swift */; };
+		BAEAD63B213F104B004FE7EC /* ActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAD63A213F104B004FE7EC /* ActivityDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +113,7 @@
 		BAEAD62E213E66A1004FE7EC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BAEAD636213E7447004FE7EC /* UrgentPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgentPageViewController.swift; sourceTree = "<group>"; };
 		BAEAD638213E745C004FE7EC /* UrgentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgentViewController.swift; sourceTree = "<group>"; };
+		BAEAD63A213F104B004FE7EC /* ActivityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +229,7 @@
 				BAEAD60A213E6619004FE7EC /* BookmarkTableViewCell.swift */,
 				BAEAD60D213E6619004FE7EC /* ActivityViewController.swift */,
 				BAEAD60F213E6619004FE7EC /* ActivityTableViewCell.swift */,
+				BAEAD63A213F104B004FE7EC /* ActivityDetailViewController.swift */,
 				BAEAD609213E6619004FE7EC /* SearchViewController.swift */,
 				BAEAD610213E6619004FE7EC /* SearchTableViewCell.swift */,
 			);
@@ -364,6 +367,7 @@
 				85A63191213E2430002EECB2 /* SignUpGenderVC.swift in Sources */,
 				BA17FF2B213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodeld in Sources */,
 				BAEAD615213E6619004FE7EC /* ActivityViewController.swift in Sources */,
+				BAEAD63B213F104B004FE7EC /* ActivityDetailViewController.swift in Sources */,
 				85A631AF213E9B9D002EECB2 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

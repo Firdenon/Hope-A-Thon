@@ -85,7 +85,6 @@ extension UrgentPageViewController: UIPageViewControllerDataSource, UIPageViewCo
                             previousViewControllers: [UIViewController],transitionCompleted completed: Bool) {
         if let firstViewController = viewControllers?.first as? UrgentViewController,
             let index = vc.index(of: firstViewController) {
-            print("Gerak : \(index)")
             urgentDelegate?.urgentPageIndex(urgentPageViewController: self, didUpdatePageIndex: index)
         }
     }

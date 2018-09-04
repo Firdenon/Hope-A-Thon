@@ -29,7 +29,6 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         // Do any additional setup after loading the view, typically from a nib.
         searchBar.backgroundImage = UIImage()
         searchBar.layer.borderWidth = 0
-//        navigationItem.title = "Search"
         setNavTitle()
         self.searchBar.setSearchFieldBackgroundImage(UIImage(named: "searchbar"), for: UIControlState.normal)
        

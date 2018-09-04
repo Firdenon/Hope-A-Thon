@@ -156,10 +156,10 @@
             </objects>
             <point key="canvasLocation" x="196" y="147.78325123152709"/>
         </scene>
-        <!--View Controller-->
+        <!--Activity Detail View Controller-->
         <scene sceneID="DhI-Xq-K0T">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="zsD-we-jbm" customClass="ViewController" customModule="Hope_A_Thon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="zsD-we-jbm" customClass="ActivityDetailViewController" customModule="Hope_A_Thon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MrX-uY-ccx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,7 +169,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Lake" translatesAutoresizingMaskIntoConstraints="NO" id="8l2-lS-g9I">
-                                        <rect key="frame" x="-2" y="0.0" width="376" height="178"/>
+                                        <rect key="frame" x="-2" y="0.0" width="377" height="182"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ma-Gx-Ho6">
@@ -389,17 +389,20 @@
                     <navigationItem key="navigationItem" id="Ntp-3N-ekP"/>
                     <size key="freeformSize" width="375" height="1400"/>
                     <connections>
-                        <outlet property="descLabel" destination="aJ3-3U-xwe" id="fqf-hq-aV0"/>
-                        <outlet property="desiredLabel" destination="yHo-b4-shg" id="aae-df-el7"/>
-                        <outlet property="durationLabel" destination="TXU-lk-2Hx" id="uC0-63-mja"/>
-                        <outlet property="locationLabel" destination="LVb-hb-zbE" id="ySc-l1-iZW"/>
-                        <outlet property="postedLabel" destination="HHQ-6g-4Ru" id="7a7-5z-at9"/>
-                        <outlet property="scrollView" destination="CQf-SI-lAh" id="CJu-ku-KpQ"/>
-                        <outlet property="termLabel" destination="ZJo-yL-PiT" id="ELc-Ns-rxM"/>
-                        <outlet property="viewAtas" destination="v82-RV-3vR" id="lew-Kh-d0n"/>
-                        <outlet property="viewDesc" destination="UW3-vw-es4" id="wAw-dh-KEW"/>
-                        <outlet property="viewSkill" destination="qMS-UJ-UEu" id="MaX-pe-TYJ"/>
-                        <outlet property="viewTerm" destination="ob4-Bh-CD6" id="qeN-hK-4O5"/>
+                        <outlet property="activityImage" destination="8l2-lS-g9I" id="N26-B0-Avr"/>
+                        <outlet property="dateLabel" destination="gIP-w8-5dY" id="F8i-cn-erY"/>
+                        <outlet property="descLabel" destination="aJ3-3U-xwe" id="jFS-TU-8po"/>
+                        <outlet property="desiredLabel" destination="yHo-b4-shg" id="AXc-1E-ilN"/>
+                        <outlet property="durationLabel" destination="TXU-lk-2Hx" id="jmT-Uu-f0a"/>
+                        <outlet property="locationLabel" destination="0pN-5G-LCQ" id="LYo-Mp-wyq"/>
+                        <outlet property="ngoLabel" destination="9YY-bK-Weo" id="KMO-BP-n9p"/>
+                        <outlet property="postedLabel" destination="HHQ-6g-4Ru" id="3c1-xh-on8"/>
+                        <outlet property="scrollView" destination="CQf-SI-lAh" id="Jji-sw-FqU"/>
+                        <outlet property="termLabel" destination="ZJo-yL-PiT" id="WMU-fh-Ohb"/>
+                        <outlet property="viewAtas" destination="v82-RV-3vR" id="TKu-nM-9h0"/>
+                        <outlet property="viewDesc" destination="UW3-vw-es4" id="OBU-Rl-1Pn"/>
+                        <outlet property="viewSkill" destination="qMS-UJ-UEu" id="aHU-LG-zpE"/>
+                        <outlet property="viewTerm" destination="ob4-Bh-CD6" id="chm-ee-8ef"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tb7-Vr-zOS" sceneMemberID="firstResponder"/>
