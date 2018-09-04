@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26A4DB78213EAC0D00F91964 /* CheckMarkViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A4DB74213EAC0D00F91964 /* CheckMarkViewCell.swift */; };
+		26A4DB79213EAC0D00F91964 /* CheckMarkViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26A4DB75213EAC0D00F91964 /* CheckMarkViewCell.xib */; };
+		26A4DB7A213EAC0D00F91964 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A4DB76213EAC0D00F91964 /* DetailViewController.swift */; };
+		26A4DB7B213EAC0D00F91964 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A4DB77213EAC0D00F91964 /* TestViewController.swift */; };
+		26A4DB7D213EAC3400F91964 /* Vanessa.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26A4DB7C213EAC3400F91964 /* Vanessa.storyboard */; };
+		26A4DB7F213EAC3E00F91964 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A4DB7E213EAC3E00F91964 /* ViewController.swift */; };
 		452A6D80213E4FC90080D7D3 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A6D7F213E4FC90080D7D3 /* Activity.swift */; };
 		452A6D82213E93AA0080D7D3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A6D81213E93AA0080D7D3 /* ProfileViewController.swift */; };
 		850668A6213D812000100DB7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850668A4213D812000100DB7 /* LoginViewController.swift */; };
@@ -53,6 +59,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26A4DB74213EAC0D00F91964 /* CheckMarkViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMarkViewCell.swift; sourceTree = "<group>"; };
+		26A4DB75213EAC0D00F91964 /* CheckMarkViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckMarkViewCell.xib; sourceTree = "<group>"; };
+		26A4DB76213EAC0D00F91964 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		26A4DB77213EAC0D00F91964 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		26A4DB7C213EAC3400F91964 /* Vanessa.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Vanessa.storyboard; sourceTree = "<group>"; };
+		26A4DB7E213EAC3E00F91964 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		452A6D7F213E4FC90080D7D3 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		452A6D81213E93AA0080D7D3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		850668A4213D812000100DB7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +123,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26A4DB73213EABE800F91964 /* Vanessa */ = {
+			isa = PBXGroup;
+			children = (
+				26A4DB7E213EAC3E00F91964 /* ViewController.swift */,
+				26A4DB7C213EAC3400F91964 /* Vanessa.storyboard */,
+				26A4DB74213EAC0D00F91964 /* CheckMarkViewCell.swift */,
+				26A4DB75213EAC0D00F91964 /* CheckMarkViewCell.xib */,
+				26A4DB76213EAC0D00F91964 /* DetailViewController.swift */,
+				26A4DB77213EAC0D00F91964 /* TestViewController.swift */,
+			);
+			path = Vanessa;
+			sourceTree = "<group>";
+		};
 		850668A3213D812000100DB7 /* Login & Signup */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +189,7 @@
 				85A6319D213E4E1B002EECB2 /* NotificationTableViewController.swift */,
 				85A6319F213E4E1B002EECB2 /* NotificationTableViewController.xib */,
 				85A631A8213E4ED3002EECB2 /* DummyData.swift */,
+				26A4DB73213EABE800F91964 /* Vanessa */,
 				850668B9213D867F00100DB7 /* Additional */,
 				850668A3213D812000100DB7 /* Login & Signup */,
 				BA716A56213D54F500B979D2 /* Model */,
@@ -278,10 +304,12 @@
 			files = (
 				BAEAD631213E66A1004FE7EC /* Bookmark.storyboard in Resources */,
 				85A631A1213E4E1C002EECB2 /* NotificationTableViewCell.xib in Resources */,
+				26A4DB79213EAC0D00F91964 /* CheckMarkViewCell.xib in Resources */,
 				BAEAD632213E66A1004FE7EC /* Profile.storyboard in Resources */,
 				BAEAD634213E66A1004FE7EC /* LaunchScreen.storyboard in Resources */,
 				BAEAD633213E66A1004FE7EC /* Home.storyboard in Resources */,
 				BAEAD635213E66A1004FE7EC /* Main.storyboard in Resources */,
+				26A4DB7D213EAC3400F91964 /* Vanessa.storyboard in Resources */,
 				BAEAD630213E66A1004FE7EC /* Activity.storyboard in Resources */,
 				850668A7213D812000100DB7 /* SignIn.storyboard in Resources */,
 				85A631A4213E4E1C002EECB2 /* NotificationTableViewController.xib in Resources */,
@@ -305,6 +333,7 @@
 				85A63197213E2639002EECB2 /* UserInfo.swift in Sources */,
 				452A6D80213E4FC90080D7D3 /* Activity.swift in Sources */,
 				BAEAD616213E6619004FE7EC /* HomeViewController.swift in Sources */,
+				26A4DB78213EAC0D00F91964 /* CheckMarkViewCell.swift in Sources */,
 				BAEAD613213E6619004FE7EC /* HomeTableViewCell.swift in Sources */,
 				85A6318F213E2425002EECB2 /* SignUpPasswordVC.swift in Sources */,
 				8539324A213E08A300936825 /* GradientView.swift in Sources */,
@@ -313,10 +342,13 @@
 				BAEAD614213E6619004FE7EC /* BookmarkViewController.swift in Sources */,
 				85A631B1213EB71A002EECB2 /* NotificationEmbededViewController.swift in Sources */,
 				452A6D82213E93AA0080D7D3 /* ProfileViewController.swift in Sources */,
+				26A4DB7F213EAC3E00F91964 /* ViewController.swift in Sources */,
 				BAEAD639213E745C004FE7EC /* UrgentViewController.swift in Sources */,
 				BAEAD612213E6619004FE7EC /* BookmarkTableViewCell.swift in Sources */,
 				85A63193213E2442002EECB2 /* SignUpBirthdateVC.swift in Sources */,
+				26A4DB7B213EAC0D00F91964 /* TestViewController.swift in Sources */,
 				BAEAD617213E6619004FE7EC /* ActivityTableViewCell.swift in Sources */,
+				26A4DB7A213EAC0D00F91964 /* DetailViewController.swift in Sources */,
 				85A631A5213E4E1C002EECB2 /* NotificationItem.swift in Sources */,
 				850668A6213D812000100DB7 /* LoginViewController.swift in Sources */,
 				BAEAD611213E6619004FE7EC /* SearchViewController.swift in Sources */,

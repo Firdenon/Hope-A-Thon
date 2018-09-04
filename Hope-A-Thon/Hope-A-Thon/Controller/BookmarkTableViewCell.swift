@@ -16,6 +16,7 @@ class BookmarkTableViewCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var ngoLabel: UILabel!
+    @IBOutlet weak var bookmarkBtn: UIButton!
     
 //    func setCell(activity: Activity) {
 //        titleLabel.text = activity.title

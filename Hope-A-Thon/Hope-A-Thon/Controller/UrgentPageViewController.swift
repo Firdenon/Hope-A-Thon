@@ -29,6 +29,7 @@ class UrgentPageViewController: UIPageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        urgentActivities.append(Activity(title: "PEDULI GUNUNG", date: "28/08/2017 - 29/10/2019", location: "Jakarta", ngo: "HOPE International", image: #imageLiteral(resourceName: "Hill"), bookmark: false))
         urgentActivities.append(Activity(title: "PEDULI LOMBOK", date: "27/09/2018 - 30/09/2018", location: "Lombok", ngo: "HOPE", image: #imageLiteral(resourceName: "Lake"), bookmark: true))
         urgentActivities.append(Activity(title: "PEDULI JOGJA", date: "31/09/2018 - 27/10/2018", location: "Jogjakarta", ngo: "HOPE - 2", image: #imageLiteral(resourceName: "Mountain"), bookmark: false))
         
@@ -49,8 +50,13 @@ class UrgentPageViewController: UIPageViewController {
         if itemIndex < urgentActivities.count{
             let pageItemController = self.storyboard?.instantiateViewController(withIdentifier: "itemController") as! UrgentViewController
             
+            print(urgentActivities[itemIndex])
             pageItemController.itemIndex = itemIndex
             pageItemController.image = urgentActivities[itemIndex].image
+            pageItemController.titleActivity = urgentActivities[itemIndex].title
+            pageItemController.ngo = urgentActivities[itemIndex].ngo
+            pageItemController.date = urgentActivities[itemIndex].date
+            pageItemController.location = urgentActivities[itemIndex].location
             return pageItemController
         }
         return nil
@@ -78,6 +84,7 @@ extension UrgentPageViewController: UIPageViewControllerDataSource, UIPageViewCo
                             previousViewControllers: [UIViewController],transitionCompleted completed: Bool) {
         if let firstViewController = viewControllers?.first as? UrgentViewController,
             let index = vc.index(of: firstViewController) {
+            print("Gerak : \(index)")
             urgentDelegate?.urgentPageIndex(urgentPageViewController: self, didUpdatePageIndex: index)
         }
     }
