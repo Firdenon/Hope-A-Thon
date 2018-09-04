@@ -107,11 +107,9 @@ extension UILabel {
 extension HomeViewController: UrgentDelegate {
     func urgentPageCount(urgentPageViewController: UrgentPageViewController, didUpdatePageCount count: Int) {
         pageControl.numberOfPages = count
-        print(pageControl.numberOfPages)
     }
     
     func urgentPageIndex(urgentPageViewController: UrgentPageViewController, didUpdatePageIndex index: Int) {
         pageControl.currentPage = index
-        print("Current index: \(pageControl.currentPage)")
     }
 }

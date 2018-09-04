@@ -10,7 +10,7 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController, UINavigationBarDelegate {
+class ProfileViewController: UIViewController, UINavigationBarDelegate, UITextFieldDelegate {
     
     
     @IBOutlet weak var nameLabel: UILabel!
@@ -32,6 +32,10 @@ class ProfileViewController: UIViewController, UINavigationBarDelegate {
     @IBOutlet weak var emergencyCard: UIView!
     @IBOutlet weak var insideStack: UIStackView!
     
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +44,8 @@ class ProfileViewController: UIViewController, UINavigationBarDelegate {
         self.profileImage.layer.borderWidth = CGFloat(3.5)
         self.profileImage.layer.borderColor = UIColor.white.cgColor
         //UIApplication.shared.statusBarStyle = .lightContent
+        
+        nameTextField.delegate = self
         
         contactCard.layer.cornerRadius = 10
         contactCard.layer.borderWidth = 1
@@ -108,6 +114,29 @@ class ProfileViewController: UIViewController, UINavigationBarDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    @IBAction func dobEditBtn(_ sender: Any) {
+        
+    }
+    
+    
+    @IBAction func nameEditBtn(_ sender: Any) {
+        nameTextField.isHidden = false
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        return true
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        textField.isHidden = true
+        return true
+    }
+    
+
     
 }
 

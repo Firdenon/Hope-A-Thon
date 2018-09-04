@@ -32,6 +32,11 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
 //        navigationItem.title = "Search"
         setNavTitle()
         self.searchBar.setSearchFieldBackgroundImage(UIImage(named: "searchbar"), for: UIControlState.normal)
+       
+  
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        
         mixArrayHome = urgentActivities + nonUrgentActivities
         
         mixArrayActivity = ongoingActivities + completedActivities
@@ -41,7 +46,8 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         currentArray = mixArrayHome
         currentArray1 = mixArrayBookmark
         currentArray2 = mixArrayActivity
-  
+        
+        table.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
