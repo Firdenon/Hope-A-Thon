@@ -29,6 +29,8 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         // Do any additional setup after loading the view, typically from a nib.
         searchBar.backgroundImage = UIImage()
         searchBar.layer.borderWidth = 0
+//        navigationItem.title = "Search"
+        setNavTitle()
         self.searchBar.setSearchFieldBackgroundImage(UIImage(named: "searchbar"), for: UIControlState.normal)
         mixArrayHome = urgentActivities + nonUrgentActivities
         
@@ -179,6 +181,17 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         self.becomeFirstResponder()
         
     }
+    
+    func setNavTitle() {
+        let titleLabel = UILabel()
+        titleLabel.attributedText = NSAttributedString(string: "SEARCH")
+        titleLabel.font = UIFont(name: "HelveticaNeue", size: 17.0)
+        titleLabel.textColor = UIColor.white
+        titleLabel.addCharacterSpacing(kernValue: 2.25)
+        titleLabel.sizeToFit()
+        self.navigationItem.titleView = titleLabel
+    }
+
     
     
 }
