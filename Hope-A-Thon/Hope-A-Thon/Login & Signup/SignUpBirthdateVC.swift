@@ -21,7 +21,7 @@ class SignUpBirthdateVC: BaseSignUpViewController {
     private var birthDate: Date? {
         didSet {
             let df = DateFormatter()
-            df.dateFormat = "MM/dd/yyyy"
+            df.dateFormat = "MMMM d, yyyy"
             self.birthdateTF.setTitle(df.string(from: self.birthDate!), for: .normal)
         }
     }
@@ -32,6 +32,11 @@ class SignUpBirthdateVC: BaseSignUpViewController {
         continueBtn.setTitle("", for: .normal)
         self.birthdatePicker.transform = .init(scaleX: 0.01, y: 0.01)
         birthDate = Date()
+        
+        birthdateTF.disclosureButton(baseColor: #colorLiteral(red: 0.2901639342, green: 0.2902185321, blue: 0.2901567817, alpha: 1))
+        birthdateTF.layer.cornerRadius = 10
+        birthdateTF.contentHorizontalAlignment = .left
+        birthdateTF.tintColor = #colorLiteral(red: 0.2901639342, green: 0.2902185321, blue: 0.2901567817, alpha: 1)
         
         let tapSignIn = UITapGestureRecognizer(target: self, action: #selector(self.backToSignIn))
         signInStackView.addGestureRecognizer(tapSignIn)

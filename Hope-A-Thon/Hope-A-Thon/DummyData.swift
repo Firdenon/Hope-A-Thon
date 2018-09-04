@@ -49,3 +49,4 @@ var notificationItems = [
 ]
 
 var globalUserInfo = UserInfo()
+
