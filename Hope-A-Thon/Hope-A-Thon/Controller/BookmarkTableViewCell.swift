@@ -17,12 +17,26 @@ class BookmarkTableViewCell: UITableViewCell {
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var ngoLabel: UILabel!
     
-    func setCell(activity: Activity) {
-        titleLabel.text = activity.title
-        dateLabel.text = activity.date
-        locationLabel.text = activity.location
-        ngoLabel.text = activity.ngo
-        activityImage.image = UIImage(named: activity.image)
+//    func setCell(activity: Activity) {
+//        titleLabel.text = activity.title
+//        dateLabel.text = activity.date
+//        locationLabel.text = activity.location
+//        ngoLabel.text = activity.ngo
+//        activityImage.image = activity.image
+//    }
+    override var frame: CGRect {
+        get {
+            return super.frame
+        }
+        set (newFrame) {
+            var frame =  newFrame
+            frame.origin.y += 6
+            frame.origin.x += 8
+            frame.size.height -= 2 * 4
+            frame.size.width -= 2 * 8
+            super.frame = frame
+            
+        }
     }
     
     override func awakeFromNib() {

@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class BookmarkViewController: UIViewController {
     
     // MARK: - Outlets
@@ -15,16 +17,13 @@ class BookmarkViewController: UIViewController {
     @IBOutlet weak var bookmarkTableView: UITableView!
     
     // MARK: - Variables
-    var bookmarkUrgentActivities = [Activity]()
-    var bookmarkNonUrgentActivities = [Activity]()
+    
     
     // MARK: - App Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        bookmarkUrgentActivities.append(Activity(title: "Peduli Pantai Lombok", date: "09 September 2017", location: "Lombok", ngo: "HOPE", image: "Sea"))
-        
-        bookmarkNonUrgentActivities.append(Activity(title: "Gunung Semeru", date: "03 February 2016", location: "Jawa", ngo: "HOPE", image: "Hill"))
+       
         
         upperSegment.frame = CGRect.init(x: 0, y: 88, width: 375, height: 35)
     }
@@ -48,14 +47,24 @@ extension BookmarkViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var activity = Activity()
-        if upperSegment.selectedSegmentIndex == 0 {
-            activity = bookmarkUrgentActivities[indexPath.row]
-        } else {
-            activity = bookmarkNonUrgentActivities[indexPath.row]
-        }
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "bookmarkCell") as! BookmarkTableViewCell
-        cell.setCell(activity: activity)
+        if upperSegment.selectedSegmentIndex == 0 {
+            cell.titleLabel.text = bookmarkUrgentActivities[indexPath.row].title
+            cell.dateLabel.text = bookmarkUrgentActivities[indexPath.row].date
+            cell.locationLabel.text = bookmarkUrgentActivities[indexPath.row].location
+            cell.ngoLabel.text = bookmarkUrgentActivities[indexPath.row].ngo
+            cell.activityImage.image = bookmarkUrgentActivities[indexPath.row].image
+        } else {
+            cell.titleLabel.text = bookmarkNonUrgentActivities[indexPath.row].title
+            cell.dateLabel.text = bookmarkNonUrgentActivities[indexPath.row].date
+            cell.locationLabel.text = bookmarkNonUrgentActivities[indexPath.row].location
+            cell.ngoLabel.text = bookmarkNonUrgentActivities[indexPath.row].ngo
+            cell.activityImage.image = bookmarkNonUrgentActivities[indexPath.row].image
+            
+        }
+        cell.layer.borderWidth = 0.5
+        cell.layer.cornerRadius = 14
         return cell
     }
 }

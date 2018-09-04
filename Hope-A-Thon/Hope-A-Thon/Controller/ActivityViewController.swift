@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ActivityViewController: UIViewController {
     
     // MARK: - Outlets
@@ -16,16 +17,12 @@ class ActivityViewController: UIViewController {
     
     
     // MARK: - Variables
-    var ongoingActivities = [Activity]()
-    var completedActivities = [Activity]()
+   
     
     // MARK: - App Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ongoingActivities.append(Activity(title: "Peduli Gunung Bromo", date: "10 October 2016", location: "Solo", ngo: "HOPE", image: "Mountain"))
-        
-        completedActivities.append(Activity(title: "Danau Sumatra", date: "08 March 2017", location: "Padang", ngo: "HOPE", image: "Lake"))
         
         upperSegment.frame = CGRect.init(x: 0, y: 88, width: 375, height: 35)
     }
@@ -49,14 +46,23 @@ extension ActivityViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var activity = Activity()
-        if upperSegment.selectedSegmentIndex == 0 {
-            activity = ongoingActivities[indexPath.row]
-        } else {
-            activity = completedActivities[indexPath.row]
-        }
         let cell = tableView.dequeueReusableCell(withIdentifier: "activityCell") as! ActivityTableViewCell
-        cell.setCell(activity: activity)
+        if upperSegment.selectedSegmentIndex == 0 {
+            cell.titleLabel.text = ongoingActivities[indexPath.row].title
+            cell.dateLabel.text = ongoingActivities[indexPath.row].date
+            cell.locationLabel.text = ongoingActivities[indexPath.row].location
+            cell.ngoLabel.text = ongoingActivities[indexPath.row].ngo
+            cell.activityImage.image = ongoingActivities[indexPath.row].image
+        } else {
+            cell.titleLabel.text = completedActivities[indexPath.row].title
+            cell.dateLabel.text = completedActivities[indexPath.row].date
+            cell.locationLabel.text = completedActivities[indexPath.row].location
+            cell.ngoLabel.text = completedActivities[indexPath.row].ngo
+            cell.activityImage.image = completedActivities[indexPath.row].image
+            
+        }
+        cell.layer.borderWidth = 0.5
+        cell.layer.cornerRadius = 14
         return cell
     }
 }

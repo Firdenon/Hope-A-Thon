@@ -7,18 +7,19 @@
 //
 
 import Foundation
+import UIKit
 
 class Activity: NSObject {
     var title: String = ""
     var date: String = ""
     var location: String = ""
     var ngo: String = ""
-    var image: String = ""
+    var image: UIImage
     
-    override init(){
-    }
+//    override init(){
+//    }
     
-    init(title: String, date: String, location: String, ngo: String, image: String) {
+    init(title: String, date: String, location: String, ngo: String, image: UIImage) {
         self.title = title
         self.date = date
         self.location = location
