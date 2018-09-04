@@ -33,6 +33,7 @@
 		85A631A3213E4E1C002EECB2 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A6319E213E4E1B002EECB2 /* NotificationTableViewCell.swift */; };
 		85A631A4213E4E1C002EECB2 /* NotificationTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85A6319F213E4E1B002EECB2 /* NotificationTableViewController.xib */; };
 		85A631A5213E4E1C002EECB2 /* NotificationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A631A0213E4E1C002EECB2 /* NotificationItem.swift */; };
+		85A631A9213E4ED3002EECB2 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A631A8213E4ED3002EECB2 /* DummyData.swift */; };
 		BA17FF28213D4ADD00B8B228 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA17FF26213D4ADD00B8B228 /* Main.storyboard */; };
 		BA17FF2B213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA17FF29213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodeld */; };
 		BA17FF30213D4ADF00B8B228 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA17FF2E213D4ADF00B8B228 /* LaunchScreen.storyboard */; };
@@ -68,6 +69,7 @@
 		85A6319E213E4E1B002EECB2 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		85A6319F213E4E1B002EECB2 /* NotificationTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationTableViewController.xib; sourceTree = "<group>"; };
 		85A631A0213E4E1C002EECB2 /* NotificationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationItem.swift; sourceTree = "<group>"; };
+		85A631A8213E4ED3002EECB2 /* DummyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		BA17FF1F213D4ADD00B8B228 /* Hope-A-Thon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hope-A-Thon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA17FF27213D4ADD00B8B228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA17FF2A213D4ADD00B8B228 /* Hope_A_Thon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hope_A_Thon.xcdatamodel; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				85A6319C213E4E1B002EECB2 /* NotificationTableViewCell.xib */,
 				85A6319D213E4E1B002EECB2 /* NotificationTableViewController.swift */,
 				85A6319F213E4E1B002EECB2 /* NotificationTableViewController.xib */,
+				85A631A8213E4ED3002EECB2 /* DummyData.swift */,
 				850668B9213D867F00100DB7 /* Additional */,
 				850668A3213D812000100DB7 /* Login & Signup */,
 				BA716A56213D54F500B979D2 /* Model */,
@@ -269,6 +272,7 @@
 			files = (
 				85A631A3213E4E1C002EECB2 /* NotificationTableViewCell.swift in Sources */,
 				85A6318D213E240C002EECB2 /* SignUpEmailVC.swift in Sources */,
+				85A631A9213E4ED3002EECB2 /* DummyData.swift in Sources */,
 				85A63195213E253A002EECB2 /* SignUpLastVC.swift in Sources */,
 				85A63197213E2639002EECB2 /* UserInfo.swift in Sources */,
 				85A6318F213E2425002EECB2 /* SignUpPasswordVC.swift in Sources */,
