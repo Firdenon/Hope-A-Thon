@@ -59,19 +59,25 @@ class HomeDetailViewController: UIViewController {
         applyButton.layer.cornerRadius = 8
         applyButton.layer.borderColor = UIColor.clear.cgColor
         
-        postedLabel.addCharacterSpacing(kernValue: 2.33)
-        locationLabel.addCharacterSpacing(kernValue: 2.33)
-        durationLabel.addCharacterSpacing(kernValue: 2.33)
-        desiredLabel.addCharacterSpacing(kernValue: 2.33)
-        descLabel.addCharacterSpacing(kernValue: 2.33)
-        termLabel.addCharacterSpacing(kernValue: 2.33)
-        titleLabel.addCharacterSpacing(kernValue: 2)
+        
         
         activityImage.image = detailActivity.image
         ngoLabel.text = detailActivity.ngo
         locationLabel.text = detailActivity.location
         dateLabel.text = detailActivity.date
         titleLabel.text = detailActivity.title
+        
+        postedLabel.addCharacterSpacing(kernValue: 2.33)
+        locationLabel.addCharacterSpacing(kernValue: 2.33)
+        durationLabel.addCharacterSpacing(kernValue: 2.33)
+        desiredLabel.addCharacterSpacing(kernValue: 2.33)
+        descLabel.addCharacterSpacing(kernValue: 2.33)
+        termLabel.addCharacterSpacing(kernValue: 2.33)
+        titleLabel.addCharacterSpacing(kernValue: 2.0)
+        
+        if detailActivity.bookmark == true {
+            bookmarkButton.setImage(#imageLiteral(resourceName: "starActive"), for: .normal)
+        }
     }
     
     @IBAction func applyButtonPressed() {
