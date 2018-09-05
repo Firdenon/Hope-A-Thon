@@ -44,7 +44,6 @@ class HomeViewController: NotificationEmbededViewController {
 //        bookmarkUrgentActivities.append(Activity(title: "BANJIR NTT", date: "31/09/2018 - 27/10/2018", location: "NTT", ngo: "Stay.org", image: #imageLiteral(resourceName: "banjirntt"), bookmark: true))
         
         ongoingActivities.append(Activity(title: "LONGSOR", date: "27/08/2018 - 27/09/2018", location: "Puncak", ngo: "The Bogorian", image: #imageLiteral(resourceName: "longsor"), bookmark: false))
-        ongoingActivities.append(Activity(title: "PEDULI LOMBOK", date: "27/09/2018 - 30/09/2018", location: "Lombok", ngo: "HOPE", image: #imageLiteral(resourceName: "gempalombok"), bookmark: false))
         
         completedActivities.append(Activity(title: "Erupsi Gunung Sinabung", date: "27/08/2018 - 27/09/2018", location: "Padang", ngo: "Medaners", image: #imageLiteral(resourceName: "erupsisinabung"), bookmark: false))
         

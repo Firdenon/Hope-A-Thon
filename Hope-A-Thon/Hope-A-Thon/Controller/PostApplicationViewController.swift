@@ -101,7 +101,6 @@ class PostApplicationViewController: UIViewController{
     }
     
     @IBAction func submitButtonPressed() {
-        ongoingActivities.append(detailActivity)
         
         var found = false
         for i in 0...nonUrgentActivities.count-1 {
@@ -121,19 +120,23 @@ class PostApplicationViewController: UIViewController{
             }
         }
         
-        for i in 0...bookmarkNonUrgentActivities.count-1{
-            if detailActivity.title == bookmarkNonUrgentActivities[i].title {
-                bookmarkNonUrgentActivities.remove(at: i)
-                found = true
-                break
+        if bookmarkNonUrgentActivities.count-1 >= 0 {
+            for i in 0...bookmarkNonUrgentActivities.count-1{
+                if detailActivity.title == bookmarkNonUrgentActivities[i].title {
+                    bookmarkNonUrgentActivities.remove(at: i)
+                    found = true
+                    break
+                }
             }
         }
         
         if found == false {
-            for i in 0...bookmarkUrgentActivities.count-1{
-                if detailActivity.title == bookmarkUrgentActivities[i].title {
-                    bookmarkUrgentActivities.remove(at: i)
-                    break
+            if bookmarkUrgentActivities.count-1 >= 0 {
+                for i in 0...bookmarkUrgentActivities.count-1{
+                    if detailActivity.title == bookmarkUrgentActivities[i].title {
+                        bookmarkUrgentActivities.remove(at: i)
+                        break
+                    }
                 }
             }
         }

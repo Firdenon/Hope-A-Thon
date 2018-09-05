@@ -245,8 +245,8 @@
 		BAEAD627213E6694004FE7EC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BAEAD629213E66A1004FE7EC /* Activity.storyboard */,
 				BAEAD62A213E66A1004FE7EC /* Bookmark.storyboard */,
+				BAEAD629213E66A1004FE7EC /* Activity.storyboard */,
 				BAEAD62C213E66A1004FE7EC /* Home.storyboard */,
 				BAEAD62D213E66A1004FE7EC /* LaunchScreen.storyboard */,
 				BAEAD62E213E66A1004FE7EC /* Main.storyboard */,
@@ -502,7 +502,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW6L62Q584;
+				DEVELOPMENT_TEAM = U29H6RHFQ4;
 				INFOPLIST_FILE = "Hope-A-Thon/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -520,7 +520,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW6L62Q584;
+				DEVELOPMENT_TEAM = U29H6RHFQ4;
 				INFOPLIST_FILE = "Hope-A-Thon/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

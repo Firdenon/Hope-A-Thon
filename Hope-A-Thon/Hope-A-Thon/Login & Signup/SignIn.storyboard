@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -52,30 +51,20 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="xXc-uD-2f4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="xXc-uD-2f4">
                                 <rect key="frame" x="38" y="156" width="300" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="xXc-uD-2f4" secondAttribute="height" multiplier="1:1" id="6ew-ez-jvx"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_text" translatesAutoresizingMaskIntoConstraints="NO" id="LkH-Uy-qeE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_text" translatesAutoresizingMaskIntoConstraints="NO" id="LkH-Uy-qeE">
                                 <rect key="frame" x="63" y="380" width="250" height="83"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="LkH-Uy-qeE" secondAttribute="height" multiplier="250:83" id="9EK-dG-U9r"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.42352941176470588" green="0.71372549019607845" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="3GT-FC-X47" firstAttribute="leading" secondItem="6gk-LT-Cb7" secondAttribute="leading" constant="80" id="6Gf-bW-Un6"/>
-                            <constraint firstItem="xXc-uD-2f4" firstAttribute="top" secondItem="6gk-LT-Cb7" secondAttribute="top" constant="112" id="9Qa-KZ-MGS"/>
-                            <constraint firstItem="LkH-Uy-qeE" firstAttribute="top" secondItem="xXc-uD-2f4" secondAttribute="bottom" constant="-76" id="Itk-e5-ugG"/>
-                            <constraint firstItem="6gk-LT-Cb7" firstAttribute="trailing" secondItem="LkH-Uy-qeE" secondAttribute="trailing" constant="62" id="NjV-re-3L2"/>
                             <constraint firstItem="6gk-LT-Cb7" firstAttribute="trailing" secondItem="3GT-FC-X47" secondAttribute="trailing" constant="80" id="ZvV-eS-bUh"/>
-                            <constraint firstItem="6gk-LT-Cb7" firstAttribute="trailing" secondItem="xXc-uD-2f4" secondAttribute="trailing" constant="37" id="grV-ZH-iLT"/>
-                            <constraint firstItem="xXc-uD-2f4" firstAttribute="leading" secondItem="6gk-LT-Cb7" secondAttribute="leading" constant="38" id="kV6-Z0-bsc"/>
                             <constraint firstItem="6gk-LT-Cb7" firstAttribute="bottom" secondItem="3GT-FC-X47" secondAttribute="bottom" constant="71.666666666666629" id="rE5-yl-X3e"/>
-                            <constraint firstItem="LkH-Uy-qeE" firstAttribute="leading" secondItem="6gk-LT-Cb7" secondAttribute="leading" constant="63" id="sUf-6w-U7J"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6gk-LT-Cb7"/>
                     </view>

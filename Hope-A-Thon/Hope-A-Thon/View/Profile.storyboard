@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WNe-F5-Iiy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WNe-F5-Iiy">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -151,8 +152,8 @@
                                                                                                 <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16 Juni 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKn-FO-Mc3">
-                                                                                                <rect key="frame" x="53.000000000000007" y="62.000000000000007" width="71.666666666666686" height="14.333333333333336"/>
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 Juni 1997" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKn-FO-Mc3">
+                                                                                                <rect key="frame" x="55.999999999999993" y="62.000000000000007" width="65.333333333333314" height="14.333333333333336"/>
                                                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                                                 <nil key="textColor"/>
                                                                                                 <nil key="highlightedColor"/>
@@ -766,13 +767,13 @@
         <image name="button_id" width="300" height="30"/>
         <image name="button_resume" width="300" height="30"/>
         <image name="button_volunteerhistory" width="300" height="30"/>
-        <image name="icon_communications" width="409.60000610351562" height="409.60000610351562"/>
-        <image name="icon_edit" width="409.60000610351562" height="409.60000610351562"/>
-        <image name="icon_health" width="409.60000610351562" height="409.60000610351562"/>
-        <image name="icon_logistics" width="409.60000610351562" height="409.60000610351562"/>
-        <image name="icon_profile" width="25.600000381469727" height="25.600000381469727"/>
-        <image name="icon_profile_active" width="25.600000381469727" height="25.600000381469727"/>
-        <image name="icon_reconstruction" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="icon_communications" width="512" height="512"/>
+        <image name="icon_edit" width="512" height="512"/>
+        <image name="icon_health" width="512" height="512"/>
+        <image name="icon_logistics" width="512" height="512"/>
+        <image name="icon_profile" width="32" height="32"/>
+        <image name="icon_profile_active" width="32" height="32"/>
+        <image name="icon_reconstruction" width="512" height="512"/>
         <image name="jane" width="150" height="150"/>
     </resources>
 </document>
