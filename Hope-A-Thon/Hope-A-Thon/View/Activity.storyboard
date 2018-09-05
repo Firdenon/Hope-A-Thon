@@ -435,7 +435,7 @@
                     <size key="freeformSize" width="375" height="1400"/>
                     <connections>
                         <outlet property="activityImage" destination="8l2-lS-g9I" id="N26-B0-Avr"/>
-                        <outlet property="approvedLabel" destination="VCB-tj-EXb" id="VZ3-WN-xrS"/>
+                        <outlet property="approvedLabel" destination="VCB-tj-EXb" id="eUv-w3-cCa"/>
                         <outlet property="approvedView" destination="tp0-5E-N46" id="hHU-BW-ZCU"/>
                         <outlet property="bookmarkButton" destination="58i-iE-fhT" id="nJ2-7i-03k"/>
                         <outlet property="dateLabel" destination="gIP-w8-5dY" id="F8i-cn-erY"/>

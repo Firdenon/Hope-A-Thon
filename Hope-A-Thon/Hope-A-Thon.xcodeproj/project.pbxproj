@@ -245,8 +245,8 @@
 		BAEAD627213E6694004FE7EC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BAEAD629213E66A1004FE7EC /* Activity.storyboard */,
 				BAEAD62A213E66A1004FE7EC /* Bookmark.storyboard */,
+				BAEAD629213E66A1004FE7EC /* Activity.storyboard */,
 				BAEAD62C213E66A1004FE7EC /* Home.storyboard */,
 				BAEAD62D213E66A1004FE7EC /* LaunchScreen.storyboard */,
 				BAEAD62E213E66A1004FE7EC /* Main.storyboard */,

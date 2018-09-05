@@ -34,6 +34,7 @@ class ActivityDetailViewController: UIViewController {
     
     var detailActivity: Activity!
     var index: Int!
+    var status: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,15 +68,15 @@ class ActivityDetailViewController: UIViewController {
         descLabel.addCharacterSpacing(kernValue: 2.33)
         termLabel.addCharacterSpacing(kernValue: 2.33)
         
-        approvedLabel.addCharacterSpacing(kernValue: 2.33)
-        
         activityImage.image = detailActivity.image
         ngoLabel.text = detailActivity.ngo
         locationLabel.text = detailActivity.location
         dateLabel.text = detailActivity.date
         titleLabel.text = detailActivity.title
-        
+        approvedLabel.text = status
         titleLabel.addCharacterSpacing(kernValue: 2)
+        approvedLabel.addCharacterSpacing(kernValue: 2.33)
+        
     }
     
     @IBAction func boomarkButtonPressed() {

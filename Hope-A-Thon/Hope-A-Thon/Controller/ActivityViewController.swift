@@ -19,6 +19,7 @@ class ActivityViewController: UIViewController {
     // MARK: - Variables
     var selectedActivity: Activity!
     var selectedIndex: Int!
+    var status: String!
     
     // MARK: - App Life Cycle
     override func viewDidLoad() {
@@ -45,6 +46,7 @@ class ActivityViewController: UIViewController {
         if let destination = segue.destination as? ActivityDetailViewController {
             destination.detailActivity = selectedActivity
             destination.index = selectedIndex
+            destination.status = status
         }
     }
 }
@@ -86,8 +88,10 @@ extension ActivityViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if upperSegment.selectedSegmentIndex == 0 {
             selectedActivity = ongoingActivities[indexPath.row]
+            status = "APPROVED"
         } else {
             selectedActivity = completedActivities[indexPath.row]
+            status = "COMPLETED"
         }
         selectedIndex = indexPath.row
         performSegue(withIdentifier: "activityToDetail", sender: self)
