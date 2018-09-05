@@ -21,7 +21,7 @@ class SignUpBirthdateVC: BaseSignUpViewController {
     private var birthDate: Date? {
         didSet {
             let df = DateFormatter()
-            df.dateFormat = "MMMM d, yyyy"
+            df.dateFormat = "d MMMM yyyy"
             self.birthdateTF.setTitle(df.string(from: self.birthDate!), for: .normal)
         }
     }

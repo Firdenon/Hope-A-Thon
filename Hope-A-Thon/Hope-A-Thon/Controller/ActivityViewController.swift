@@ -28,6 +28,10 @@ class ActivityViewController: UIViewController {
         setNavTitle()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        activityTableView.reloadData()
+    }
+    
     @IBAction func upperSegmentPressed() {
         activityTableView.reloadData()
     }

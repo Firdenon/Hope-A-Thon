@@ -46,7 +46,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             passwordTF.becomeFirstResponder()
         } else {
             passwordTF.resignFirstResponder()
-            Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { (_) in
+            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { (_) in
+                if self.passwordTF.text == "" {
+                    let alert = UIAlertController(title: nil, message: "Please fill the blank fields", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in
+                        alert.dismiss(animated: true, completion: nil)
+                    }))
+                    self.present(alert, animated: true, completion: nil)
+                    return
+                }
                 self.performSegue(withIdentifier: "next", sender: nil)
             }
         }
