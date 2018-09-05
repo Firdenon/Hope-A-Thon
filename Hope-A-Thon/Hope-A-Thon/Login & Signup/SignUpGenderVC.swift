@@ -43,6 +43,7 @@ class SignUpGenderVC: BaseSignUpViewController {
             underline(label: femaleLabel, value: 1.5)
             globalUserInfo.gender = .female
         }
+        delegate?.goNext()
     }
     
     func underline(label: UILabel, value: Double) {

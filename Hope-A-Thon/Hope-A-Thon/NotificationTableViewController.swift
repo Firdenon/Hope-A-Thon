@@ -37,6 +37,7 @@ class NotificationTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! NotificationTableViewCell
         cell.item = notificationItems[indexPath.row]
+        
         return cell
     }
     

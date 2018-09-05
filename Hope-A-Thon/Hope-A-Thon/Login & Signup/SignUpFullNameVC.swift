@@ -46,6 +46,7 @@ class SignUpFullNameVC: BaseSignUpViewController, UITextFieldDelegate {
             lastNameTF.becomeFirstResponder()
         } else {
             lastNameTF.resignFirstResponder()
+            delegate?.goNext()
         }
         return true
     }

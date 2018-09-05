@@ -32,7 +32,8 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         setNavTitle()
         self.searchBar.setSearchFieldBackgroundImage(UIImage(named: "searchbar"), for: UIControlState.normal)
        
-  
+        let textField = searchBar.value(forKey: "_searchField") as! UITextField
+        textField.clearButtonMode = .never
     }
     override func viewWillAppear(_ animated: Bool) {
         

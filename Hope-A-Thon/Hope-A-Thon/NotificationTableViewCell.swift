@@ -25,8 +25,12 @@ class NotificationTableViewCell: UITableViewCell {
             
             if item.isNew {
                 self.backView.backgroundColor = #colorLiteral(red: 0.3102046847, green: 0.722851932, blue: 0.870384872, alpha: 1)
+                self.contentView.backgroundColor = #colorLiteral(red: 0.3102046847, green: 0.722851932, blue: 0.870384872, alpha: 1)
+                self.contentView.tintColor = #colorLiteral(red: 0.3102046847, green: 0.722851932, blue: 0.870384872, alpha: 1)
             } else {
                 self.backView.backgroundColor = .white
+                self.contentView.backgroundColor = .white
+                self.contentView.tintColor = .white
             }
         }
     }

@@ -37,6 +37,7 @@ class SignUpEmailVC: BaseSignUpViewController, UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         emailTF.resignFirstResponder()
+        delegate?.goNext()
         return true
     }
 }
