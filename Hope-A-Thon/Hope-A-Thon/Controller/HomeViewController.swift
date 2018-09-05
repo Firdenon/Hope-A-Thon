@@ -33,10 +33,10 @@ class HomeViewController: NotificationEmbededViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nonUrgentActivities.append(Activity(title: "Kebakaran Hutan", date: "27/10/2018 - 27/11/2018", location: "Riau", ngo: "GovHelp", image: #imageLiteral(resourceName: "kebakaranhutan"), bookmark: false))
-        nonUrgentActivities.append(Activity(title: "Erupsi Gunung Bromo", date: "30/09/2018 - 05/10/2018", location: "Jawa Timur", ngo: "Here2Help", image: #imageLiteral(resourceName: "gunungbromo"), bookmark: false))
+        nonUrgentActivities.append(Activity(title: "KEBAKARAN HUTAN", date: "27/10/2018 - 27/11/2018", location: "Riau", ngo: "GovHelp", image: #imageLiteral(resourceName: "kebakaranhutan"), bookmark: false))
+        nonUrgentActivities.append(Activity(title: "ERUPSI GUNUNG BROMO", date: "30/09/2018 - 05/10/2018", location: "Jawa Timur", ngo: "Here2Help", image: #imageLiteral(resourceName: "gunungbromo"), bookmark: false))
         nonUrgentActivities.append(Activity(title: "PEDULI LOMBOK", date: "27/09/2018 - 30/09/2018", location: "Lombok", ngo: "HOPE", image: #imageLiteral(resourceName: "gempalombok"), bookmark: false))
-        nonUrgentActivities.append(Activity(title: "Erupsi Gunung Sinabung", date: "27/08/2018 - 27/09/2018", location: "Padang", ngo: "Medaners", image: #imageLiteral(resourceName: "erupsisinabung"), bookmark: false))
+        nonUrgentActivities.append(Activity(title: "ERUPSI GUNUNG SINABUNG", date: "27/08/2018 - 27/09/2018", location: "Padang", ngo: "Medaners", image: #imageLiteral(resourceName: "erupsisinabung"), bookmark: false))
         
 //        bookmarkNonUrgentActivities.append(Activity(title: "Kebakaran Hutan", date: "27/10/2018 - 27/11/2018", location: "Riau", ngo: "GovHelp", image: #imageLiteral(resourceName: "kebakaranhutan"), bookmark: true))
 //        bookmarkNonUrgentActivities.append(Activity(title: "PEDULI LOMBOK", date: "27/09/2018 - 30/09/2018", location: "Lombok", ngo: "HOPE", image: #imageLiteral(resourceName: "gempalombok"), bookmark: true))
@@ -45,7 +45,7 @@ class HomeViewController: NotificationEmbededViewController {
         
         ongoingActivities.append(Activity(title: "LONGSOR", date: "27/08/2018 - 27/09/2018", location: "Puncak", ngo: "The Bogorian", image: #imageLiteral(resourceName: "longsor"), bookmark: false))
         
-        completedActivities.append(Activity(title: "Erupsi Gunung Sinabung", date: "27/08/2018 - 27/09/2018", location: "Padang", ngo: "Medaners", image: #imageLiteral(resourceName: "erupsisinabung"), bookmark: false))
+        completedActivities.append(Activity(title: "ERUPSI GUNUNG SINABUNG", date: "27/08/2018 - 27/09/2018", location: "Padang", ngo: "Medaners", image: #imageLiteral(resourceName: "erupsisinabung"), bookmark: false))
         
         setNavTitle()
         recentLabel.addCharacterSpacing(kernValue: 1.5)
