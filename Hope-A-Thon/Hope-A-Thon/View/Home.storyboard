@@ -55,21 +55,21 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUz-C5-qPC">
                                                             <rect key="frame" x="8" y="52" width="172" height="19"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLc-7h-A7U">
                                                             <rect key="frame" x="8" y="71" width="172" height="19"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NGO" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEJ-Hf-UHU">
                                                             <rect key="frame" x="8" y="33" width="172" height="19"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -139,7 +139,7 @@
                         <outlet property="homeTableView" destination="3sh-oC-8w4" id="V57-6e-cHP"/>
                         <outlet property="pageControl" destination="rYH-pa-KMf" id="gXJ-cb-dNF"/>
                         <outlet property="recentLabel" destination="xLm-ld-7rw" id="rzZ-Gx-rbw"/>
-                        <segue destination="eZc-XF-dcG" kind="show" id="ZJj-Ic-9ga"/>
+                        <segue destination="eZc-XF-dcG" kind="show" identifier="homeToDetail" id="ZJj-Ic-9ga"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="scV-cM-cof" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -210,7 +210,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jW6-Ve-18d">
-                                                <rect key="frame" x="324" y="209" width="27" height="24"/>
+                                                <rect key="frame" x="324" y="209" width="20" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="1" green="0.89024107058148561" blue="0.7107862762284487" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" red="1" green="0.98995180513125958" blue="0.98826317944184905" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -265,12 +265,12 @@
             </objects>
             <point key="canvasLocation" x="4909.6000000000004" y="555.66502463054189"/>
         </scene>
-        <!--Home-->
+        <!--Navigation Controller-->
         <scene sceneID="k1G-nk-tu2">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Eb-2k-jnA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="icon_home" id="ca8-CY-acs">
-                        <inset key="imageInsets" minX="0.0" minY="123" maxX="0.0" maxY="119"/>
+                <navigationController storyboardIdentifier="homeVC" automaticallyAdjustsScrollViewInsets="NO" id="7Eb-2k-jnA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="icon_home" id="ca8-CY-acs">
+                        <inset key="imageInsets" minX="0.0" minY="132" maxX="0.0" maxY="119"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -293,10 +293,10 @@
             </objects>
             <point key="canvasLocation" x="2208.8000000000002" y="555.66502463054189"/>
         </scene>
-        <!--View Controller-->
+        <!--Home Detail View Controller-->
         <scene sceneID="2cL-rL-vt9">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="eZc-XF-dcG" customClass="ViewController" customModule="Hope_A_Thon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="eZc-XF-dcG" customClass="HomeDetailViewController" customModule="Hope_A_Thon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="45N-Sl-5Zv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -317,7 +317,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="1YV-jl-N44" kind="show" id="8Qp-Ff-0EB"/>
+                                            <action selector="applyButtonPressed" destination="eZc-XF-dcG" eventType="touchUpInside" id="hjc-NC-Cq0"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKz-oP-Ivx">
@@ -537,27 +537,32 @@
                     <navigationItem key="navigationItem" id="RAW-UV-4AD"/>
                     <size key="freeformSize" width="375" height="1500"/>
                     <connections>
+                        <outlet property="activityImage" destination="20h-vz-9Uj" id="3fm-v2-wCp"/>
+                        <outlet property="applyButton" destination="65T-1m-lKy" id="HDj-ZP-wrF"/>
+                        <outlet property="dateLabel" destination="6C4-Y7-UuB" id="sh9-FJ-XEy"/>
                         <outlet property="descLabel" destination="bzs-ts-IPV" id="9Qz-6O-bvi"/>
                         <outlet property="desiredLabel" destination="t9V-0k-pR6" id="iFZ-Eh-2es"/>
                         <outlet property="durationLabel" destination="JPt-7A-Fcp" id="bhk-JM-ehb"/>
-                        <outlet property="locationLabel" destination="a5g-wG-Ldt" id="mzS-xS-8kV"/>
+                        <outlet property="locationLabel" destination="OqE-56-dqQ" id="gUO-vW-wdF"/>
+                        <outlet property="ngoLabel" destination="mm5-uc-oJL" id="BvV-nd-e1l"/>
                         <outlet property="postedLabel" destination="ET9-U8-A6f" id="plt-Bi-YdP"/>
-                        <outlet property="scrollView" destination="Avu-Hf-Zde" id="Zbq-NP-dhB"/>
+                        <outlet property="scrollView" destination="Avu-Hf-Zde" id="nfy-eE-1bL"/>
                         <outlet property="termLabel" destination="Wpt-Qb-lcF" id="PyR-zw-f7A"/>
-                        <outlet property="viewAtas" destination="K8E-yx-Gvk" id="uIe-gZ-45u"/>
-                        <outlet property="viewDesc" destination="FBi-46-PfF" id="Lkg-Y3-Kwd"/>
-                        <outlet property="viewSkill" destination="r0F-O7-D9E" id="uAy-0f-eld"/>
-                        <outlet property="viewTerm" destination="mdZ-T9-nN8" id="XQz-NV-hrz"/>
+                        <outlet property="viewAtas" destination="K8E-yx-Gvk" id="jsM-MQ-OdV"/>
+                        <outlet property="viewDesc" destination="FBi-46-PfF" id="UVH-lm-XaM"/>
+                        <outlet property="viewSkill" destination="r0F-O7-D9E" id="9Hc-im-oh4"/>
+                        <outlet property="viewTerm" destination="mdZ-T9-nN8" id="8T2-Iw-0UB"/>
+                        <segue destination="1YV-jl-N44" kind="show" identifier="detailToPost" id="kOQ-42-t5w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P4a-ys-OAY" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3151" y="1813"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Post Application View Controller-->
         <scene sceneID="c3a-eI-IV1">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="1YV-jl-N44" customClass="DetailViewController" customModule="Hope_A_Thon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="1YV-jl-N44" customClass="PostApplicationViewController" customModule="Hope_A_Thon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RDc-pX-Cdv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -568,7 +573,7 @@
                                 <color key="backgroundColor" red="0.87810738460000004" green="1" blue="0.71946915739999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" image="button_submit"/>
                                 <connections>
-                                    <segue destination="CC7-aL-hwf" kind="show" id="PXA-ae-zsK"/>
+                                    <action selector="submitButtonPressed" destination="1YV-jl-N44" eventType="touchUpInside" id="VpF-8e-gCD"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CHOOSE YOUR PREFERRED SKILLSET" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DO0-2h-JAs">
@@ -747,43 +752,17 @@
                         <viewLayoutGuide key="safeArea" id="urt-Jc-8LK"/>
                     </view>
                     <connections>
-                        <outlet property="applyButton" destination="KXv-5P-fgv" id="tZa-VZ-8dK"/>
-                        <outlet property="chooseLabel" destination="DO0-2h-JAs" id="spc-gH-rE7"/>
+                        <outlet property="chooseLabel" destination="DO0-2h-JAs" id="DR5-gh-pXz"/>
                         <outlet property="motivationLabel" destination="Vom-jb-ei3" id="klq-NE-A0C"/>
-                        <outlet property="motivationView" destination="tcU-rk-UhR" id="4W0-cK-DIp"/>
-                        <outlet property="resultTextView" destination="a1d-j6-li3" id="cCg-iS-pnh"/>
+                        <outlet property="motivationView" destination="tcU-rk-UhR" id="XGg-YQ-hDf"/>
+                        <outlet property="resultTextView" destination="a1d-j6-li3" id="ecd-xQ-bTb"/>
+                        <segue destination="I5e-pY-P0O" kind="unwind" identifier="unwind" unwindAction="unwindToHome:" id="6Hb-iB-5Ms"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="stw-qc-eHL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="I5e-pY-P0O" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4018" y="1813"/>
-        </scene>
-        <!--Test View Controller-->
-        <scene sceneID="D8h-eN-wc7">
-            <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="CC7-aL-hwf" customClass="TestViewController" customModule="Hope_A_Thon" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0Or-Hj-2gG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="fdfdfd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwO-2D-RwX">
-                                <rect key="frame" x="34" y="139" width="47" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="KJA-8G-pvF"/>
-                    </view>
-                    <connections>
-                        <outlet property="lblResult" destination="LwO-2D-RwX" id="5eY-JX-mRt"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fau-Zo-iFg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4910" y="1813"/>
         </scene>
     </scenes>
     <resources>

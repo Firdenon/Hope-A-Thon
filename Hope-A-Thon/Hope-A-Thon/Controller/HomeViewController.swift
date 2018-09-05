@@ -26,6 +26,8 @@ class HomeViewController: NotificationEmbededViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var containerView: UIView!
     
+    var selectedActivity: Activity!
+    
     // MARK: - App Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,6 +64,8 @@ class HomeViewController: NotificationEmbededViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? UrgentPageViewController {
             destination.urgentDelegate = self
+        } else if let destination = segue.destination as? HomeDetailViewController {
+            destination.detailActivity = selectedActivity
         }
     }
 }
@@ -103,6 +107,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedActivity = nonUrgentActivities[indexPath.row]
+        performSegue(withIdentifier: "homeToDetail", sender: self)
+    }
+    
     @objc func clicked(_ sender: UIButton){
 
         if nonUrgentActivities[sender.tag].bookmark == false {
@@ -137,6 +146,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         titleLabel.addCharacterSpacing(kernValue: 2.25)
         titleLabel.sizeToFit()
         self.navigationItem.titleView = titleLabel
+    }
+    
+    @IBAction func unwindToHome(_ sender: UIStoryboardSegue) {
+        NotificationManager.instance.notifAcceptance(NotificationItem(title: selectedActivity.title, desc: "Your application has been accepted", timestamp: Date(), image: UIImage(named: "hopeindonesia_logo")!, isNew: true))
     }
 }
 

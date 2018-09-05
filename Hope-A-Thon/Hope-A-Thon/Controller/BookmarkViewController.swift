@@ -65,8 +65,6 @@ class BookmarkViewController: UIViewController, UITableViewDelegate,UITableViewD
         else if mixArrayBookmark[indexPath.row].bookmark == false {
             print("2 , 2")
             cell.bookmarkBtn.setImage(#imageLiteral(resourceName: "starNot"), for: .normal)
-            
-            
         }
         
         cell.layer.borderWidth = 0.5

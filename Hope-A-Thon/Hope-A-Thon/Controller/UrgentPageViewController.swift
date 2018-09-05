@@ -47,6 +47,16 @@ class UrgentPageViewController: UIPageViewController {
         urgentDelegate?.urgentPageCount(urgentPageViewController: self, didUpdatePageCount: urgentActivities.count)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+//        if urgentActivities[itemIndex].bookmark == true{
+//            bookmarkButton.setImage(#imageLiteral(resourceName: "starActive"), for: .normal)
+//        }
+//        else{
+//            bookmarkButton.setImage(#imageLiteral(resourceName: "starNot"), for: .normal)
+//        }
+    }
+    
     func getItemController (_ itemIndex: Int) -> UrgentViewController? {
         if itemIndex < urgentActivities.count{
             let pageItemController = self.storyboard?.instantiateViewController(withIdentifier: "itemController") as! UrgentViewController

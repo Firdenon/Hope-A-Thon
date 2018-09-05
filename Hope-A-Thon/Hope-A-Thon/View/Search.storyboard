@@ -133,9 +133,9 @@
         <!--Search-->
         <scene sceneID="dnR-lp-z8a">
             <objects>
-                <navigationController title="Search" automaticallyAdjustsScrollViewInsets="NO" id="xj5-KP-z1q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search" image="icon_search" selectedImage="icon_search_active" id="RiI-8K-jsb">
-                        <inset key="imageInsets" minX="0.0" minY="123" maxX="0.0" maxY="119"/>
+                <navigationController storyboardIdentifier="searchVC" title="Search" automaticallyAdjustsScrollViewInsets="NO" id="xj5-KP-z1q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="icon_search" selectedImage="icon_search_active" id="RiI-8K-jsb">
+                        <inset key="imageInsets" minX="0.0" minY="132" maxX="0.0" maxY="119"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <toolbarItems/>
