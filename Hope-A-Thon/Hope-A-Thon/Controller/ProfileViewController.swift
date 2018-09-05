@@ -97,14 +97,6 @@ class ProfileViewController: UIViewController, UINavigationBarDelegate, UITextFi
         languangeLabel.addCharacterSpacing(kernValue: 2.33)
         emergencyLabel.addCharacterSpacing(kernValue: 2.33)
         
-        
-        //emergencyCard.bounds = CGRect(x: 10, y: 10, width: 10, height: 10)
-        
-        
-//        insideStack.preservesSuperviewLayoutMargins = true
-//        insideStack.isLayoutMarginsRelativeArrangement = true
-//        insideStack.layoutMargins = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -130,6 +122,7 @@ class ProfileViewController: UIViewController, UINavigationBarDelegate, UITextFi
         // Dispose of any resources that can be recreated.
     }
     
+    //EDIT
     
     @IBAction func nameEditBtn(_ sender: Any) {
         nameTextField.isHidden = false
@@ -147,17 +140,7 @@ class ProfileViewController: UIViewController, UINavigationBarDelegate, UITextFi
         dateTextField.becomeFirstResponder()
     }
     
-    @objc func textFieldDidBeginEditing(_ textField: UITextField) {
-        
-        if textField.tag == 4 {
-            let datePickerView:UIDatePicker = UIDatePicker()
-            datePickerView.datePickerMode = UIDatePickerMode.date
-            textField.inputView = datePickerView
-            datePickerView.addTarget(self, action: #selector(ProfileViewController.datePickerValueChanged), for: UIControlEvents.valueChanged)
-            
-        }
-        
-    }
+    //KEYBOARD INPUT
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField.tag == 1 {
@@ -180,23 +163,30 @@ class ProfileViewController: UIViewController, UINavigationBarDelegate, UITextFi
         return false
     }
     
+    //DATE PICKER
+    @objc func textFieldDidBeginEditing(_ textField: UITextField) {
+        
+        if textField.tag == 4 {
+            let datePickerView:UIDatePicker = UIDatePicker()
+            datePickerView.datePickerMode = UIDatePickerMode.date
+            datePickerView.locale = Locale(identifier: "id")
+            textField.inputView = datePickerView
+            datePickerView.addTarget(self, action: #selector(ProfileViewController.datePickerValueChanged), for: UIControlEvents.valueChanged)
+        }
+    }
+    
     @objc func datePickerValueChanged(sender:UIDatePicker) {
-        
+
         let dateFormatter = DateFormatter()
-        
         dateFormatter.dateStyle = DateFormatter.Style.medium
-        
         dateFormatter.timeStyle = DateFormatter.Style.none
-        
         dateTextField.text = dateFormatter.string(from: sender.date)
-        
     }
     
     @objc func dismissPicker() {
         view.endEditing(true)
         dateLabel.text = dateTextField.text
         dateTextField.isHidden = true
-        
     }
 
     
