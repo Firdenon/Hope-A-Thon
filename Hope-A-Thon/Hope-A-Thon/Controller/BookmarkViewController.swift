@@ -91,15 +91,11 @@ class BookmarkViewController: UIViewController, UITableViewDelegate,UITableViewD
                 var newIndex = sender.tag - bookmarkUrgentActivities.count
                 bookmarkNonUrgentActivities.remove(at: newIndex)
                 
-//                for i in 0...nonUrgentActivities.count-1{
-//                    if nonUrgentActivities[i].title == bookmarkNonUrgentActivities[sender.tag].title{
-//                        nonUrgentActivities[i].bookmark = false
-//                    }
-//                }
             }
             else{
                 var newIndex = sender.tag
                 bookmarkUrgentActivities.remove(at: newIndex)
+                urgentActivities[newIndex].bookmark = false
             }
             
             
