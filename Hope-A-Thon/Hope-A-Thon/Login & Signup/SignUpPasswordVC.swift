@@ -57,6 +57,7 @@ class SignUpPasswordVC: BaseSignUpViewController, UITextFieldDelegate {
             retypePasswordTF.becomeFirstResponder()
         } else {
             retypePasswordTF.resignFirstResponder()
+            delegate?.goNext()
         }
         return true
     }

@@ -84,7 +84,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3L-JE-fpo">
-                                                            <rect key="frame" x="8" y="62" width="172" height="14"/>
+                                                            <rect key="frame" x="8" y="62" width="172" height="19"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -133,9 +133,9 @@
         <!--Search-->
         <scene sceneID="dnR-lp-z8a">
             <objects>
-                <navigationController title="Search" automaticallyAdjustsScrollViewInsets="NO" id="xj5-KP-z1q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search" image="icon_search" selectedImage="icon_search_active" id="RiI-8K-jsb">
-                        <inset key="imageInsets" minX="0.0" minY="123" maxX="0.0" maxY="119"/>
+                <navigationController storyboardIdentifier="searchVC" title="Search" automaticallyAdjustsScrollViewInsets="NO" id="xj5-KP-z1q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="icon_search" selectedImage="icon_search_active" id="RiI-8K-jsb">
+                        <inset key="imageInsets" minX="0.0" minY="132" maxX="0.0" maxY="119"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <toolbarItems/>

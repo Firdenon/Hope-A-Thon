@@ -17,13 +17,6 @@ class ActivityTableViewCell: UITableViewCell {
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var ngoLabel: UILabel!
     
-//    func setCell(activity: Activity) {
-//        titleLabel.text = activity.title
-//        dateLabel.text = activity.date
-//        locationLabel.text = activity.location
-//        ngoLabel.text = activity.ngo
-//        activityImage.image = activity.image
-//    }
     override var frame: CGRect {
         get {
             return super.frame

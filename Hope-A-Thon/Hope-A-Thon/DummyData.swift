@@ -35,18 +35,35 @@ func randomBool() -> Bool {
     return arc4random_uniform(2) == 1
 }
 
-var notificationItems = [
-    NotificationItem(title: "Your application has been approved. Please wait to be contacted", timestamp: randomDate(), image: UIImage(named: "notification")!, isNew: randomBool()),
-    NotificationItem(title: "Your application has been approved. Please wait to be contacted", timestamp: randomDate(), image: UIImage(named: "notification")!, isNew: randomBool()),
-    NotificationItem(title: "Your application has been approved. Please wait to be contacted", timestamp: randomDate(), image: UIImage(named: "notification")!, isNew: randomBool()),
-    NotificationItem(title: "Your application has been approved. Please wait to be contacted", timestamp: randomDate(), image: UIImage(named: "notification")!, isNew: randomBool()),
-    NotificationItem(title: "Your application has been approved. Please wait to be contacted", timestamp: randomDate(), image: UIImage(named: "notification")!, isNew: randomBool()),
-    NotificationItem(title: "Your application has been approved. Please wait to be contacted", timestamp: randomDate(), image: UIImage(named: "notification")!, isNew: randomBool()),
-    NotificationItem(title: "Your application has been approved. Please wait to be contacted", timestamp: randomDate(), image: UIImage(named: "notification")!, isNew: randomBool()),
-    NotificationItem(title: "Your application has been approved. Please wait to be contacted", timestamp: randomDate(), image: UIImage(named: "notification")!, isNew: randomBool()),
-    NotificationItem(title: "Your application has been approved. Please wait to be contacted", timestamp: randomDate(), image: UIImage(named: "notification")!, isNew: randomBool()),
-    NotificationItem(title: "Your application has been approved. Please wait to be contacted", timestamp: randomDate(), image: UIImage(named: "notification")!, isNew: randomBool()),
+private var globalImageNotif = UIImage(named: "hopeindonesia_logo")!
+
+private let notifDescs = [
+    "Your application has been accepted. Waiting to get screening.",
+    "Your application has been approved. You will be contacted later by NGO officer.",
+    "Your application has been sorted."
 ]
+
+private func randomNotifDesc() -> String {
+    return notifDescs[Int(arc4random_uniform(UInt32(notifDescs.count)))]
+}
+
+var notificationItems = [
+    NotificationItem(title: "Gempa Lombok", desc: randomNotifDesc(), timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
+    NotificationItem(title: "Tsunami Aceh", desc: randomNotifDesc(), timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
+    NotificationItem(title: "Banjir Jakarta", desc: randomNotifDesc(), timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
+    NotificationItem(title: "Peduli Gunung", desc: randomNotifDesc(), timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
+    NotificationItem(title: "Langit Indonesia", desc: randomNotifDesc(), timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
+    NotificationItem(title: "Danau Toba Kita", desc: randomNotifDesc(), timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
+    NotificationItem(title: "Gempa Tangerang", desc: randomNotifDesc(), timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
+    NotificationItem(title: "Puting Beliung", desc: randomNotifDesc(), timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
+    NotificationItem(title: "Kelaparan", desc: randomNotifDesc(), timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
+    NotificationItem(title: "Tsunami", desc: randomNotifDesc(), timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
+]
+
+func addNewNotification(_ n: NotificationItem) {
+    notificationItems.append(n)
+    
+}
 
 var globalUserInfo = UserInfo()
 

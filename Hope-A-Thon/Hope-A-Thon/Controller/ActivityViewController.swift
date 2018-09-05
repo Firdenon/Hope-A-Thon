@@ -17,7 +17,7 @@ class ActivityViewController: UIViewController {
     
     
     // MARK: - Variables
-   
+    var selectedActivity: Activity!
     
     // MARK: - App Life Cycle
     override func viewDidLoad() {
@@ -38,6 +38,12 @@ class ActivityViewController: UIViewController {
         titleLabel.addCharacterSpacing(kernValue: 2.25)
         titleLabel.sizeToFit()
         self.navigationItem.titleView = titleLabel
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? ActivityDetailViewController {
+            destination.detailActivity = selectedActivity
+        }
     }
 }
 
@@ -68,10 +74,19 @@ extension ActivityViewController: UITableViewDelegate, UITableViewDataSource {
             cell.locationLabel.text = completedActivities[indexPath.row].location
             cell.ngoLabel.text = completedActivities[indexPath.row].ngo
             cell.activityImage.image = completedActivities[indexPath.row].image
-            
         }
+        
         cell.layer.borderWidth = 0.5
         cell.layer.cornerRadius = 14
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if upperSegment.selectedSegmentIndex == 0 {
+            selectedActivity = ongoingActivities[indexPath.row]
+        } else {
+            selectedActivity = completedActivities[indexPath.row]
+        }
+        performSegue(withIdentifier: "activityToDetail", sender: self)
     }
 }

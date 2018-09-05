@@ -18,7 +18,7 @@ var bookmarkNonUrgentActivities = [Activity]()
 var ongoingActivities = [Activity]()
 var completedActivities = [Activity]()
 
-class HomeViewController: UIViewController {
+class HomeViewController: NotificationEmbededViewController {
 
     // MARK: - Outlets
     @IBOutlet weak var homeTableView: UITableView!
@@ -26,21 +26,26 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var containerView: UIView!
     
+    var selectedActivity: Activity!
+    
     // MARK: - App Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nonUrgentActivities.append(Activity(title: "LANGIT INDONESIA", date: "27/10/2018 - 27/11/2018", location: "Jakarta", ngo: "HOPE", image: #imageLiteral(resourceName: "Sky"), bookmark: true))
-        nonUrgentActivities.append(Activity(title: "Danau Toba Kita", date: "30/09/2018 - 05/10/2018", location: "Sumatera", ngo: "HOPE", image: #imageLiteral(resourceName: "Lake"), bookmark: false))
+        nonUrgentActivities.append(Activity(title: "Kebakaran Hutan", date: "27/10/2018 - 27/11/2018", location: "Riau", ngo: "GovHelp", image: #imageLiteral(resourceName: "kebakaranhutan"), bookmark: true))
+        nonUrgentActivities.append(Activity(title: "Erupsi Gunung Bromo", date: "30/09/2018 - 05/10/2018", location: "Jawa Timur", ngo: "Here2Help", image: #imageLiteral(resourceName: "gunungbromo"), bookmark: false))
+        nonUrgentActivities.append(Activity(title: "PEDULI LOMBOK", date: "27/09/2018 - 30/09/2018", location: "Lombok", ngo: "HOPE", image: #imageLiteral(resourceName: "gempalombok"), bookmark: true))
+        nonUrgentActivities.append(Activity(title: "Erupsi Gunung Sinabung", date: "27/08/2018 - 27/09/2018", location: "Padang", ngo: "Medaners", image: #imageLiteral(resourceName: "erupsisinabung"), bookmark: false))
         
-        bookmarkUrgentActivities.append(Activity(title: "PEDULI LOMBOK", date: "27/09/2018 - 30/09/2018", location: "Lombok", ngo: "HOPE", image: #imageLiteral(resourceName: "Lake"), bookmark: true))
+        bookmarkNonUrgentActivities.append(Activity(title: "Kebakaran Hutan", date: "27/10/2018 - 27/11/2018", location: "Riau", ngo: "GovHelp", image: #imageLiteral(resourceName: "kebakaranhutan"), bookmark: true))
+        bookmarkNonUrgentActivities.append(Activity(title: "PEDULI LOMBOK", date: "27/09/2018 - 30/09/2018", location: "Lombok", ngo: "HOPE", image: #imageLiteral(resourceName: "gempalombok"), bookmark: true))
         
-        bookmarkNonUrgentActivities.append(Activity(title: "LANGIT INDONESIA", date: "27/10/2018 - 27/11/2018", location: "Jakarta", ngo: "HOPE", image: #imageLiteral(resourceName: "Sky"), bookmark: true))
+        bookmarkUrgentActivities.append(Activity(title: "BANJIR NTT", date: "31/09/2018 - 27/10/2018", location: "NTT", ngo: "Stay.org", image: #imageLiteral(resourceName: "banjirntt"), bookmark: true))
         
-        ongoingActivities.append(Activity(title: "PEDULI GUNUNG BROMO", date: "27/08/2018 - 27/09/2018", location: "Solo", ngo: "HOPE", image: #imageLiteral(resourceName: "Mountain"), bookmark: false))
-        ongoingActivities.append(Activity(title: "PEDULI GUNUNG MERAPI", date: "27/08/2018 - 27/09/2018", location: "Indonesia", ngo: "HOPE", image: #imageLiteral(resourceName: "Mountain"), bookmark: false))
+        ongoingActivities.append(Activity(title: "LONGSOR", date: "27/08/2018 - 27/09/2018", location: "Puncak", ngo: "The Bogorian", image: #imageLiteral(resourceName: "longsor"), bookmark: false))
+        ongoingActivities.append(Activity(title: "PEDULI LOMBOK", date: "27/09/2018 - 30/09/2018", location: "Lombok", ngo: "HOPE", image: #imageLiteral(resourceName: "gempalombok"), bookmark: false))
         
-        completedActivities.append(Activity(title: "DANAU TOBA", date: "27/08/2018 - 27/09/2018", location: "Padang", ngo: "HOPE", image: #imageLiteral(resourceName: "Lake"), bookmark: false))
+        completedActivities.append(Activity(title: "Erupsi Gunung Sinabung", date: "27/08/2018 - 27/09/2018", location: "Padang", ngo: "Medaners", image: #imageLiteral(resourceName: "erupsisinabung"), bookmark: false))
         
         setNavTitle()
         recentLabel.addCharacterSpacing(kernValue: 1.5)
@@ -52,9 +57,15 @@ class HomeViewController: UIViewController {
         homeTableView.reloadData()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        homeTableView.reloadData()
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? UrgentPageViewController {
             destination.urgentDelegate = self
+        } else if let destination = segue.destination as? HomeDetailViewController {
+            destination.detailActivity = selectedActivity
         }
     }
 }
@@ -77,11 +88,55 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell.locationLabel.text = nonUrgentActivities[indexPath.row].location
         cell.ngoLabel.text = nonUrgentActivities[indexPath.row].ngo
         cell.activityImage.image = nonUrgentActivities[indexPath.row].image
+        cell.bookmarkBtn.tag = indexPath.row
+        cell.bookmarkBtn.addTarget(self, action: #selector(HomeViewController.clicked(_:)), for: .touchUpInside)
+        
+        if nonUrgentActivities[indexPath.row].bookmark == true{
+            cell.bookmarkBtn.setImage(#imageLiteral(resourceName: "starActive"), for: .normal)
+           
+        }
+        else if nonUrgentActivities[indexPath.row].bookmark == false{
+                cell.bookmarkBtn.setImage(#imageLiteral(resourceName: "starNot"), for: .normal)
+            
+            }
         
         cell.layer.borderWidth = 0.5
         cell.layer.cornerRadius = 14
+        cell.selectionStyle = .none
+        
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedActivity = nonUrgentActivities[indexPath.row]
+        performSegue(withIdentifier: "homeToDetail", sender: self)
+    }
+    
+    @objc func clicked(_ sender: UIButton){
+
+        if nonUrgentActivities[sender.tag].bookmark == false {
+            nonUrgentActivities[sender.tag].bookmark = true
+            bookmarkNonUrgentActivities.append(nonUrgentActivities[sender.tag])
+        }
+        else{
+    
+            nonUrgentActivities[sender.tag].bookmark = false
+            for i in 0...bookmarkNonUrgentActivities.count-1{
+                if bookmarkNonUrgentActivities[i].title == nonUrgentActivities[sender.tag].title{
+                     bookmarkNonUrgentActivities[i].bookmark = false
+                    bookmarkNonUrgentActivities.remove(at: i)
+                }
+                else{
+                    print("empty")
+                }
+            }
+           
+        }
+            
+            homeTableView.reloadData()
+    
+    }
+
     
     func setNavTitle() {
         let titleLabel = UILabel()
@@ -91,6 +146,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         titleLabel.addCharacterSpacing(kernValue: 2.25)
         titleLabel.sizeToFit()
         self.navigationItem.titleView = titleLabel
+    }
+    
+    @IBAction func unwindToHome(_ sender: UIStoryboardSegue) {
+        NotificationManager.instance.notifAcceptance(NotificationItem(title: selectedActivity.title, desc: "Your application has been accepted", timestamp: Date(), image: UIImage(named: "hopeindonesia_logo")!, isNew: true))
     }
 }
 

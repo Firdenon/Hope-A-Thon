@@ -44,10 +44,37 @@ class UrgentViewController: UIViewController {
         titleLabel.addCharacterSpacing(kernValue: 3)
         urgentImage.layer.borderWidth = 0.5
         urgentImage.layer.cornerRadius = 14
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if urgentActivities[itemIndex].bookmark == true{
+            bookmarkButton.setImage(#imageLiteral(resourceName: "starActive"), for: .normal)
+        }
+        else{
+            bookmarkButton.setImage(#imageLiteral(resourceName: "starNot"), for: .normal)
+        }
+        
     }
     
     
     @IBAction func bookmarkButtonPressed() {
         print(itemIndex)
+        if urgentActivities[itemIndex].bookmark == false {
+            urgentActivities[itemIndex].bookmark = true
+        }
+        else{
+            urgentActivities[self.itemIndex].bookmark = false
+            for i in 0...bookmarkUrgentActivities.count-1{
+                if bookmarkUrgentActivities[i].title == urgentActivities[itemIndex].title{
+                bookmarkUrgentActivities[i].bookmark = false
+                bookmarkUrgentActivities.remove(at: i)
+            }
+                else{
+                    print("empty")
+                }
+            }
+        }
     }
+    
 }

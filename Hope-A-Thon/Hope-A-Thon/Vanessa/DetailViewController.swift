@@ -19,6 +19,8 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     
     @IBOutlet weak var chooseLabel: UILabel!
     @IBOutlet weak var motivationLabel: UILabel!
+    @IBOutlet weak var headerLabel: UILabel!
+    
     
     @IBOutlet weak var motivationView: UIView!
     
@@ -37,8 +39,8 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
         
         motivationLabel.textColor = #colorLiteral(red: 0.2901960784, green: 0.2901960784, blue: 0.2901960784, alpha: 1)
         motivationLabel.addCharacterSpacing(kernValue: 2.33)
-//        
-//        
+//
+//
 //        listItemArray.append("A")
 //        listItemArray.append("B")
 //        listItemArray.append("C")

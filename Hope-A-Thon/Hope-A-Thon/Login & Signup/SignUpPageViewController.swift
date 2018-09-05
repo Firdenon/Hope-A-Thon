@@ -8,7 +8,10 @@
 
 import UIKit
 
-class SignUpPageViewController: UIPageViewController {
+class SignUpPageViewController: UIPageViewController, SignUpPageControlDelegate {
+    func goNext() {
+        self.scrollToNextViewController()
+    }
     
     private var currentVCIndex: Int! = 0
     private(set) lazy var orderedViewControllers: [BaseSignUpViewController] = {
@@ -21,8 +24,10 @@ class SignUpPageViewController: UIPageViewController {
     }()
     
     private func newSignUpViewController(_ identifier: String) -> BaseSignUpViewController {
-        return UIStoryboard(name: "SignIn", bundle: nil) .
+        let vc = UIStoryboard(name: "SignIn", bundle: nil) .
             instantiateViewController(withIdentifier: "SignUp\(identifier)") as! BaseSignUpViewController
+        vc.delegate = self
+        return vc
     }
     
     override var transitionStyle: UIPageViewControllerTransitionStyle {
@@ -86,6 +91,7 @@ extension SignUpPageViewController: UIPageViewControllerDataSource {
             return nil
         }
         
+        currentVCIndex = previousIndex
         return orderedViewControllers[previousIndex]
     }
     
@@ -109,6 +115,7 @@ extension SignUpPageViewController: UIPageViewControllerDataSource {
             return nil
         }
         
+        currentVCIndex = nextIndex
         return orderedViewControllers[nextIndex]
     }
     
@@ -117,7 +124,7 @@ extension SignUpPageViewController: UIPageViewControllerDataSource {
     }
     
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
-        print()
+        print(currentVCIndex)
         return currentVCIndex
     }
 }
@@ -128,7 +135,6 @@ extension SignUpPageViewController: UIPageViewControllerDelegate {
                             didFinishAnimating finished: Bool,
                             previousViewControllers: [UIViewController],
                             transitionCompleted completed: Bool) {
-//        notifyTutorialDelegateOfNewIndex()
         currentVCIndex = previousViewControllers.count
     }
     

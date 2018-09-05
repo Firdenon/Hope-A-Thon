@@ -8,7 +8,13 @@
 
 import UIKit
 
+protocol SignUpPageControlDelegate {
+    func goNext()
+}
+
 class BaseSignUpViewController: UIViewController {
+    
+    var delegate: SignUpPageControlDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -53,23 +53,23 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGr-pq-NUx">
-                                                            <rect key="frame" x="8" y="47" width="172" height="21"/>
+                                                            <rect key="frame" x="8" y="52" width="172" height="19"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8a-dD-t8J">
-                                                            <rect key="frame" x="8" y="65" width="172" height="21"/>
+                                                            <rect key="frame" x="8" y="71" width="172" height="19"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NGO" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qp0-Z1-L1W">
-                                                            <rect key="frame" x="8" y="26" width="172" height="13"/>
+                                                            <rect key="frame" x="8" y="33" width="172" height="19"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -124,12 +124,12 @@
             </objects>
             <point key="canvasLocation" x="1018.4" y="81.2807881773399"/>
         </scene>
-        <!--Bookmark-->
+        <!--Navigation Controller-->
         <scene sceneID="Zca-VO-DDF">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6fp-CM-ax5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Bookmark" image="icon_bookmark" selectedImage="icon_bookmark_active" id="bix-0i-z7p">
-                        <inset key="imageInsets" minX="0.0" minY="123" maxX="0.0" maxY="119"/>
+                <navigationController storyboardIdentifier="bookmarkVC" automaticallyAdjustsScrollViewInsets="NO" id="6fp-CM-ax5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="icon_bookmark" selectedImage="icon_bookmark_active" id="bix-0i-z7p">
+                        <inset key="imageInsets" minX="0.0" minY="132" maxX="0.0" maxY="119"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -149,8 +149,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon_bookmark" width="512" height="512"/>
-        <image name="icon_bookmark_active" width="512" height="512"/>
+        <image name="icon_bookmark" width="32" height="32"/>
+        <image name="icon_bookmark_active" width="32" height="32"/>
         <image name="starNot" width="512" height="512"/>
     </resources>
 </document>

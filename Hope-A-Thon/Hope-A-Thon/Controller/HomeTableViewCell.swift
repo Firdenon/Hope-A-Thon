@@ -16,6 +16,7 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var ngoLabel: UILabel!
+    @IBOutlet weak var bookmarkBtn: UIButton!
     
     override var frame: CGRect {
         get {
