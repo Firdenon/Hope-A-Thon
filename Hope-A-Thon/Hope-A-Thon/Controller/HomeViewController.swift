@@ -151,7 +151,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     @IBAction func unwindToHome(_ sender: UIStoryboardSegue) {
-        NotificationManager.instance.notifAcceptance(NotificationItem(title: selectedActivity.title, desc: "Your application has been accepted", timestamp: Date(), image: UIImage(named: "hopeindonesia_logo")!, isNew: true))
+        NotificationManager.instance.notifAcceptance(NotificationItem(title: selectedActivity.title, desc: notifDescs[0], timestamp: Date(), image: UIImage(named: "hopeindonesia_logo")!, isNew: true))
     }
 }
 

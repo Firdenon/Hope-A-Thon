@@ -37,7 +37,7 @@ func randomBool() -> Bool {
 
 private var globalImageNotif = UIImage(named: "hopeindonesia_logo")!
 
-private let notifDescs = [
+let notifDescs = [
     "Your application has been accepted! You'll be informed if your application is approved.",
     "Your application has been approved. You will be contacted later by NGO officer.",
     "Your application didn't meet the requirements. Try to apply on another event."
