@@ -38,26 +38,19 @@ func randomBool() -> Bool {
 private var globalImageNotif = UIImage(named: "hopeindonesia_logo")!
 
 private let notifDescs = [
-    "Your application has been accepted. Waiting to get screening.",
+    "Your application has been accepted! You'll be informed if your application is approved.",
     "Your application has been approved. You will be contacted later by NGO officer.",
-    "Your application has been sorted."
+    "Your application didn't meet the requirements. Try to apply on another event."
 ]
 
-private func randomNotifDesc() -> String {
-    return notifDescs[Int(arc4random_uniform(UInt32(notifDescs.count)))]
-}
+//private func randomNotifDesc() -> String {
+//    return notifDescs[Int(arc4random_uniform(UInt32(notifDescs.count)))]
+//}
 
 var notificationItems = [
-    NotificationItem(title: "Gempa Lombok", desc: randomNotifDesc(), timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
-    NotificationItem(title: "Tsunami Aceh", desc: randomNotifDesc(), timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
-    NotificationItem(title: "Banjir Jakarta", desc: randomNotifDesc(), timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
-    NotificationItem(title: "Peduli Gunung", desc: randomNotifDesc(), timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
-    NotificationItem(title: "Langit Indonesia", desc: randomNotifDesc(), timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
-    NotificationItem(title: "Danau Toba Kita", desc: randomNotifDesc(), timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
-    NotificationItem(title: "Gempa Tangerang", desc: randomNotifDesc(), timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
-    NotificationItem(title: "Puting Beliung", desc: randomNotifDesc(), timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
-    NotificationItem(title: "Kelaparan", desc: randomNotifDesc(), timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
-    NotificationItem(title: "Tsunami", desc: randomNotifDesc(), timestamp: randomDate(), image: globalImageNotif, isNew: randomBool()),
+    NotificationItem(title: "Gempa Lombok", desc: notifDescs[0], timestamp: randomDate(), image: globalImageNotif, isNew: true),
+    NotificationItem(title: "Puting Beliung", desc: notifDescs[1], timestamp: randomDate(), image: globalImageNotif, isNew: true),
+    NotificationItem(title: "Banjir Jakarta", desc: notifDescs[2], timestamp: randomDate(), image: globalImageNotif, isNew: true),
 ]
 
 func addNewNotification(_ n: NotificationItem) {

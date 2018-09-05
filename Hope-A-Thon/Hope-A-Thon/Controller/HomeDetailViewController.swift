@@ -14,6 +14,7 @@ class HomeDetailViewController: UIViewController {
     @IBOutlet weak var ngoLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var postedLabel: UILabel!
@@ -23,6 +24,7 @@ class HomeDetailViewController: UIViewController {
     @IBOutlet weak var termLabel: UILabel!
     @IBOutlet weak var applyButton: UIButton!
     
+    @IBOutlet weak var bookmarkButton: UIButton!
     
     @IBOutlet weak var viewAtas: UIView!
     @IBOutlet weak var viewSkill: UIView!
@@ -30,6 +32,7 @@ class HomeDetailViewController: UIViewController {
     @IBOutlet weak var viewDesc: UIView!
     
     var detailActivity: Activity!
+    var index: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,17 +59,25 @@ class HomeDetailViewController: UIViewController {
         applyButton.layer.cornerRadius = 8
         applyButton.layer.borderColor = UIColor.clear.cgColor
         
+        
+        
+        activityImage.image = detailActivity.image
+        ngoLabel.text = detailActivity.ngo
+        locationLabel.text = detailActivity.location
+        dateLabel.text = detailActivity.date
+        titleLabel.text = detailActivity.title
+        
         postedLabel.addCharacterSpacing(kernValue: 2.33)
         locationLabel.addCharacterSpacing(kernValue: 2.33)
         durationLabel.addCharacterSpacing(kernValue: 2.33)
         desiredLabel.addCharacterSpacing(kernValue: 2.33)
         descLabel.addCharacterSpacing(kernValue: 2.33)
         termLabel.addCharacterSpacing(kernValue: 2.33)
+        titleLabel.addCharacterSpacing(kernValue: 2.0)
         
-        activityImage.image = detailActivity.image
-        ngoLabel.text = detailActivity.ngo
-        locationLabel.text = detailActivity.location
-        dateLabel.text = detailActivity.date
+        if detailActivity.bookmark == true {
+            bookmarkButton.setImage(#imageLiteral(resourceName: "starActive"), for: .normal)
+        }
     }
     
     @IBAction func applyButtonPressed() {
@@ -78,4 +89,29 @@ class HomeDetailViewController: UIViewController {
             destination.detailActivity = detailActivity
         }
     }
+    
+    @IBAction func bookmarkButtonPressed() {
+        
+        if nonUrgentActivities[index].bookmark == false {
+            nonUrgentActivities[index].bookmark = true
+           bookmarkNonUrgentActivities.append(nonUrgentActivities[index])
+            bookmarkButton.setImage(#imageLiteral(resourceName: "starActive"), for: .normal)
+            
+        }
+        else{
+            nonUrgentActivities[index].bookmark = false
+            bookmarkNonUrgentActivities[index].bookmark = false
+            bookmarkButton.setImage(#imageLiteral(resourceName: "starNot"), for: .normal)
+//            for i in 0...bookmarkUrgentActivities.count-1{
+//                if bookmarkUrgentActivities[i].title == urgentActivities[itemIndex].title{
+//                    bookmarkUrgentActivities[i].bookmark = false
+//                    bookmarkUrgentActivities.remove(at: i)
+//                }
+//                else{
+//                    print("empty")
+//                }
+//            }
+        }
+    }
+    
 }
