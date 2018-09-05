@@ -33,15 +33,15 @@ class HomeViewController: NotificationEmbededViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nonUrgentActivities.append(Activity(title: "Kebakaran Hutan", date: "27/10/2018 - 27/11/2018", location: "Riau", ngo: "GovHelp", image: #imageLiteral(resourceName: "kebakaranhutan"), bookmark: true))
+        nonUrgentActivities.append(Activity(title: "Kebakaran Hutan", date: "27/10/2018 - 27/11/2018", location: "Riau", ngo: "GovHelp", image: #imageLiteral(resourceName: "kebakaranhutan"), bookmark: false))
         nonUrgentActivities.append(Activity(title: "Erupsi Gunung Bromo", date: "30/09/2018 - 05/10/2018", location: "Jawa Timur", ngo: "Here2Help", image: #imageLiteral(resourceName: "gunungbromo"), bookmark: false))
-        nonUrgentActivities.append(Activity(title: "PEDULI LOMBOK", date: "27/09/2018 - 30/09/2018", location: "Lombok", ngo: "HOPE", image: #imageLiteral(resourceName: "gempalombok"), bookmark: true))
+        nonUrgentActivities.append(Activity(title: "PEDULI LOMBOK", date: "27/09/2018 - 30/09/2018", location: "Lombok", ngo: "HOPE", image: #imageLiteral(resourceName: "gempalombok"), bookmark: false))
         nonUrgentActivities.append(Activity(title: "Erupsi Gunung Sinabung", date: "27/08/2018 - 27/09/2018", location: "Padang", ngo: "Medaners", image: #imageLiteral(resourceName: "erupsisinabung"), bookmark: false))
         
-        bookmarkNonUrgentActivities.append(Activity(title: "Kebakaran Hutan", date: "27/10/2018 - 27/11/2018", location: "Riau", ngo: "GovHelp", image: #imageLiteral(resourceName: "kebakaranhutan"), bookmark: true))
-        bookmarkNonUrgentActivities.append(Activity(title: "PEDULI LOMBOK", date: "27/09/2018 - 30/09/2018", location: "Lombok", ngo: "HOPE", image: #imageLiteral(resourceName: "gempalombok"), bookmark: true))
+//        bookmarkNonUrgentActivities.append(Activity(title: "Kebakaran Hutan", date: "27/10/2018 - 27/11/2018", location: "Riau", ngo: "GovHelp", image: #imageLiteral(resourceName: "kebakaranhutan"), bookmark: true))
+//        bookmarkNonUrgentActivities.append(Activity(title: "PEDULI LOMBOK", date: "27/09/2018 - 30/09/2018", location: "Lombok", ngo: "HOPE", image: #imageLiteral(resourceName: "gempalombok"), bookmark: true))
         
-        bookmarkUrgentActivities.append(Activity(title: "BANJIR NTT", date: "31/09/2018 - 27/10/2018", location: "NTT", ngo: "Stay.org", image: #imageLiteral(resourceName: "banjirntt"), bookmark: true))
+//        bookmarkUrgentActivities.append(Activity(title: "BANJIR NTT", date: "31/09/2018 - 27/10/2018", location: "NTT", ngo: "Stay.org", image: #imageLiteral(resourceName: "banjirntt"), bookmark: true))
         
         ongoingActivities.append(Activity(title: "LONGSOR", date: "27/08/2018 - 27/09/2018", location: "Puncak", ngo: "The Bogorian", image: #imageLiteral(resourceName: "longsor"), bookmark: false))
         ongoingActivities.append(Activity(title: "PEDULI LOMBOK", date: "27/09/2018 - 30/09/2018", location: "Lombok", ngo: "HOPE", image: #imageLiteral(resourceName: "gempalombok"), bookmark: false))
