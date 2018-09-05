@@ -37,8 +37,58 @@ class PostApplicationViewController: UIViewController{
 
         resultTextView.layer.borderColor = #colorLiteral(red: 0.9058823529, green: 0.8941176471, blue: 0.8941176471, alpha: 1)
         resultTextView.layer.borderWidth = 0.5
-        
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        setKeyboardListeners()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        removeKeyboardListeners()
+    }
+    
+    // MARK: KEYBOARD EVENTS
+    
+    private var keyboardHeight: CGFloat = 0
+    
+    private lazy var viewYWhenKeyboardAppear: CGFloat! = {
+        self.view.frame.origin.y - (self.keyboardHeight - 20)
+    } ()
+    private lazy var viewYWhenKeyboardDisappear: CGFloat! = {
+        self.view.frame.origin.y + (self.keyboardHeight - 20)
+    } ()
+    
+    @objc func keyboardWillAppear(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            self.keyboardHeight = keyboardSize.height - (UIApplication.shared.keyWindow?.safeAreaInsets.bottom)!
+            UIView.animate(withDuration: 0.3) {
+                self.view.frame = CGRect(x: self.view.frame.origin.x, y: self.viewYWhenKeyboardAppear, width: self.view.frame.width, height: self.view.frame.height)
+            }
+        }
+    }
+    
+    @objc func keyboardWillDisappear(notification: NSNotification) {
+        UIView.animate(withDuration: 0.3) {
+            self.view.frame = CGRect(x: self.view.frame.origin.x, y: self.viewYWhenKeyboardDisappear, width: self.view.frame.width, height: self.view.frame.height)
+        }
+    }
+    
+    @objc func resignTextView() {
+        resultTextView.resignFirstResponder()
+    }
+    
+    private func setKeyboardListeners() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(resignTextView))
+        self.view.addGestureRecognizer(tap)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillAppear(notification:)), name: .UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillDisappear(notification:)), name: .UIKeyboardWillHide, object: nil)
+    }
+    
+    private func removeKeyboardListeners() {
+        NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillHide, object: nil)
+    }
+    
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         print("button pressed")
