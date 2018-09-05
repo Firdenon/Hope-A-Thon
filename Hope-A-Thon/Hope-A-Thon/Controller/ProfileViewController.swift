@@ -133,11 +133,13 @@ class ProfileViewController: UIViewController, UINavigationBarDelegate, UITextFi
     
     @IBAction func nameEditBtn(_ sender: Any) {
         nameTextField.isHidden = false
+        nameTextField.becomeFirstResponder()
     }
     
     @IBAction func contactEditBtn(_ sender: Any) {
         emailTextField.isHidden = false
         phoneTextfield.isHidden = false
+        emailTextField.becomeFirstResponder()
     }
     
     

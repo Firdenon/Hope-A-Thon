@@ -95,7 +95,7 @@
                                                                                     <action selector="contactEditBtn:" destination="W1r-mO-Gaf" eventType="touchUpInside" id="SiM-8r-eRf"/>
                                                                                 </connections>
                                                                             </button>
-                                                                            <textField hidden="YES" opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lIs-Hv-GLn">
+                                                                            <textField hidden="YES" opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lIs-Hv-GLn">
                                                                                 <rect key="frame" x="77.666666666666686" y="60.666666666666686" width="200" height="30"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="200" id="I8p-fW-AZ1"/>
@@ -104,7 +104,7 @@
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="continue" textContentType="email"/>
                                                                             </textField>
-                                                                            <textField hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t7A-T8-sQN">
+                                                                            <textField hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t7A-T8-sQN">
                                                                                 <rect key="frame" x="77.666666666666686" y="96" width="200" height="30"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="200" id="QND-Jq-irg"/>
@@ -775,7 +775,7 @@
                                                 <color key="shadowColor" red="0.38467639590000002" green="0.38467639590000002" blue="0.38467639590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <size key="shadowOffset" width="1" height="1"/>
                                             </label>
-                                            <textField hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lNT-p1-sh2">
+                                            <textField hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lNT-p1-sh2">
                                                 <rect key="frame" x="37.666666666666657" y="153.66666666666669" width="300" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="Hyp-1N-Hph"/>
