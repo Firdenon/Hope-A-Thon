@@ -107,7 +107,7 @@ class NotificationEmbededViewController: UIViewController {
                     height: UIScreen.main.bounds.size.height
                 )
                 self.notificationVC.view.layoutIfNeeded()
-                self.notificationVC.view.backgroundColor = UIColor.clear
+//                self.notificationVC.view.backgroundColor = UIColor.clear
             }, completion: { _ in
                 self.notificationVC.view.removeFromSuperview()
                 self.notificationVC.removeFromParentViewController()
