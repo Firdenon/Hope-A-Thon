@@ -38,7 +38,6 @@ class PostApplicationViewController: UIViewController{
         resultTextView.layer.borderColor = #colorLiteral(red: 0.9058823529, green: 0.8941176471, blue: 0.8941176471, alpha: 1)
         resultTextView.layer.borderWidth = 0.5
         
-        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(UIView.endEditing(_:))))
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
@@ -89,6 +88,7 @@ class PostApplicationViewController: UIViewController{
             }
         }
         
+        ongoingActivities.append(detailActivity)
         self.performSegue(withIdentifier: "unwind", sender: nil)
     }
 }

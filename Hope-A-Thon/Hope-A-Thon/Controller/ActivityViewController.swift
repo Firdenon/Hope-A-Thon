@@ -18,6 +18,7 @@ class ActivityViewController: UIViewController {
     
     // MARK: - Variables
     var selectedActivity: Activity!
+    var selectedIndex: Int!
     
     // MARK: - App Life Cycle
     override func viewDidLoad() {
@@ -43,6 +44,7 @@ class ActivityViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? ActivityDetailViewController {
             destination.detailActivity = selectedActivity
+            destination.index = selectedIndex
         }
     }
 }
@@ -87,6 +89,7 @@ extension ActivityViewController: UITableViewDelegate, UITableViewDataSource {
         } else {
             selectedActivity = completedActivities[indexPath.row]
         }
+        selectedIndex = indexPath.row
         performSegue(withIdentifier: "activityToDetail", sender: self)
     }
 }

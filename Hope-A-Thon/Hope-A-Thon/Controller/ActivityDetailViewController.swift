@@ -14,6 +14,7 @@ class ActivityDetailViewController: UIViewController {
     @IBOutlet weak var ngoLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var postedLabel: UILabel!
@@ -22,6 +23,7 @@ class ActivityDetailViewController: UIViewController {
     @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var termLabel: UILabel!
     
+    @IBOutlet weak var bookmarkButton: UIButton!
     
     @IBOutlet weak var viewAtas: UIView!
     @IBOutlet weak var viewSkill: UIView!
@@ -29,6 +31,7 @@ class ActivityDetailViewController: UIViewController {
     @IBOutlet weak var viewDesc: UIView!
     
     var detailActivity: Activity!
+    var index: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,10 +60,16 @@ class ActivityDetailViewController: UIViewController {
         desiredLabel.addCharacterSpacing(kernValue: 2.33)
         descLabel.addCharacterSpacing(kernValue: 2.33)
         termLabel.addCharacterSpacing(kernValue: 2.33)
+        titleLabel.addCharacterSpacing(kernValue: 2)
         
         activityImage.image = detailActivity.image
         ngoLabel.text = detailActivity.ngo
         locationLabel.text = detailActivity.location
         dateLabel.text = detailActivity.date
+        titleLabel.text = detailActivity.title
     }
+    
+    @IBAction func boomarkButtonPressed() {
+    }
+    
 }

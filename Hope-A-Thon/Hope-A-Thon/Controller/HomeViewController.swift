@@ -27,6 +27,7 @@ class HomeViewController: NotificationEmbededViewController {
     @IBOutlet weak var containerView: UIView!
     
     var selectedActivity: Activity!
+    var selectedIndex: Int!
     
     // MARK: - App Life Cycle
     override func viewDidLoad() {
@@ -66,6 +67,7 @@ class HomeViewController: NotificationEmbededViewController {
             destination.urgentDelegate = self
         } else if let destination = segue.destination as? HomeDetailViewController {
             destination.detailActivity = selectedActivity
+            destination.index = selectedIndex
         }
     }
 }
@@ -97,8 +99,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         }
         else if nonUrgentActivities[indexPath.row].bookmark == false{
                 cell.bookmarkBtn.setImage(#imageLiteral(resourceName: "starNot"), for: .normal)
-            
-            }
+        }
         
         cell.layer.borderWidth = 0.5
         cell.layer.cornerRadius = 14
@@ -109,6 +110,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedActivity = nonUrgentActivities[indexPath.row]
+        selectedIndex = indexPath.row
         performSegue(withIdentifier: "homeToDetail", sender: self)
     }
     
