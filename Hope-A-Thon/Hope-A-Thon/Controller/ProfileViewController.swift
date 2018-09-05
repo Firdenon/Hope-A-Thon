@@ -16,7 +16,7 @@ class ProfileViewController: UIViewController, UINavigationBarDelegate, UITextFi
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
-    
+    @IBOutlet weak var dateLabel: UILabel!
     
     
     
@@ -41,6 +41,7 @@ class ProfileViewController: UIViewController, UINavigationBarDelegate, UITextFi
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var phoneTextfield: UITextField!
+    @IBOutlet weak var dateTextField: UITextField!
     
     
     
@@ -56,6 +57,10 @@ class ProfileViewController: UIViewController, UINavigationBarDelegate, UITextFi
         nameTextField.delegate = self
         phoneTextfield.delegate = self
         emailTextField.delegate = self
+        dateTextField.delegate = self
+        let toolBar = UIToolbar().ToolbarPiker(mySelect: #selector(ProfileViewController.dismissPicker))
+        
+        dateTextField.inputAccessoryView = toolBar
         
         contactCard.layer.cornerRadius = 10
         contactCard.layer.borderWidth = 1
@@ -82,15 +87,15 @@ class ProfileViewController: UIViewController, UINavigationBarDelegate, UITextFi
         emergencyCard.layer.borderColor = #colorLiteral(red: 0.9058823529, green: 0.8941176471, blue: 0.8941176471, alpha: 1)
         
         
-        nameLabel.addCharacterSpacing()
-        contactLabel.addCharacterSpacing()
-        dobLabel.addCharacterSpacing()
-        genderLabel.addCharacterSpacing()
-        nationalLabel.addCharacterSpacing()
-        occupationLabel.addCharacterSpacing()
-        skillLabel.addCharacterSpacing()
-        languangeLabel.addCharacterSpacing()
-        emergencyLabel.addCharacterSpacing()
+        nameLabel.addCharacterSpacing(kernValue: 2.33)
+        contactLabel.addCharacterSpacing(kernValue: 2.33)
+        dobLabel.addCharacterSpacing(kernValue: 2.33)
+        genderLabel.addCharacterSpacing(kernValue: 2.33)
+        nationalLabel.addCharacterSpacing(kernValue: 2.33)
+        occupationLabel.addCharacterSpacing(kernValue: 2.33)
+        skillLabel.addCharacterSpacing(kernValue: 2.33)
+        languangeLabel.addCharacterSpacing(kernValue: 2.33)
+        emergencyLabel.addCharacterSpacing(kernValue: 2.33)
         
         
         //emergencyCard.bounds = CGRect(x: 10, y: 10, width: 10, height: 10)
@@ -126,11 +131,6 @@ class ProfileViewController: UIViewController, UINavigationBarDelegate, UITextFi
     }
     
     
-    @IBAction func dobEditBtn(_ sender: Any) {
-        
-    }
-    
-    
     @IBAction func nameEditBtn(_ sender: Any) {
         nameTextField.isHidden = false
         nameTextField.becomeFirstResponder()
@@ -142,6 +142,22 @@ class ProfileViewController: UIViewController, UINavigationBarDelegate, UITextFi
         emailTextField.becomeFirstResponder()
     }
     
+    @IBAction func dobEditBtn(_ sender: Any) {
+        dateTextField.isHidden = false
+        dateTextField.becomeFirstResponder()
+    }
+    
+    @objc func textFieldDidBeginEditing(_ textField: UITextField) {
+        
+        if textField.tag == 4 {
+            let datePickerView:UIDatePicker = UIDatePicker()
+            datePickerView.datePickerMode = UIDatePickerMode.date
+            textField.inputView = datePickerView
+            datePickerView.addTarget(self, action: #selector(ProfileViewController.datePickerValueChanged), for: UIControlEvents.valueChanged)
+            
+        }
+        
+    }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField.tag == 1 {
@@ -164,6 +180,24 @@ class ProfileViewController: UIViewController, UINavigationBarDelegate, UITextFi
         return false
     }
     
+    @objc func datePickerValueChanged(sender:UIDatePicker) {
+        
+        let dateFormatter = DateFormatter()
+        
+        dateFormatter.dateStyle = DateFormatter.Style.medium
+        
+        dateFormatter.timeStyle = DateFormatter.Style.none
+        
+        dateTextField.text = dateFormatter.string(from: sender.date)
+        
+    }
+    
+    @objc func dismissPicker() {
+        view.endEditing(true)
+        dateLabel.text = dateTextField.text
+        dateTextField.isHidden = true
+        
+    }
 
     
 }
@@ -175,4 +209,26 @@ extension UILabel {
             attributedText = NSAttributedString(string: textString, attributes: attrs)
         }
     }
+}
+
+extension UIToolbar {
+    
+    func ToolbarPiker(mySelect : Selector) -> UIToolbar {
+        
+        let toolBar = UIToolbar()
+        
+        toolBar.barStyle = UIBarStyle.default
+        toolBar.isTranslucent = true
+        toolBar.tintColor = UIColor.black
+        toolBar.sizeToFit()
+        
+        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.plain, target: self, action: mySelect)
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        
+        toolBar.setItems([ spaceButton, doneButton], animated: false)
+        toolBar.isUserInteractionEnabled = true
+        
+        return toolBar
+    }
+    
 }
