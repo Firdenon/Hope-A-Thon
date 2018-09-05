@@ -183,14 +183,6 @@
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58i-iE-fhT">
-                                                <rect key="frame" x="338" y="63" width="20" height="20"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="icon_star_w"/>
-                                                <connections>
-                                                    <action selector="boomarkButtonPressed" destination="zsD-we-jbm" eventType="touchUpInside" id="73B-yG-rXs"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <viewLayoutGuide key="safeArea" id="ZWM-sT-RN0"/>
@@ -437,7 +429,6 @@
                         <outlet property="activityImage" destination="8l2-lS-g9I" id="N26-B0-Avr"/>
                         <outlet property="approvedLabel" destination="VCB-tj-EXb" id="eUv-w3-cCa"/>
                         <outlet property="approvedView" destination="tp0-5E-N46" id="hHU-BW-ZCU"/>
-                        <outlet property="bookmarkButton" destination="58i-iE-fhT" id="nJ2-7i-03k"/>
                         <outlet property="dateLabel" destination="gIP-w8-5dY" id="F8i-cn-erY"/>
                         <outlet property="descLabel" destination="aJ3-3U-xwe" id="jFS-TU-8po"/>
                         <outlet property="desiredLabel" destination="yHo-b4-shg" id="AXc-1E-ilN"/>
@@ -471,6 +462,5 @@
         <image name="icon_logistics" width="512" height="512"/>
         <image name="icon_reconstruction" width="512" height="512"/>
         <image name="icon_rescue" width="512" height="512"/>
-        <image name="icon_star_w" width="512" height="512"/>
     </resources>
 </document>
