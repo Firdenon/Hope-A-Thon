@@ -169,6 +169,7 @@ class ProfileViewController: UIViewController, UINavigationBarDelegate, UITextFi
         if textField.tag == 4 {
             let datePickerView:UIDatePicker = UIDatePicker()
             datePickerView.datePickerMode = UIDatePickerMode.date
+            datePickerView.locale = Locale(identifier: "id")
             textField.inputView = datePickerView
             datePickerView.addTarget(self, action: #selector(ProfileViewController.datePickerValueChanged), for: UIControlEvents.valueChanged)
         }

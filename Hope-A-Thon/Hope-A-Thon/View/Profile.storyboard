@@ -151,8 +151,8 @@
                                                                                                 <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="June 16, 1996" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKn-FO-Mc3">
-                                                                                                <rect key="frame" x="48.999999999999993" y="62.000000000000007" width="79.333333333333314" height="14.333333333333336"/>
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16 Juni 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKn-FO-Mc3">
+                                                                                                <rect key="frame" x="53.000000000000007" y="62.000000000000007" width="71.666666666666686" height="14.333333333333336"/>
                                                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                                                 <nil key="textColor"/>
                                                                                                 <nil key="highlightedColor"/>
@@ -519,7 +519,7 @@
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RuP-hC-zB4">
                                                                                 <rect key="frame" x="10" y="81.333333333333258" width="335" height="98.666666666666686"/>
-                                                                                <state key="normal" image="button_resume"/>
+                                                                                <state key="normal" image="button_id"/>
                                                                             </button>
                                                                         </subviews>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -757,7 +757,7 @@
     </scenes>
     <resources>
         <image name="Health history" width="300" height="30"/>
-        <image name="button_resume" width="300" height="30"/>
+        <image name="button_id" width="300" height="30"/>
         <image name="button_volunteerhistory" width="300" height="30"/>
         <image name="icon_communications" width="409.60000610351562" height="409.60000610351562"/>
         <image name="icon_edit" width="409.60000610351562" height="409.60000610351562"/>
