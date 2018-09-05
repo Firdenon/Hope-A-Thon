@@ -165,7 +165,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CQf-SI-lAh">
-                                <rect key="frame" x="0.0" y="96" width="375" height="1181"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="1189"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Lake" translatesAutoresizingMaskIntoConstraints="NO" id="8l2-lS-g9I">
@@ -337,7 +337,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UW3-vw-es4" userLabel="View Description">
-                                        <rect key="frame" x="9" y="705" width="359" height="225"/>
+                                        <rect key="frame" x="9" y="705" width="359" height="250"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DESCRIPTION" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJ3-3U-xwe">
@@ -348,9 +348,9 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2g-Ga-Bvi">
-                                                <rect key="frame" x="29" y="33" width="300" height="189"/>
+                                                <rect key="frame" x="29" y="33" width="300" height="209"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+                                                <string key="text">We're looking for a volunteer to commit to three months living and teaching in a small, coastal village on the island of Lombok, Indonesia. The volunteer will be expected to implement and teach a language program suitable for children. Teaching experience and qualifications are a must, but more importantly, positivity, dynamism and creativity are valued above all else.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -359,7 +359,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ob4-Bh-CD6" userLabel="view term">
-                                        <rect key="frame" x="7" y="938" width="359" height="232"/>
+                                        <rect key="frame" x="7" y="963" width="359" height="123"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TERM &amp; CONDITION" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJo-yL-PiT">
@@ -369,10 +369,9 @@
                                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oM-7U-j8v">
-                                                <rect key="frame" x="29" y="26" width="300" height="189"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This project will take on 4 until 12 weeks. Volunteers will be staying with a local family." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oM-7U-j8v">
+                                                <rect key="frame" x="29" y="26" width="300" height="97"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -380,6 +379,21 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LOMBOK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Eh-3N-qiJ">
+                                        <rect key="frame" x="8" y="174" width="266" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58i-iE-fhT">
+                                        <rect key="frame" x="346" y="174" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="icon_star_w"/>
+                                        <connections>
+                                            <action selector="boomarkButtonPressed" destination="zsD-we-jbm" eventType="touchUpInside" id="73B-yG-rXs"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -390,6 +404,7 @@
                     <size key="freeformSize" width="375" height="1400"/>
                     <connections>
                         <outlet property="activityImage" destination="8l2-lS-g9I" id="N26-B0-Avr"/>
+                        <outlet property="bookmarkButton" destination="58i-iE-fhT" id="nJ2-7i-03k"/>
                         <outlet property="dateLabel" destination="gIP-w8-5dY" id="F8i-cn-erY"/>
                         <outlet property="descLabel" destination="aJ3-3U-xwe" id="jFS-TU-8po"/>
                         <outlet property="desiredLabel" destination="yHo-b4-shg" id="AXc-1E-ilN"/>
@@ -399,6 +414,7 @@
                         <outlet property="postedLabel" destination="HHQ-6g-4Ru" id="3c1-xh-on8"/>
                         <outlet property="scrollView" destination="CQf-SI-lAh" id="Jji-sw-FqU"/>
                         <outlet property="termLabel" destination="ZJo-yL-PiT" id="WMU-fh-Ohb"/>
+                        <outlet property="titleLabel" destination="2Eh-3N-qiJ" id="93e-fK-EaT"/>
                         <outlet property="viewAtas" destination="v82-RV-3vR" id="TKu-nM-9h0"/>
                         <outlet property="viewDesc" destination="UW3-vw-es4" id="OBU-Rl-1Pn"/>
                         <outlet property="viewSkill" destination="qMS-UJ-UEu" id="aHU-LG-zpE"/>
@@ -422,5 +438,6 @@
         <image name="icon_logistics" width="512" height="512"/>
         <image name="icon_reconstruction" width="512" height="512"/>
         <image name="icon_rescue" width="512" height="512"/>
+        <image name="icon_star_w" width="512" height="512"/>
     </resources>
 </document>

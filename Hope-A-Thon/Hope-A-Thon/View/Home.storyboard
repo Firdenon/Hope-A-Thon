@@ -302,13 +302,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Avu-Hf-Zde">
-                                <rect key="frame" x="0.0" y="96" width="375" height="1500"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="1508"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Lake" translatesAutoresizingMaskIntoConstraints="NO" id="20h-vz-9Uj">
-                                        <rect key="frame" x="-2" y="0.0" width="376" height="178"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Lake" translatesAutoresizingMaskIntoConstraints="NO" id="20h-vz-9Uj">
+                                        <rect key="frame" x="0.0" y="-8" width="376" height="194"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LOMBOK" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogn-0E-GFu">
+                                        <rect key="frame" x="8" y="157" width="331" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65T-1m-lKy">
                                         <rect key="frame" x="7" y="201" width="359" height="74"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -485,7 +492,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FBi-46-PfF" userLabel="View Description">
-                                        <rect key="frame" x="7" y="799" width="359" height="225"/>
+                                        <rect key="frame" x="7" y="799" width="359" height="251"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DESCRIPTION" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzs-ts-IPV">
@@ -496,9 +503,9 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTp-zv-UcU">
-                                                <rect key="frame" x="29" y="33" width="300" height="189"/>
+                                                <rect key="frame" x="29" y="33" width="300" height="210"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+                                                <string key="text">We're looking for a volunteer to commit to three months living and teaching in a small, coastal village on the island of Lombok, Indonesia. The volunteer will be expected to implement and teach a language program suitable for children. Teaching experience and qualifications are a must, but more importantly, positivity, dynamism and creativity are valued above all else.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -507,7 +514,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mdZ-T9-nN8" userLabel="view term">
-                                        <rect key="frame" x="8" y="1032" width="359" height="232"/>
+                                        <rect key="frame" x="8" y="1059" width="359" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TERM &amp; CONDITION" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpt-Qb-lcF">
@@ -517,10 +524,9 @@
                                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fc1-nM-9e9">
-                                                <rect key="frame" x="29" y="26" width="300" height="189"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This project will take on 4 until 12 weeks. Volunteers will be staying with a local family." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fc1-nM-9e9">
+                                                <rect key="frame" x="29" y="26" width="300" height="94"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -528,6 +534,14 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcI-Ak-GQc">
+                                        <rect key="frame" x="346" y="157" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="icon_star_w"/>
+                                        <connections>
+                                            <action selector="bookmarkButtonPressed" destination="eZc-XF-dcG" eventType="touchUpInside" id="dJ0-Sv-xfK"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -539,6 +553,7 @@
                     <connections>
                         <outlet property="activityImage" destination="20h-vz-9Uj" id="3fm-v2-wCp"/>
                         <outlet property="applyButton" destination="65T-1m-lKy" id="HDj-ZP-wrF"/>
+                        <outlet property="bookmarkButton" destination="dcI-Ak-GQc" id="cHd-ZM-7Iu"/>
                         <outlet property="dateLabel" destination="6C4-Y7-UuB" id="sh9-FJ-XEy"/>
                         <outlet property="descLabel" destination="bzs-ts-IPV" id="9Qz-6O-bvi"/>
                         <outlet property="desiredLabel" destination="t9V-0k-pR6" id="iFZ-Eh-2es"/>
@@ -548,6 +563,7 @@
                         <outlet property="postedLabel" destination="ET9-U8-A6f" id="plt-Bi-YdP"/>
                         <outlet property="scrollView" destination="Avu-Hf-Zde" id="nfy-eE-1bL"/>
                         <outlet property="termLabel" destination="Wpt-Qb-lcF" id="PyR-zw-f7A"/>
+                        <outlet property="titleLabel" destination="ogn-0E-GFu" id="haC-Nt-Vph"/>
                         <outlet property="viewAtas" destination="K8E-yx-Gvk" id="jsM-MQ-OdV"/>
                         <outlet property="viewDesc" destination="FBi-46-PfF" id="UVH-lm-XaM"/>
                         <outlet property="viewSkill" destination="r0F-O7-D9E" id="9Hc-im-oh4"/>
@@ -557,7 +573,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P4a-ys-OAY" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3151" y="1813"/>
+            <point key="canvasLocation" x="3149.5999999999999" y="1812.5615763546798"/>
         </scene>
         <!--Post Application View Controller-->
         <scene sceneID="c3a-eI-IV1">
