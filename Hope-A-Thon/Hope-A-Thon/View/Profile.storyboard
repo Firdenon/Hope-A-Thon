@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WNe-F5-Iiy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WNe-F5-Iiy">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1712"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IaI-Qo-d64">
-                                        <rect key="frame" x="0.0" y="77" width="375" height="1550"/>
+                                        <rect key="frame" x="0.0" y="77" width="375" height="1712"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GL4-FY-9vR">
                                                 <rect key="frame" x="0.0" y="-150" width="375" height="300"/>
@@ -371,7 +370,7 @@
                                                                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                                                             </imageView>
                                                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="communications &amp; management" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1QS-a9-ftj">
-                                                                                                                <rect key="frame" x="-9" y="105" width="102.33333333333333" height="28.666666666666657"/>
+                                                                                                                <rect key="frame" x="-9" y="105" width="102" height="29"/>
                                                                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                                                                 <nil key="textColor"/>
@@ -392,7 +391,7 @@
                                                                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                                                             </imageView>
                                                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="health &amp; mental health" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pU-cM-u1R">
-                                                                                                                <rect key="frame" x="-8" y="105" width="102.33333333333333" height="28.666666666666657"/>
+                                                                                                                <rect key="frame" x="-8" y="105" width="102" height="29"/>
                                                                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                                                                 <nil key="textColor"/>
@@ -426,7 +425,7 @@
                                                                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                                                             </imageView>
                                                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="logistics" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKF-96-BF9">
-                                                                                                                <rect key="frame" x="-11" y="111" width="102.33333333333333" height="14.333333333333343"/>
+                                                                                                                <rect key="frame" x="-11" y="111" width="102" height="14"/>
                                                                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                                                                 <nil key="textColor"/>
@@ -447,7 +446,7 @@
                                                                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                                                             </imageView>
                                                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="reconstruction" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0a-pL-qkS">
-                                                                                                                <rect key="frame" x="-11" y="111" width="102.33333333333333" height="14.333333333333343"/>
+                                                                                                                <rect key="frame" x="-11" y="111" width="102" height="14"/>
                                                                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                                                                 <nil key="textColor"/>
@@ -518,7 +517,7 @@
                                                                                 <rect key="frame" x="0.0" y="200" width="355" height="30"/>
                                                                                 <state key="normal" image="button_volunteerhistory"/>
                                                                             </button>
-                                                                            <button opaque="NO" contentMode="scaleAspectFit" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RuP-hC-zB4">
+                                                                            <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RuP-hC-zB4">
                                                                                 <rect key="frame" x="10" y="81.333333333333258" width="335" height="93.666666666666686"/>
                                                                                 <state key="normal" image="button_id"/>
                                                                             </button>
@@ -673,6 +672,7 @@
                                             <constraint firstItem="GL4-FY-9vR" firstAttribute="leading" secondItem="IaI-Qo-d64" secondAttribute="leading" id="D3N-IX-cIo"/>
                                             <constraint firstItem="ert-PY-V3t" firstAttribute="top" secondItem="GL4-FY-9vR" secondAttribute="bottom" id="D3S-bE-lrm"/>
                                             <constraint firstItem="Dzd-Bw-txy" firstAttribute="centerY" secondItem="GL4-FY-9vR" secondAttribute="centerY" constant="20" id="HWm-qe-UK7"/>
+                                            <constraint firstAttribute="height" constant="1712" id="Pvf-yt-Shh"/>
                                             <constraint firstItem="WU1-0e-7l8" firstAttribute="leading" secondItem="IaI-Qo-d64" secondAttribute="leading" id="Tj4-Q3-Kop"/>
                                             <constraint firstItem="Dzd-Bw-txy" firstAttribute="centerX" secondItem="GL4-FY-9vR" secondAttribute="centerX" id="kpV-w0-xAv"/>
                                             <constraint firstItem="lNT-p1-sh2" firstAttribute="centerX" secondItem="WU1-0e-7l8" secondAttribute="centerX" id="pY9-Yz-XLi"/>
@@ -680,7 +680,6 @@
                                             <constraint firstAttribute="trailing" secondItem="ert-PY-V3t" secondAttribute="trailing" id="qd2-xv-lRn"/>
                                             <constraint firstItem="WU1-0e-7l8" firstAttribute="centerX" secondItem="IaI-Qo-d64" secondAttribute="centerX" id="tNK-Vl-EkL"/>
                                             <constraint firstItem="Nmc-Pb-4xt" firstAttribute="bottom" secondItem="GL4-FY-9vR" secondAttribute="bottom" constant="-10" id="ueB-Z2-oR0"/>
-                                            <constraint firstAttribute="height" constant="1550" id="vsj-JY-Nbq"/>
                                             <constraint firstAttribute="trailing" secondItem="WU1-0e-7l8" secondAttribute="trailing" id="wTx-az-uz7"/>
                                             <constraint firstItem="lNT-p1-sh2" firstAttribute="centerY" secondItem="WU1-0e-7l8" secondAttribute="centerY" id="zpx-kx-UqJ"/>
                                         </constraints>
@@ -690,11 +689,11 @@
                                     <constraint firstAttribute="trailing" secondItem="IaI-Qo-d64" secondAttribute="trailing" id="Dnc-FJ-Goe"/>
                                     <constraint firstItem="IaI-Qo-d64" firstAttribute="top" secondItem="e4o-91-SyW" secondAttribute="top" constant="77" id="E4N-NB-GFe"/>
                                     <constraint firstItem="IaI-Qo-d64" firstAttribute="leading" secondItem="e4o-91-SyW" secondAttribute="leading" id="fPY-vV-kHz"/>
-                                    <constraint firstAttribute="bottom" secondItem="IaI-Qo-d64" secondAttribute="bottom" constant="23" id="r8C-bS-XSc"/>
+                                    <constraint firstAttribute="bottom" secondItem="IaI-Qo-d64" secondAttribute="bottom" id="r8C-bS-XSc"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.42352941179999998" green="0.71372549019999998" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="e4o-91-SyW" firstAttribute="top" secondItem="6hl-gx-o8l" secondAttribute="top" id="9cH-sq-Ppn"/>
                             <constraint firstItem="e4o-91-SyW" firstAttribute="trailing" secondItem="6hl-gx-o8l" secondAttribute="trailing" id="CBr-UR-JAN"/>
@@ -767,13 +766,13 @@
         <image name="button_id" width="300" height="30"/>
         <image name="button_resume" width="300" height="30"/>
         <image name="button_volunteerhistory" width="300" height="30"/>
-        <image name="icon_communications" width="512" height="512"/>
-        <image name="icon_edit" width="512" height="512"/>
-        <image name="icon_health" width="512" height="512"/>
-        <image name="icon_logistics" width="512" height="512"/>
-        <image name="icon_profile" width="32" height="32"/>
-        <image name="icon_profile_active" width="32" height="32"/>
-        <image name="icon_reconstruction" width="512" height="512"/>
+        <image name="icon_communications" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="icon_edit" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="icon_health" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="icon_logistics" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="icon_profile" width="25.600000381469727" height="25.600000381469727"/>
+        <image name="icon_profile_active" width="25.600000381469727" height="25.600000381469727"/>
+        <image name="icon_reconstruction" width="409.60000610351562" height="409.60000610351562"/>
         <image name="jane" width="150" height="150"/>
     </resources>
 </document>

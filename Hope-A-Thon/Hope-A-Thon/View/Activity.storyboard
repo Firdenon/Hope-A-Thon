@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t6C-QS-cuu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t6C-QS-cuu">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -452,15 +452,15 @@
     </scenes>
     <resources>
         <image name="Lake" width="3840" height="2160"/>
-        <image name="icon_activities" width="32" height="32"/>
-        <image name="icon_activities_active" width="32" height="32"/>
-        <image name="icon_child" width="512" height="512"/>
-        <image name="icon_communications" width="512" height="512"/>
-        <image name="icon_fundraising" width="512" height="512"/>
-        <image name="icon_health" width="512" height="512"/>
-        <image name="icon_infrastructure" width="512" height="512"/>
-        <image name="icon_logistics" width="512" height="512"/>
-        <image name="icon_reconstruction" width="512" height="512"/>
-        <image name="icon_rescue" width="512" height="512"/>
+        <image name="icon_activities" width="25.600000381469727" height="25.600000381469727"/>
+        <image name="icon_activities_active" width="25.600000381469727" height="25.600000381469727"/>
+        <image name="icon_child" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="icon_communications" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="icon_fundraising" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="icon_health" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="icon_infrastructure" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="icon_logistics" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="icon_reconstruction" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="icon_rescue" width="409.60000610351562" height="409.60000610351562"/>
     </resources>
 </document>
